@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/ten"
+        android:layout_margin="@dimen/five"
+        android:id="@+id/card_options"
+        android:clipToPadding="true"
+        android:padding="@dimen/five">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/five">
+
+        <ImageView
+                android:layout_width="@dimen/fifteen"
+                android:layout_height="@dimen/fifteen"
+                app:srcCompat="@drawable/ic_select_income_source_tick"
+                android:id="@+id/imageView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:id="@+id/income_cource_imageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/twenty"
+                android:padding="5dp" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintBottom_toTopOf="@+id/income_source_textView"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/income_source_textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/income_cource_imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/twenty"
+                android:textSize="@dimen/text_size_fourteen"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/fifteen"
+                android:layout_marginEnd="@dimen/fifteen"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

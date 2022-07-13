@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:background="@color/white">
+
+    <View
+            android:id="@+id/view_child_line"
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:background="@color/lighter_grey" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/lightest_grey"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/twenty">
+
+        <TextView
+                android:id="@+id/process_decription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:padding="5dp"
+                android:text="Please upload all the required documents."
+                android:textColor="@color/lighter_black"
+                android:textSize="@dimen/text_size_fourteen" />
+
+        <LinearLayout
+                android:id="@+id/field_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/update_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/red"
+                android:layout_marginLeft="@dimen/thirty_five"
+                android:layout_marginRight="@dimen/thirty_five"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:text="@string/click_update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

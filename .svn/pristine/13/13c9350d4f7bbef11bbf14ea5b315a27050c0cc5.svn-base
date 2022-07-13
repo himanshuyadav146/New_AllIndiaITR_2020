@@ -1,0 +1,138 @@
+package dell.com.allindiaitr.utils;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b \n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\u000b\u001a\u00020\u00042\u0006\u0010\f\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u0014J\u0016\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u001e\u0010\u0017\u001a\u00020\u00042\u0006\u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\u0019\u001a\u00020\u0006J\u0016\u0010\u001a\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001d\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010 \u001a\u00020\u00042\u0006\u0010!\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010\"\u001a\u00020\u00042\u0006\u0010#\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010$\u001a\u00020\u00042\u0006\u0010%\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010&\u001a\u00020\u00042\u0006\u0010\'\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010(\u001a\u00020\u00042\u0006\u0010)\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010*\u001a\u00020\u00042\u0006\u0010+\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010,\u001a\u00020\u00042\u0006\u0010-\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u0010.\u001a\u00020\u00042\u0006\u0010/\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u00100\u001a\u00020\u00042\u0006\u00101\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bJ\u0016\u00102\u001a\u00020\u00042\u0006\u00103\u001a\u00020\u00062\u0006\u00104\u001a\u000205\u00a8\u00066"}, d2 = {"Ldell/com/allindiaitr/utils/Validation;", "", "()V", "isAadhaarValid", "", "aadhaar", "", "editText", "Landroid/widget/EditText;", "isAddressValid", "address", "isBankAccountNumberValid", "accNum", "isBankNameValid", "bankName", "isCityValid", "city", "isDobValid", "dob", "textView", "Landroid/widget/TextView;", "isEmailValid", "email", "isEmpaty", "txt", "msg", "isFatherNameValid", "fatherName", "isFieldValid", "amount", "isFirstNameValid", "firstName", "isGstInCompanyNameAddress", "gstInName", "isGstInNumber", "gstInNo", "isIfscValid", "ifsc", "isLastNameValid", "lastName", "isMobileValid", "mobile", "isNameValid", "name", "isOTPValid", "otp", "isPanValid", "pan", "isPinValid", "pin", "isStateValid", "state", "context", "Landroid/content/Context;", "app_debug"})
+public final class Validation {
+    
+    public final boolean isMobileValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String mobile, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isEmpaty(@org.jetbrains.annotations.NotNull()
+    java.lang.String txt, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText, @org.jetbrains.annotations.NotNull()
+    java.lang.String msg) {
+        return false;
+    }
+    
+    public final boolean isOTPValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String otp, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isFirstNameValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String firstName, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isLastNameValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String lastName, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isEmailValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String email, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isPanValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String pan, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isDobValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String dob, @org.jetbrains.annotations.NotNull()
+    android.widget.TextView textView) {
+        return false;
+    }
+    
+    public final boolean isFatherNameValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String fatherName, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isAadhaarValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String aadhaar, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isAddressValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String address, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isStateValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String state, @org.jetbrains.annotations.NotNull()
+    android.content.Context context) {
+        return false;
+    }
+    
+    public final boolean isCityValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String city, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isPinValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String pin, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isBankNameValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String bankName, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isIfscValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String ifsc, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isBankAccountNumberValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String accNum, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isFieldValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String amount, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isNameValid(@org.jetbrains.annotations.NotNull()
+    java.lang.String name, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isGstInNumber(@org.jetbrains.annotations.NotNull()
+    java.lang.String gstInNo, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public final boolean isGstInCompanyNameAddress(@org.jetbrains.annotations.NotNull()
+    java.lang.String gstInName, @org.jetbrains.annotations.NotNull()
+    android.widget.EditText editText) {
+        return false;
+    }
+    
+    public Validation() {
+        super();
+    }
+}

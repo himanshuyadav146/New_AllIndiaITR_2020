@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/activity_leave_comment">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearLayout"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:padding="10dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:scrollbars="vertical"
+                app:stackFromEnd="true" />
+
+        <LinearLayout
+                android:id="@+id/no_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/group_229"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="90dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Conversations yet"
+                    android:textColor="@color/light_grey"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text_size_sixteen"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/fifteen"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seems like you have not made any conversation."
+                    android:textColor="@color/light_grey"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lighter_grey"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_alignParentBottom="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/leave_ed_bg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                <ImageView
+                        android:id="@+id/cameraImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        app:srcCompat="@drawable/ic_camera"
+                        android:padding="@dimen/twelve"
+                        android:layout_gravity="center_vertical"/>
+
+                <EditText
+                        android:id="@+id/commentEditext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.1"
+                        android:hint="Type your message here…"
+                        android:textStyle="italic"
+                        android:imeOptions="flagNoExtractUi"
+                        android:padding="@dimen/ten"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:background="@drawable/leave_ed_bg"/>
+
+                <ImageView
+                        android:id="@+id/sendImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_sent"
+                        android:layout_marginRight="@dimen/fifteen"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_income_tax_calculator"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context=".usefultools.IncomeTaxCalculatorActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:baselineAligned="false"
+            android:text="@string/calculate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_fourteen"
+            android:background="@drawable/button_background"/>
+
+    <RelativeLayout
+            android:id="@+id/parent_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/calculateButton"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/five"
+                    android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty"
+                        app:cardCornerRadius="@dimen/three"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:id="@+id/personalInfoLayOut">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+
+                        <ImageView
+                                android:id="@+id/icon_image"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                app:srcCompat="@drawable/ic_select_user" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/icon_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:text="@string/title_incometax_calculator"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_sixteen" />
+
+                        <ImageView
+                                android:id="@+id/personalInfoUpArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown"
+                                android:rotation="180" />
+
+                        <ImageView
+                                android:id="@+id/personalInfoDownArowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown"
+                                android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                        android:id="@+id/personalInfoLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:orientation="vertical"
+                        android:padding="@dimen/five">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_incometax_select_years"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <Spinner
+                            android:id="@+id/assessmentYearSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/bg_spinner"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/five"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_dob"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:orientation="horizontal"
+                            android:background="@drawable/text_field">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/ageTextView"
+                                android:paddingBottom="@dimen/twelve"
+                                android:paddingTop="@dimen/twelve"
+                                android:paddingStart="@dimen/twelve"
+                                android:paddingEnd="@dimen/thirty_five"
+                                android:background="@null"
+                                android:textColor="@color/lighter_black"
+                                android:textSize="@dimen/text_size_twelve"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/fifteen"
+                                android:layout_height="@dimen/fifteen"
+                                app:srcCompat="@drawable/ic_calendar_filled"
+                                android:layout_marginEnd="@dimen/twelve"
+                                android:layout_gravity="center_vertical|end"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_residaental"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <Spinner
+                            android:id="@+id/residentialStatusSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/bg_spinner"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/five"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/incomeDetailLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="@dimen/fifteen"
+                        app:cardCornerRadius="@dimen/three"
+                        app:cardBackgroundColor="@color/white">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+
+                        <ImageView
+                                android:id="@+id/coin"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                app:srcCompat="@drawable/ic_coins" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/coin"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:text="@string/title_incomedetails"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_sixteen" />
+
+                        <ImageView
+                                android:id="@+id/incomeDetailUPArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown"
+                                android:rotation="180"
+                                android:tint="@color/grey"
+                                android:visibility="gone"/>
+
+                        <ImageView
+                                android:id="@+id/incomeDetailDownArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                        android:id="@+id/incomeDetailLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:orientation="vertical"
+                        android:padding="@dimen/five"
+                        android:visibility="gone">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_taxable_sal"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/taxableSalaryEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:id="@+id/tv_desc_income"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_deductions"
+                            android:textSize="@dimen/text_size_ten"
+                            android:visibility="gone" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_intrest_other_inc"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/incomeFromInterestEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_self_house"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve"
+                            android:layout_marginTop="@dimen/five"
+                            android:textStyle="normal"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_paid_on_loan"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/interestPaidHomeLoneEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_rented_house_property"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve"
+                            android:layout_marginTop="@dimen/five"
+                            android:textStyle="normal"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_rented_income_recived"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/rentalIncomeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_interstpaid_home"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/interestPaidLoneEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="@dimen/fifteen"
+                        app:cardCornerRadius="@dimen/three"
+                        app:cardBackgroundColor="@color/white">
+
+                    <RelativeLayout
+                            android:id="@+id/deducationLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+
+                        <ImageView
+                                android:id="@+id/deduct"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                app:srcCompat="@drawable/ic_tax" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/deduct"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:text="@string/title_deduction"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_sixteen" />
+
+                        <ImageView
+                                android:id="@+id/deductionUpArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown"
+                                android:rotation="180"
+                                android:visibility="gone" />
+
+                        <ImageView
+                                android:id="@+id/deductionDownArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                        android:id="@+id/deducationLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:orientation="vertical"
+                        android:padding="@dimen/five"
+                        android:visibility="gone">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_section80_c"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_basic_deduction"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/section80CEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <LinearLayout
+                            android:id="@+id/deducationLinearLayout_tta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="@string/title_section80_tta"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_twelve" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/title_interst_from"
+                                android:textSize="@dimen/text_size_twelve" />
+
+                        <EditText
+                                android:id="@+id/section80TTAEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:background="@drawable/text_field"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:padding="@dimen/twelve"
+                                android:singleLine="true"
+                                android:textSize="@dimen/text_size_twelve" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/deducationLinearLayout_ttb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="@string/title_section80_ttb"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_twelve" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/title_interest_on_deposit"
+                                android:textSize="@dimen/text_size_twelve" />
+
+                        <EditText
+                                android:id="@+id/section80TTBEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:background="@drawable/text_field"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:padding="@dimen/twelve"
+                                android:singleLine="true"
+                                android:textSize="@dimen/text_size_twelve" />
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_section80_g"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_donation_charity"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/section80GEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_section80_d"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_medical_pre"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/section80DEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_section80_e"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/title_interest_e_loan"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/section80EEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/tdsDetailsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_marginBottom="2dp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+
+                        <ImageView
+                                android:id="@+id/tdsDetail"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                app:srcCompat="@drawable/ic_google_forms" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/tdsDetail"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:text="@string/title_tds_details"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_sixteen" />
+
+                        <ImageView
+                                android:id="@+id/tdsUpArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown"
+                                android:rotation="180"
+                                android:visibility="gone" />
+
+                        <ImageView
+                                android:id="@+id/tdsDownArrowImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_dropdown" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                        android:id="@+id/tdsDetailsLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:orientation="vertical"
+                        android:padding="@dimen/five"
+                        android:visibility="gone">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/title_tds_deduct"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/tdsDeductedSalaryEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/title_tds_other_deduct"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/tdsDeductedOtherSalaryEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/title_advance_tax_paid"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                            android:id="@+id/totalAdvanceEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/text_field"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="@dimen/twelve"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_twelve" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

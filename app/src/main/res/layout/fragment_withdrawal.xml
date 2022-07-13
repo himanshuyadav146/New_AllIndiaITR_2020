@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/withdrawl_frag"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/img_withered"
+                android:layout_width="170dp"
+                android:layout_height="195dp"
+                app:srcCompat="@drawable/e_message" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/ref_earn_sorry"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/fifteen">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ref_earn_add_bank"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:textSize="@dimen/text_size_fourteen"
+                    android:textColor="@color/lighter_black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ref_earn_account"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/coupenNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:padding="12dp"
+                    android:background="@drawable/text_field"
+                    android:inputType="textCapSentences"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ref_earn_bank_name"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/coupenBankNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:padding="12dp"
+                    android:background="@drawable/text_field"
+                    android:inputType="textCapSentences"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ref_earn_bank_ac_no"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/coupenAccountNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:padding="12dp"
+                    android:background="@drawable/text_field"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:maxLength="16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ref_earn_bank_ifsc"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/coupenIFSCEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:padding="12dp"
+                    android:textAllCaps="true"
+                    android:background="@drawable/text_field"
+                    android:inputType="textCapCharacters"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:maxLength="11"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:background="@drawable/button_background"
+        android:text="@string/ref_earn_btn_withdraw"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_fourteen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

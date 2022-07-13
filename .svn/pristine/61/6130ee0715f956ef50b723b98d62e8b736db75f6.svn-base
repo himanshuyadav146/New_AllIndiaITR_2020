@@ -1,0 +1,67 @@
+package dell.com.allindiaitr.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0015\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u001b\u001a\u00020\u001cH\u0016J\u0012\u0010\u001d\u001a\u00020\u001c2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0014J\u0012\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0016R,\u0010\u0003\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u00060\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR \u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00050\fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u001a\u0010\u0011\u001a\u00020\u0012X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0017\u001a\u00020\u0018X\u0080\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001a\u00a8\u0006$"}, d2 = {"Ldell/com/allindiaitr/home/FAQActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "expandableListDetail", "Ljava/util/HashMap;", "", "", "getExpandableListDetail", "()Ljava/util/HashMap;", "setExpandableListDetail", "(Ljava/util/HashMap;)V", "expandableListTitle", "Ljava/util/ArrayList;", "getExpandableListTitle", "()Ljava/util/ArrayList;", "setExpandableListTitle", "(Ljava/util/ArrayList;)V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "prevExpandPosition", "", "getPrevExpandPosition$app_debug", "()[I", "onBackPressed", "", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "", "item", "Landroid/view/MenuItem;", "app_debug"})
+public final class FAQActivity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    private final int[] prevExpandPosition = null;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> expandableListTitle;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> expandableListDetail;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final int[] getPrevExpandPosition$app_debug() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getExpandableListTitle() {
+        return null;
+    }
+    
+    public final void setExpandableListTitle(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> getExpandableListDetail() {
+        return null;
+    }
+    
+    public final void setExpandableListDetail(@org.jetbrains.annotations.NotNull()
+    java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public FAQActivity() {
+        super();
+    }
+}

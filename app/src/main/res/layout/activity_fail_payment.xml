@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".submitDocument.FailPaymentActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/failureImage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/failure" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/failureImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Payment Failed"
+                        android:textColor="@color/red"
+                        android:textStyle="normal"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/text_size_eighteen" />
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Your Payment has been failed. Please Try again."
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_fourteen" />
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:layout_marginTop="25dp">
+
+                <TableRow
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="Transaction Id :"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"
+                            android:textStyle="normal"
+                            android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                            android:id="@+id/transactionIdTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="Order Id :"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"
+                            android:textStyle="normal"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                            android:id="@+id/orderIdTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="left"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                    <TextView
+                            android:id="@+id/taxPayableTextView"
+                            android:layout_column="1"
+                            android:text="Amount :"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"
+                            android:textStyle="normal"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                            android:id="@+id/amountTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="left"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                    android:id="@+id/retryPaymentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/forty"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button_background"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="Retry Payment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_fourteen" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

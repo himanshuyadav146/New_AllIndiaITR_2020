@@ -1,0 +1,117 @@
+package dell.com.allindiaitr.submitDocument;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020\u00102\u0006\u0010.\u001a\u00020,H\u0002J\b\u0010/\u001a\u000200H\u0002J\u0012\u00101\u001a\u0002002\b\u00102\u001a\u0004\u0018\u000103H\u0016J&\u00104\u001a\u0004\u0018\u00010\u00162\u0006\u00105\u001a\u0002062\b\u00107\u001a\u0004\u0018\u0001082\b\u00102\u001a\u0004\u0018\u000103H\u0016J\b\u00109\u001a\u000200H\u0002J\n\u0010:\u001a\u0004\u0018\u00010#H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0016X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\u001cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u001e\"\u0004\b\u001f\u0010 R \u0010!\u001a\b\u0012\u0004\u0012\u00020#0\"X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\'R \u0010(\u001a\b\u0012\u0004\u0012\u00020#0\"X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010%\"\u0004\b*\u0010\'\u00a8\u0006;"}, d2 = {"Ldell/com/allindiaitr/submitDocument/ImpDetailsEnterFragment;", "Landroidx/fragment/app/Fragment;", "()V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "getAppPreferences", "()Ldell/com/allindiaitr/utils/AppPreferences;", "setAppPreferences", "(Ldell/com/allindiaitr/utils/AppPreferences;)V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mView", "Landroid/view/View;", "getMView", "()Landroid/view/View;", "setMView", "(Landroid/view/View;)V", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "stateIdArrayList", "", "", "getStateIdArrayList", "()Ljava/util/List;", "setStateIdArrayList", "(Ljava/util/List;)V", "stateNameArrayList", "getStateNameArrayList", "setStateNameArrayList", "dpToPx", "", "context", "valueInDp", "getAadhaarDetails", "", "onActivityCreated", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "postAadhaarDetails", "readJSONFromAsset", "app_debug"})
+public final class ImpDetailsEnterFragment extends androidx.fragment.app.Fragment {
+    @org.jetbrains.annotations.NotNull()
+    private java.util.List<java.lang.String> stateIdArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.List<java.lang.String> stateNameArrayList;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    public android.view.View mView;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<java.lang.String> getStateIdArrayList() {
+        return null;
+    }
+    
+    public final void setStateIdArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.List<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<java.lang.String> getStateNameArrayList() {
+        return null;
+    }
+    
+    public final void setStateNameArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.List<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.utils.AppPreferences getAppPreferences() {
+        return null;
+    }
+    
+    public final void setAppPreferences(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.utils.AppPreferences p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.view.View getMView() {
+        return null;
+    }
+    
+    public final void setMView(@org.jetbrains.annotations.NotNull()
+    android.view.View p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onActivityCreated(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final float dpToPx(android.content.Context context, float valueInDp) {
+        return 0.0F;
+    }
+    
+    private final java.lang.String readJSONFromAsset() {
+        return null;
+    }
+    
+    private final void getAadhaarDetails() {
+    }
+    
+    private final void postAadhaarDetails() {
+    }
+    
+    public ImpDetailsEnterFragment() {
+        super();
+    }
+}

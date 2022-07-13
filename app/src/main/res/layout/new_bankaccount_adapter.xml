@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="10dp"
+
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/card_info_img"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:id="@+id/card_info_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/card_info_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/bankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLength="45"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textColor="@color/lighter_black"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/accountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bankName"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_fourteen"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/notify_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_ten"
+                android:textColor="@color/light_grey" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menuIconImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:tint="@color/lighter_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fifteen"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

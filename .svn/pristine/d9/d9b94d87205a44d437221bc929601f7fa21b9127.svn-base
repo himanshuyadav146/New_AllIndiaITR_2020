@@ -1,0 +1,204 @@
+package dell.com.allindiaitr.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u0010J\u0018\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u00020%2\u0006\u0010H\u001a\u00020FH\u0002J\b\u0010I\u001a\u00020CH\u0002J\b\u0010J\u001a\u00020CH\u0002J\u0012\u0010K\u001a\u00020C2\b\u0010L\u001a\u0004\u0018\u00010MH\u0016J&\u0010N\u001a\u0004\u0018\u00010+2\u0006\u0010O\u001a\u00020P2\b\u0010Q\u001a\u0004\u0018\u00010R2\b\u0010L\u001a\u0004\u0018\u00010MH\u0016J\b\u0010S\u001a\u00020CH\u0002J\u0010\u0010T\u001a\u00020C2\u0006\u0010U\u001a\u00020VH\u0002J\b\u0010W\u001a\u00020CH\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0012\"\u0004\b\u0017\u0010\u0014R\u001a\u0010\u0018\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0012\"\u0004\b\u001a\u0010\u0014R\u001a\u0010\u001b\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0012\"\u0004\b\u001d\u0010\u0014R\u001a\u0010\u001e\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u0012\"\u0004\b \u0010\u0014R\u001a\u0010!\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u0012\"\u0004\b#\u0010\u0014R\u001a\u0010$\u001a\u00020%X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\'\"\u0004\b(\u0010)R\u001a\u0010*\u001a\u00020+X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R\u001a\u00100\u001a\u000201X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R \u00106\u001a\b\u0012\u0004\u0012\u00020\u001007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b8\u00109\"\u0004\b:\u0010;R \u0010<\u001a\b\u0012\u0004\u0012\u00020\u001007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u00109\"\u0004\b>\u0010;R \u0010?\u001a\b\u0012\u0004\u0012\u00020\u001007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u00109\"\u0004\bA\u0010;\u00a8\u0006X"}, d2 = {"Ldell/com/allindiaitr/home/WithdrawalFragment;", "Landroidx/fragment/app/Fragment;", "()V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "getAppPreferences", "()Ldell/com/allindiaitr/utils/AppPreferences;", "setAppPreferences", "(Ldell/com/allindiaitr/utils/AppPreferences;)V", "balanceString", "", "getBalanceString", "()Ljava/lang/String;", "setBalanceString", "(Ljava/lang/String;)V", "check", "getCheck", "setCheck", "coupenAccountNumberString", "getCoupenAccountNumberString", "setCoupenAccountNumberString", "coupenBankNameString", "getCoupenBankNameString", "setCoupenBankNameString", "coupenIFSCString", "getCoupenIFSCString", "setCoupenIFSCString", "coupenNameString", "getCoupenNameString", "setCoupenNameString", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mView", "Landroid/view/View;", "getMView", "()Landroid/view/View;", "setMView", "(Landroid/view/View;)V", "referEarnModel", "Ldell/com/allindiaitr/models/ReferEarnModel;", "getReferEarnModel", "()Ldell/com/allindiaitr/models/ReferEarnModel;", "setReferEarnModel", "(Ldell/com/allindiaitr/models/ReferEarnModel;)V", "withdrawalDate", "Ljava/util/ArrayList;", "getWithdrawalDate", "()Ljava/util/ArrayList;", "setWithdrawalDate", "(Ljava/util/ArrayList;)V", "withdrawalMoney", "getWithdrawalMoney", "setWithdrawalMoney", "withdrawalStatus", "getWithdrawalStatus", "setWithdrawalStatus", "displayReceivedData", "", "message", "dpToPx", "", "context", "valueInDp", "getCouponWithdrawal", "getWithdrawalBank", "onActivityCreated", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "postAddBankAccount", "setVisibility_StatusMessage", "isVisible", "", "withdrawalBank", "app_debug"})
+public final class WithdrawalFragment extends androidx.fragment.app.Fragment {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> withdrawalMoney;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> withdrawalDate;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> withdrawalStatus;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.ReferEarnModel referEarnModel;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String coupenIFSCString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String coupenAccountNumberString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String coupenBankNameString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String coupenNameString;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String check;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String balanceString;
+    @org.jetbrains.annotations.NotNull()
+    public android.view.View mView;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.utils.AppPreferences getAppPreferences() {
+        return null;
+    }
+    
+    public final void setAppPreferences(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.utils.AppPreferences p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getWithdrawalMoney() {
+        return null;
+    }
+    
+    public final void setWithdrawalMoney(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getWithdrawalDate() {
+        return null;
+    }
+    
+    public final void setWithdrawalDate(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getWithdrawalStatus() {
+        return null;
+    }
+    
+    public final void setWithdrawalStatus(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.ReferEarnModel getReferEarnModel() {
+        return null;
+    }
+    
+    public final void setReferEarnModel(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.ReferEarnModel p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCoupenIFSCString() {
+        return null;
+    }
+    
+    public final void setCoupenIFSCString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCoupenAccountNumberString() {
+        return null;
+    }
+    
+    public final void setCoupenAccountNumberString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCoupenBankNameString() {
+        return null;
+    }
+    
+    public final void setCoupenBankNameString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCoupenNameString() {
+        return null;
+    }
+    
+    public final void setCoupenNameString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCheck() {
+        return null;
+    }
+    
+    public final void setCheck(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getBalanceString() {
+        return null;
+    }
+    
+    public final void setBalanceString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.view.View getMView() {
+        return null;
+    }
+    
+    public final void setMView(@org.jetbrains.annotations.NotNull()
+    android.view.View p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onActivityCreated(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final void getCouponWithdrawal() {
+    }
+    
+    private final void setVisibility_StatusMessage(boolean isVisible) {
+    }
+    
+    private final void getWithdrawalBank() {
+    }
+    
+    public final void displayReceivedData(@org.jetbrains.annotations.NotNull()
+    java.lang.String message, @org.jetbrains.annotations.NotNull()
+    java.lang.String balanceString) {
+    }
+    
+    private final float dpToPx(android.content.Context context, float valueInDp) {
+        return 0.0F;
+    }
+    
+    private final void withdrawalBank() {
+    }
+    
+    private final void postAddBankAccount() {
+    }
+    
+    public WithdrawalFragment() {
+        super();
+    }
+}

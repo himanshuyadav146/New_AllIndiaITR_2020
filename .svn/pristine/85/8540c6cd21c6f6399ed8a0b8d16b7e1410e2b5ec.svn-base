@@ -1,0 +1,35 @@
+package dell.com.allindiaitr.sliderscreen;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0002\u001a\u00020\u0003X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\u0004R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R$\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u00128F@FX\u0086\u000e\u00a2\u0006\f\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016\u00a8\u0006\u0017"}, d2 = {"Ldell/com/allindiaitr/sliderscreen/RunOnce;", "", "_context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "PREF_FILE_NAME", "", "RUN_ONCE_KEY", "SHARED_PREF_PRIVATE_MODE", "", "get_context$app_debug", "()Landroid/content/Context;", "set_context$app_debug", "editor", "Landroid/content/SharedPreferences$Editor;", "introPreference", "Landroid/content/SharedPreferences;", "isFirstTime", "", "isFirstTimeLaunch", "()Z", "setFirstTimeLaunch", "(Z)V", "app_debug"})
+public final class RunOnce {
+    private android.content.SharedPreferences introPreference;
+    private android.content.SharedPreferences.Editor editor;
+    private java.lang.String PREF_FILE_NAME;
+    private java.lang.String RUN_ONCE_KEY;
+    private int SHARED_PREF_PRIVATE_MODE;
+    @org.jetbrains.annotations.NotNull()
+    private android.content.Context _context;
+    
+    public final boolean isFirstTimeLaunch() {
+        return false;
+    }
+    
+    public final void setFirstTimeLaunch(boolean isFirstTime) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context get_context$app_debug() {
+        return null;
+    }
+    
+    public final void set_context$app_debug(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    public RunOnce(@org.jetbrains.annotations.NotNull()
+    android.content.Context _context) {
+        super();
+    }
+}

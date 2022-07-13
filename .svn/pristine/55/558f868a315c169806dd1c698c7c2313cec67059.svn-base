@@ -1,0 +1,34 @@
+[
+  {
+    "key": "en",
+    "language": "English"
+  },
+  {
+    "key": "hi",
+    "language": "हिंदी(Hindi)"
+  },
+  {
+    "key": "te",
+    "language":"తెలుగు(Telugu)"
+  },
+  {
+    "key": "ta",
+    "language":"தமிழ்(Tamil)"
+  },
+  {
+    "key": "kn",
+    "language":"ಕನ್ನಡ(Kannada)"
+  },
+  {
+    "key": "bn",
+    "language":"বাংলা(Bangla)"
+  },
+  {
+    "key": "ml",
+    "language":"മലയാളം(Malayalam)"
+  },
+  {
+    "key": "mr",
+    "language":"मराठी(Marathi)"
+  }
+]

@@ -1,0 +1,131 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0014\n\u0002\u0010\u0002\n\u0002\b\n\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u000e\u001a\u0004\u0018\u00010\u0004J\b\u0010\u000f\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0010\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0011\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0012\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0013\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0014\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0015\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0016\u001a\u0004\u0018\u00010\u0004J\b\u0010\u0017\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0003\u001a\u00020\u0004J\u000e\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0005\u001a\u00020\u0004J\u000e\u0010\u001b\u001a\u00020\u00192\u0006\u0010\u0006\u001a\u00020\u0004J\u000e\u0010\u001c\u001a\u00020\u00192\u0006\u0010\u0007\u001a\u00020\u0004J\u000e\u0010\u001d\u001a\u00020\u00192\u0006\u0010\b\u001a\u00020\u0004J\u000e\u0010\u001e\u001a\u00020\u00192\u0006\u0010\t\u001a\u00020\u0004J\u000e\u0010\u001f\u001a\u00020\u00192\u0006\u0010\n\u001a\u00020\u0004J\u000e\u0010 \u001a\u00020\u00192\u0006\u0010\u000b\u001a\u00020\u0004J\u000e\u0010!\u001a\u00020\u00192\u0006\u0010\f\u001a\u00020\u0004J\u000e\u0010\"\u001a\u00020\u00192\u0006\u0010\r\u001a\u00020\u0004R\u0014\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006#"}, d2 = {"Ldell/com/allindiaitr/models/Parameters;", "", "()V", "cALLBACKURL", "", "cHANNELID", "cUSTID", "eMAIL", "iNDUSTRYTYPEID", "mID", "mOBILENO", "oRDERID", "tXNAMOUNT", "wEBSITE", "getCALLBACKURL", "getCHANNELID", "getCUSTID", "getEMAIL", "getINDUSTRYTYPEID", "getMID", "getMOBILENO", "getORDERID", "getTXNAMOUNT", "getWEBSITE", "setCALLBACKURL", "", "setCHANNELID", "setCUSTID", "setEMAIL", "setINDUSTRYTYPEID", "setMID", "setMOBILENO", "setORDERID", "setTXNAMOUNT", "setWEBSITE", "app_debug"})
+public final class Parameters {
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MID")
+    private java.lang.String mID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ORDER_ID")
+    private java.lang.String oRDERID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CUST_ID")
+    private java.lang.String cUSTID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CHANNEL_ID")
+    private java.lang.String cHANNELID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "INDUSTRY_TYPE_ID")
+    private java.lang.String iNDUSTRYTYPEID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "WEBSITE")
+    private java.lang.String wEBSITE;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TXN_AMOUNT")
+    private java.lang.String tXNAMOUNT;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CALLBACK_URL")
+    private java.lang.String cALLBACKURL;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EMAIL")
+    private java.lang.String eMAIL;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MOBILE_NO")
+    private java.lang.String mOBILENO;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMID() {
+        return null;
+    }
+    
+    public final void setMID(@org.jetbrains.annotations.NotNull()
+    java.lang.String mID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getORDERID() {
+        return null;
+    }
+    
+    public final void setORDERID(@org.jetbrains.annotations.NotNull()
+    java.lang.String oRDERID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCUSTID() {
+        return null;
+    }
+    
+    public final void setCUSTID(@org.jetbrains.annotations.NotNull()
+    java.lang.String cUSTID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCHANNELID() {
+        return null;
+    }
+    
+    public final void setCHANNELID(@org.jetbrains.annotations.NotNull()
+    java.lang.String cHANNELID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getINDUSTRYTYPEID() {
+        return null;
+    }
+    
+    public final void setINDUSTRYTYPEID(@org.jetbrains.annotations.NotNull()
+    java.lang.String iNDUSTRYTYPEID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getWEBSITE() {
+        return null;
+    }
+    
+    public final void setWEBSITE(@org.jetbrains.annotations.NotNull()
+    java.lang.String wEBSITE) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTXNAMOUNT() {
+        return null;
+    }
+    
+    public final void setTXNAMOUNT(@org.jetbrains.annotations.NotNull()
+    java.lang.String tXNAMOUNT) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCALLBACKURL() {
+        return null;
+    }
+    
+    public final void setCALLBACKURL(@org.jetbrains.annotations.NotNull()
+    java.lang.String cALLBACKURL) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEMAIL() {
+        return null;
+    }
+    
+    public final void setEMAIL(@org.jetbrains.annotations.NotNull()
+    java.lang.String eMAIL) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMOBILENO() {
+        return null;
+    }
+    
+    public final void setMOBILENO(@org.jetbrains.annotations.NotNull()
+    java.lang.String mOBILENO) {
+    }
+    
+    public Parameters() {
+        super();
+    }
+}

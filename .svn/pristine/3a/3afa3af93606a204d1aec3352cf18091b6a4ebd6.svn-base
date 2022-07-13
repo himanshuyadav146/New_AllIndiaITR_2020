@@ -1,0 +1,240 @@
+package dell.com.allindiaitr.submitDocument;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000e\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0015\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0012\u0010J\u001a\u00020K2\b\u0010L\u001a\u0004\u0018\u000101H\u0014J\b\u0010M\u001a\u00020KH\u0002J\b\u0010N\u001a\u00020/H\u0002J\r\u0010O\u001a\u00020BH\u0000\u00a2\u0006\u0002\bPJ\u000e\u0010Q\u001a\u00020B2\u0006\u0010R\u001a\u00020BJ\b\u0010S\u001a\u00020KH\u0002J\u0012\u0010T\u001a\u0004\u0018\u00010B2\u0006\u0010U\u001a\u00020\u0004H\u0002J\u000e\u0010V\u001a\u00020(2\u0006\u0010U\u001a\u00020\u0004J\u0010\u0010W\u001a\u00020\u00132\u0006\u0010X\u001a\u00020(H\u0002J\u0016\u0010Y\u001a\u00020Z2\u0006\u0010[\u001a\u00020Z2\u0006\u0010\\\u001a\u00020\u0004J\u0006\u0010]\u001a\u00020BJ\"\u0010^\u001a\u00020K2\u0006\u0010_\u001a\u00020\u00042\u0006\u0010`\u001a\u00020\u00042\b\u0010a\u001a\u0004\u0018\u00010bH\u0014J\b\u0010c\u001a\u00020KH\u0016J\u0012\u0010d\u001a\u00020K2\b\u0010e\u001a\u0004\u0018\u00010fH\u0014J\u0012\u0010g\u001a\u00020/2\b\u0010h\u001a\u0004\u0018\u00010iH\u0016J-\u0010j\u001a\u00020K2\u0006\u0010_\u001a\u00020\u00042\u000e\u0010k\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00130\u001f2\u0006\u0010l\u001a\u00020mH\u0016\u00a2\u0006\u0002\u0010nJ\u0010\u0010o\u001a\u00020\u00132\u0006\u0010p\u001a\u00020ZH\u0002J\b\u0010q\u001a\u00020KH\u0002J\b\u0010r\u001a\u00020KH\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR\u001a\u0010\f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u0006\"\u0004\b\u000e\u0010\bR\u001a\u0010\u000f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0006\"\u0004\b\u0011\u0010\bR\u001a\u0010\u0012\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\u00020\u0019X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\"\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00130\u001fX\u0086\u000e\u00a2\u0006\u0010\n\u0002\u0010$\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\'\u001a\u0004\u0018\u00010(X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R\u0010\u0010-\u001a\u0004\u0018\u00010(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020/X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u00100\u001a\u000201X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R\u000e\u00106\u001a\u00020\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00107\u001a\u0004\u0018\u00010\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u00108\u001a\u000209X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010;\"\u0004\b<\u0010=R\u001a\u0010>\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b?\u0010\u0015\"\u0004\b@\u0010\u0017R\u001c\u0010A\u001a\u0004\u0018\u00010BX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR\u001c\u0010G\u001a\u0004\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bH\u0010\u0015\"\u0004\bI\u0010\u0017\u00a8\u0006s"}, d2 = {"Ldell/com/allindiaitr/submitDocument/UploadForm16Activity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "CAMERA", "", "getCAMERA", "()I", "setCAMERA", "(I)V", "GALLERY", "getGALLERY", "setGALLERY", "PERMISSIONS_REQUEST_CODE", "getPERMISSIONS_REQUEST_CODE", "setPERMISSIONS_REQUEST_CODE", "PICK_PDF_CODE", "getPICK_PDF_CODE", "setPICK_PDF_CODE", "adapterStatus", "", "getAdapterStatus", "()Ljava/lang/String;", "setAdapterStatus", "(Ljava/lang/String;)V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPermissions", "", "getAppPermissions", "()[Ljava/lang/String;", "setAppPermissions", "([Ljava/lang/String;)V", "[Ljava/lang/String;", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "filePath", "Landroid/net/Uri;", "getFilePath", "()Landroid/net/Uri;", "setFilePath", "(Landroid/net/Uri;)V", "fileUri", "isPermmited", "", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mImageFileLocation", "mediaPath", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "password", "getPassword", "setPassword", "photoFile", "Ljava/io/File;", "getPhotoFile", "()Ljava/io/File;", "setPhotoFile", "(Ljava/io/File;)V", "postPath", "getPostPath", "setPostPath", "attachBaseContext", "", "newBase", "captureImage", "checkAndRequestPermissions", "createImageFile", "createImageFile$app_debug", "customCompressImage", "actualImage", "getDocumentList", "getOutputMediaFile", "type", "getOutputMediaFileUri", "getRealPathFromURI", "contentURI", "getResizedBitmap", "Landroid/graphics/Bitmap;", "image", "maxSize", "getTempImage", "onActivityResult", "requestCode", "resultCode", "data", "Landroid/content/Intent;", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "onRequestPermissionsResult", "permissions", "grantResults", "", "(I[Ljava/lang/String;[I)V", "saveImage", "myBitmap", "uploadConfirm", "uploadFile", "app_debug"})
+public final class UploadForm16Activity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String adapterStatus;
+    private int GALLERY;
+    private int CAMERA;
+    private int PICK_PDF_CODE;
+    private int PERMISSIONS_REQUEST_CODE;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String[] appPermissions;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String postPath;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String password;
+    @org.jetbrains.annotations.Nullable()
+    private android.net.Uri filePath;
+    private java.lang.String mImageFileLocation;
+    private android.net.Uri fileUri;
+    @org.jetbrains.annotations.Nullable()
+    private java.io.File photoFile;
+    private java.lang.String mediaPath;
+    private boolean isPermmited;
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAdapterStatus() {
+        return null;
+    }
+    
+    public final void setAdapterStatus(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getGALLERY() {
+        return 0;
+    }
+    
+    public final void setGALLERY(int p0) {
+    }
+    
+    public final int getCAMERA() {
+        return 0;
+    }
+    
+    public final void setCAMERA(int p0) {
+    }
+    
+    public final int getPICK_PDF_CODE() {
+        return 0;
+    }
+    
+    public final void setPICK_PDF_CODE(int p0) {
+    }
+    
+    public final int getPERMISSIONS_REQUEST_CODE() {
+        return 0;
+    }
+    
+    public final void setPERMISSIONS_REQUEST_CODE(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String[] getAppPermissions() {
+        return null;
+    }
+    
+    public final void setAppPermissions(@org.jetbrains.annotations.NotNull()
+    java.lang.String[] p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPostPath() {
+        return null;
+    }
+    
+    public final void setPostPath(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPassword() {
+        return null;
+    }
+    
+    public final void setPassword(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final android.net.Uri getFilePath() {
+        return null;
+    }
+    
+    public final void setFilePath(@org.jetbrains.annotations.Nullable()
+    android.net.Uri p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.io.File getPhotoFile() {
+        return null;
+    }
+    
+    public final void setPhotoFile(@org.jetbrains.annotations.Nullable()
+    java.io.File p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final boolean checkAndRequestPermissions() {
+        return false;
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    public void onRequestPermissionsResult(int requestCode, @org.jetbrains.annotations.NotNull()
+    java.lang.String[] permissions, @org.jetbrains.annotations.NotNull()
+    int[] grantResults) {
+    }
+    
+    private final void getDocumentList() {
+    }
+    
+    @java.lang.Override()
+    protected void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.io.File getTempImage() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.io.File customCompressImage(@org.jetbrains.annotations.NotNull()
+    java.io.File actualImage) {
+        return null;
+    }
+    
+    private final java.lang.String getRealPathFromURI(android.net.Uri contentURI) {
+        return null;
+    }
+    
+    private final java.lang.String saveImage(android.graphics.Bitmap myBitmap) {
+        return null;
+    }
+    
+    /**
+     * Launching camera app to capture image
+     */
+    private final void captureImage() {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.io.File createImageFile$app_debug() throws java.io.IOException {
+        return null;
+    }
+    
+    /**
+     * Creating file uri to store image/video
+     */
+    @org.jetbrains.annotations.NotNull()
+    public final android.net.Uri getOutputMediaFileUri(int type) {
+        return null;
+    }
+    
+    private final java.io.File getOutputMediaFile(int type) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.graphics.Bitmap getResizedBitmap(@org.jetbrains.annotations.NotNull()
+    android.graphics.Bitmap image, int maxSize) {
+        return null;
+    }
+    
+    private final void uploadConfirm() {
+    }
+    
+    private final void uploadFile() {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public UploadForm16Activity() {
+        super();
+    }
+}

@@ -1,0 +1,297 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0018\u0002\n\u0002\b\u0014\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002R\"\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\n\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\"\u0010\u0010\u001a\u0004\u0018\u00010\u00118\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0016\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\"\u0010\u0017\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\b\u0018\u0010\u0006\"\u0004\b\u0019\u0010\bR\"\u0010\u001a\u001a\u0004\u0018\u00010\u00118\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0016\u001a\u0004\b\u001b\u0010\u0013\"\u0004\b\u001c\u0010\u0015R \u0010\u001d\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R\"\u0010#\u001a\u0004\u0018\u00010$8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010(\u001a\u0004\b#\u0010%\"\u0004\b&\u0010\'R\"\u0010)\u001a\u0004\u0018\u00010$8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010(\u001a\u0004\b*\u0010%\"\u0004\b+\u0010\'R&\u0010,\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010-8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u00100\"\u0004\b1\u00102R\"\u00103\u001a\u0004\u0018\u00010\u00118\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0016\u001a\u0004\b4\u0010\u0013\"\u0004\b5\u0010\u0015R \u00106\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u00108\"\u0004\b9\u0010:R \u0010;\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b<\u0010 \"\u0004\b=\u0010\"R \u0010>\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b?\u0010 \"\u0004\b@\u0010\"R \u0010A\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bB\u0010 \"\u0004\bC\u0010\"R \u0010D\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bE\u0010 \"\u0004\bF\u0010\"R \u0010G\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bH\u0010 \"\u0004\bI\u0010\"R \u0010J\u001a\u0004\u0018\u00010K8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bL\u0010M\"\u0004\bN\u0010OR\"\u0010P\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\bQ\u0010\u0006\"\u0004\bR\u0010\bR\"\u0010S\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\bT\u0010\u0006\"\u0004\bU\u0010\bR\"\u0010V\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\bW\u0010\u0006\"\u0004\bX\u0010\bR\"\u0010Y\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\t\u001a\u0004\bZ\u0010\u0006\"\u0004\b[\u0010\bR \u0010\\\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b]\u00108\"\u0004\b^\u0010:\u00a8\u0006_"}, d2 = {"Ldell/com/allindiaitr/models/PayDetails;", "", "()V", "actualAmount", "", "getActualAmount", "()Ljava/lang/Double;", "setActualAmount", "(Ljava/lang/Double;)V", "Ljava/lang/Double;", "appUtility", "Ldell/com/allindiaitr/models/AppUtility;", "getAppUtility", "()Ldell/com/allindiaitr/models/AppUtility;", "setAppUtility", "(Ldell/com/allindiaitr/models/AppUtility;)V", "couponCodeId", "", "getCouponCodeId", "()Ljava/lang/Integer;", "setCouponCodeId", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "couponDiscountAmount", "getCouponDiscountAmount", "setCouponDiscountAmount", "discountedAmount", "getDiscountedAmount", "setDiscountedAmount", "id", "", "getId", "()Ljava/lang/String;", "setId", "(Ljava/lang/String;)V", "isCouponApply", "", "()Ljava/lang/Boolean;", "setCouponApply", "(Ljava/lang/Boolean;)V", "Ljava/lang/Boolean;", "newService", "getNewService", "setNewService", "packageAddOnsList", "", "Ldell/com/allindiaitr/models/PackageAddOnsList;", "getPackageAddOnsList", "()Ljava/util/List;", "setPackageAddOnsList", "(Ljava/util/List;)V", "packageAmount", "getPackageAmount", "setPackageAmount", "packageCategoryId", "getPackageCategoryId", "()Ljava/lang/Object;", "setPackageCategoryId", "(Ljava/lang/Object;)V", "packageDescription", "getPackageDescription", "setPackageDescription", "packageId", "getPackageId", "setPackageId", "packageName", "getPackageName", "setPackageName", "packageTitle", "getPackageTitle", "setPackageTitle", "packageType", "getPackageType", "setPackageType", "personalDetail", "Ldell/com/allindiaitr/models/PersonalDetail;", "getPersonalDetail", "()Ldell/com/allindiaitr/models/PersonalDetail;", "setPersonalDetail", "(Ldell/com/allindiaitr/models/PersonalDetail;)V", "serviceTax", "getServiceTax", "setServiceTax", "serviceTaxRate", "getServiceTaxRate", "setServiceTaxRate", "totalAmount", "getTotalAmount", "setTotalAmount", "totalPayment", "getTotalPayment", "setTotalPayment", "userAssestmentYearId", "getUserAssestmentYearId", "setUserAssestmentYearId", "app_debug"})
+public final class PayDetails {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageId")
+    private java.lang.String packageId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageName")
+    private java.lang.String packageName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageTitle")
+    private java.lang.String packageTitle;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageDescription")
+    private java.lang.String packageDescription;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageAmount")
+    private java.lang.Integer packageAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DiscountedAmount")
+    private java.lang.Integer discountedAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageType")
+    private java.lang.String packageType;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "NewService")
+    private java.lang.Boolean newService;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageCategoryId")
+    private java.lang.Object packageCategoryId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageAddOnsList")
+    private java.util.List<dell.com.allindiaitr.models.PackageAddOnsList> packageAddOnsList;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserAssestmentYearId")
+    private java.lang.Object userAssestmentYearId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ActualAmount")
+    private java.lang.Double actualAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ServiceTax")
+    private java.lang.Double serviceTax;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ServiceTaxRate")
+    private java.lang.Double serviceTaxRate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "totalPayment")
+    private java.lang.Double totalPayment;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TotalAmount")
+    private java.lang.Double totalAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CouponDiscountAmount")
+    private java.lang.Double couponDiscountAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CouponCodeId")
+    private java.lang.Integer couponCodeId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsCouponApply")
+    private java.lang.Boolean isCouponApply;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Id")
+    private java.lang.String id;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PersonalDetail")
+    private dell.com.allindiaitr.models.PersonalDetail personalDetail;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "appUtility")
+    private dell.com.allindiaitr.models.AppUtility appUtility;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageId() {
+        return null;
+    }
+    
+    public final void setPackageId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageName() {
+        return null;
+    }
+    
+    public final void setPackageName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageTitle() {
+        return null;
+    }
+    
+    public final void setPackageTitle(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageDescription() {
+        return null;
+    }
+    
+    public final void setPackageDescription(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getPackageAmount() {
+        return null;
+    }
+    
+    public final void setPackageAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getDiscountedAmount() {
+        return null;
+    }
+    
+    public final void setDiscountedAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageType() {
+        return null;
+    }
+    
+    public final void setPackageType(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean getNewService() {
+        return null;
+    }
+    
+    public final void setNewService(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getPackageCategoryId() {
+        return null;
+    }
+    
+    public final void setPackageCategoryId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<dell.com.allindiaitr.models.PackageAddOnsList> getPackageAddOnsList() {
+        return null;
+    }
+    
+    public final void setPackageAddOnsList(@org.jetbrains.annotations.Nullable()
+    java.util.List<dell.com.allindiaitr.models.PackageAddOnsList> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getUserAssestmentYearId() {
+        return null;
+    }
+    
+    public final void setUserAssestmentYearId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getActualAmount() {
+        return null;
+    }
+    
+    public final void setActualAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getServiceTax() {
+        return null;
+    }
+    
+    public final void setServiceTax(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getServiceTaxRate() {
+        return null;
+    }
+    
+    public final void setServiceTaxRate(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getTotalPayment() {
+        return null;
+    }
+    
+    public final void setTotalPayment(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getTotalAmount() {
+        return null;
+    }
+    
+    public final void setTotalAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getCouponDiscountAmount() {
+        return null;
+    }
+    
+    public final void setCouponDiscountAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getCouponCodeId() {
+        return null;
+    }
+    
+    public final void setCouponCodeId(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isCouponApply() {
+        return null;
+    }
+    
+    public final void setCouponApply(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.PersonalDetail getPersonalDetail() {
+        return null;
+    }
+    
+    public final void setPersonalDetail(@org.jetbrains.annotations.Nullable()
+    dell.com.allindiaitr.models.PersonalDetail p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.AppUtility getAppUtility() {
+        return null;
+    }
+    
+    public final void setAppUtility(@org.jetbrains.annotations.Nullable()
+    dell.com.allindiaitr.models.AppUtility p0) {
+    }
+    
+    public PayDetails() {
+        super();
+    }
+}

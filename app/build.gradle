@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+//apply plugin 'com.github.dcendents.android-maven'
+
+android {
+
+    signingConfigs {
+        config {
+            storeFile file('/home/himanshuy/Downloads/Android Production/Key Store/keyTool/allindiaitr.jks')
+            storePassword 'control1028'
+            keyAlias = 'allindiaitr'
+            keyPassword 'control1028'
+        }
+
+    }
+
+
+    compileSdkVersion 32
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "dell.com.allindiaitr"
+        minSdkVersion 19
+        targetSdkVersion 32
+        versionCode 73
+        versionName "9.4"
+        multiDexEnabled true
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        signingConfig signingConfigs.config
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // multiDexKeepFile file('multidex-config.pro')
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+//    dexOptions {
+//        javaMaxHeapSize "4g"
+//    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    namespace 'dell.com.allindiaitr'
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+}
+
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == "com.android.support") {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion "26.+"
+//            }
+//        }
+//    }
+//}
+
+
+dependencies {
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    def multidex_version = "2.0.1"
+//    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'net.gotev:uploadservice:3.4.2'
+
+//    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+//    implementation 'com.google.firebase:firebase-core:17.2.0'
+//    implementation 'com.google.firebase:firebase-core:10.2.1'
+
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+
+    // Add the Firebase Crashlytics dependency.
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    implementation('com.paytm:pgplussdk:1.4.4') {
+        transitive = true;
+    }
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.4.1'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+//    implementation project(':filepicker')
+
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.android:facebook-android-sdk:5.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //SMS User Consent API
+
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+
+    // Image Compresser
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.karumi:dexter:5.0.0'
+
+    implementation 'com.vincent.filepicker:MultiTypeFilePicker:1.0.8'
+    
+}
+apply plugin: 'com.google.gms.google-services'

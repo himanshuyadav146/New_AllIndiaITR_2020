@@ -1,0 +1,378 @@
+package dell.com.allindiaitr.interfaces;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\n\bf\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010\u0007\u001a\u00020\u0006H\'J,\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00032\b\b\u0001\u0010\n\u001a\u00020\u00062\b\b\u0001\u0010\u000b\u001a\u00020\u00062\b\b\u0001\u0010\f\u001a\u00020\u0006H\'J,\u0010\r\u001a\b\u0012\u0004\u0012\u00020\t0\u00032\b\b\u0001\u0010\n\u001a\u00020\u00062\b\b\u0001\u0010\u000b\u001a\u00020\u00062\b\b\u0001\u0010\f\u001a\u00020\u0006H\'J\u0018\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\u0018\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\u0018\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\"\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0013\u001a\u00020\u00062\b\b\u0001\u0010\u0014\u001a\u00020\u0006H\'J\u001e\u0010\u0015\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00170\u00160\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\u0018\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\u001e\u0010\u0019\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00160\u00032\b\b\u0001\u0010\u0013\u001a\u00020\u0006H\'J\u0014\u0010\u001a\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001b0\u00160\u0003H\'J\u001e\u0010\u001c\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001d0\u00160\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J(\u0010\u001e\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001f0\u00160\u00032\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010!\u001a\u00020\u0006H\'J\u001e\u0010\"\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001b0\u00160\u00032\b\b\u0001\u0010!\u001a\u00020\u0006H\'J\"\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0013\u001a\u00020\u00062\b\b\u0001\u0010\u0014\u001a\u00020\u0006H\'J\u0014\u0010$\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00160\u0003H\'J\u0018\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\u001e\u0010&\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00160\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\"\u0010\'\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010(\u001a\u00020\u0006H\'J\u0018\u0010)\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'J\"\u0010*\u001a\b\u0012\u0004\u0012\u00020\u001f0\u00032\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010!\u001a\u00020\u0006H\'J\"\u0010+\u001a\b\u0012\u0004\u0012\u00020\u001f0\u00032\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010!\u001a\u00020\u0006H\'J\"\u0010,\u001a\b\u0012\u0004\u0012\u00020\u001f0\u00032\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010!\u001a\u00020\u0006H\'J\u0018\u0010-\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\u0018\u0010/\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u00101\u001a\u000202H\'J\u0018\u00103\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u00101\u001a\u000202H\'J\"\u00104\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u00105\u001a\u00020\u00062\b\b\u0001\u00106\u001a\u000207H\'Jh\u00108\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0013\u001a\u00020\u00062\b\b\u0001\u00109\u001a\u00020\u00062\b\b\u0001\u0010:\u001a\u00020\u00062\b\b\u0001\u0010;\u001a\u00020\u00062\b\b\u0001\u0010<\u001a\u00020\u00062\b\b\u0001\u0010=\u001a\u00020\u00062\b\b\u0001\u0010>\u001a\u00020\u00062\b\b\u0001\u0010?\u001a\u00020\u00062\b\b\u0001\u0010@\u001a\u00020\u0006H\'J\"\u0010A\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010B\u001a\u00020\u001fH\'J\u0018\u0010C\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\u0018\u0010D\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\u0018\u0010E\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010F\u001a\u00020\u001dH\'J\u0018\u0010G\u001a\b\u0012\u0004\u0012\u00020H0\u00032\b\b\u0001\u0010I\u001a\u00020HH\'J\u0018\u0010J\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010K\u001a\u00020\u001bH\'J\u0018\u0010L\u001a\b\u0012\u0004\u0012\u00020M0\u00032\b\b\u0001\u0010N\u001a\u00020MH\'J\u0018\u0010O\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\u0018\u0010P\u001a\b\u0012\u0004\u0012\u00020Q0\u00032\b\b\u0001\u0010R\u001a\u00020QH\'J\u0018\u0010S\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u0010.\u001a\u00020\u0004H\'J,\u0010T\u001a\b\u0012\u0004\u0012\u00020\t0\u00032\b\b\u0001\u0010U\u001a\u00020\u00062\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010V\u001a\u00020\tH\'J\u0018\u0010W\u001a\b\u0012\u0004\u0012\u00020Q0\u00032\b\b\u0001\u0010X\u001a\u00020QH\'J\"\u0010Y\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\"\u0010Z\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010.\u001a\u00020\u0004H\'J\u0018\u0010[\u001a\b\u0012\u0004\u0012\u00020Q0\u00032\b\b\u0001\u0010X\u001a\u00020QH\'J,\u0010\\\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u0010\\\u001a\u00020]2\b\b\u0001\u0010^\u001a\u00020]2\b\b\u0001\u0010_\u001a\u00020]H\'J6\u0010`\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u00106\u001a\u0002072\b\b\u0001\u0010\\\u001a\u00020]2\b\b\u0001\u0010^\u001a\u00020]2\b\b\u0001\u0010_\u001a\u00020]H\'J,\u0010a\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u00106\u001a\u0002072\b\b\u0001\u0010\\\u001a\u00020]2\b\b\u0001\u0010_\u001a\u00020]H\'J\u0018\u0010b\u001a\b\u0012\u0004\u0012\u0002000\u00032\b\b\u0001\u00101\u001a\u000202H\'J6\u0010c\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00032\b\b\u0001\u00106\u001a\u0002072\b\b\u0001\u0010^\u001a\u00020]2\b\b\u0001\u0010d\u001a\u00020]2\b\b\u0001\u0010_\u001a\u00020]H\'J\"\u0010e\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010f\u001a\u00020\u00062\b\b\u0001\u0010\u0005\u001a\u00020\u0006H\'\u00a8\u0006g"}, d2 = {"Ldell/com/allindiaitr/interfaces/API_Interface;", "", "GetPackageId", "Lretrofit2/Call;", "Ldell/com/allindiaitr/models/NewItrBase;", "id", "", "processMode", "PayUGateway", "Ldell/com/allindiaitr/models/PaymentModel;", "mid", "ORDERID", "CHECKSUMHASH", "checkStatus", "deleteBank", "Lokhttp3/ResponseBody;", "deleteDocument", "getAadhaarDetails", "getAadhaarDocumentList", "UserAssestmentYearId", "FileType", "getAllOrder", "", "Ldell/com/allindiaitr/models/AllOrderStatusModel;", "getBankDetail", "getBankList", "getBlogs", "Ldell/com/allindiaitr/models/MoreModel;", "getChat", "Ldell/com/allindiaitr/models/Chat;", "getCouponWithdrawl", "Ldell/com/allindiaitr/models/ReferEarnModel;", "token", "Id", "getCustomPaymentList", "getDocumentList", "getFinancialYear", "getITRStatus", "getITRuserList", "getInformation", "UserAssessmentYearId", "getOtherIncome", "getReferCode", "getReferEarnings", "getWithdrawlBank", "getchooseUserForNewITR", "newItrBase", "hra_calculation", "Ljava/lang/Void;", "usefulToolsModel", "Ldell/com/allindiaitr/models/UsefulToolsModel;", "hra_rentReceipt", "mailRentReceipt", "email", "file", "Lokhttp3/MultipartBody$Part;", "postAadhaarDetails", "UserId", "FatherName", "AadhaarCardNumber", "Address1", "Address2", "City", "StateId", "PinCode", "postAddCouponBankDetails", "referEarnModel", "postBankDetails", "postBusinessRange", "postChat", "chat", "postComment", "Ldell/com/allindiaitr/models/Comment;", "comment", "postContactUs", "moreModel", "postCouponCode", "Ldell/com/allindiaitr/models/CouponModel;", "couponModel", "postInformation", "postLOGINOTP", "Ldell/com/allindiaitr/models/LogInwithOTPModel;", "logInwithOTPModel", "postOtherIncome", "postPayTMGateway", "url", "paymentModel", "postVerifyOTP", "loginWithOTPModel", "putBankDetails", "putOtherIncome", "resendOTP", "statusUpdate", "Lokhttp3/RequestBody;", "userAssessmentYearId", "filePassword", "statusUploadFile", "statusUploadFile1", "tax_calculation", "uploadFile", "fileType", "versionUpdate", "AppType", "app_debug"})
+public abstract interface API_Interface {
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "/api/Account/NewLoginSignUp")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.LogInwithOTPModel> postLOGINOTP(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.LogInwithOTPModel logInwithOTPModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "/api/Account/VerifyOTP")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.LogInwithOTPModel> postVerifyOTP(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.LogInwithOTPModel loginWithOTPModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Account/ReGenerateOTP")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.LogInwithOTPModel> resendOTP(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.LogInwithOTPModel loginWithOTPModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Account/ForceUpdateMobileApp")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> versionUpdate(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "AppType")
+    java.lang.String AppType, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetChildUserList?")
+    @retrofit2.http.Headers(value = {"MobileApp: android"})
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.NewItrBase>> getITRuserList(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/SubmitDocument/chooseUserForNewITR?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getchooseUserForNewITR(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/OrderStatus/SubmitDocumentStatus?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getITRStatus(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetChildPersonalDetails")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getInformation(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "UserAssessmentYearId")
+    java.lang.String UserAssessmentYearId);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> postInformation(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetFinancialYear")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.NewItrBase>> getFinancialYear();
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetDocumentsByFileType?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getDocumentList(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "UserAssestmentYearId")
+    java.lang.String UserAssestmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "FileType")
+    java.lang.String FileType);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/UploadMobileUserDocument")
+    @retrofit2.http.Multipart()
+    public abstract retrofit2.Call<okhttp3.ResponseBody> uploadFile(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part()
+    okhttp3.MultipartBody.Part file, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "UserAssessmentYearId")
+    okhttp3.RequestBody userAssessmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "FileType")
+    okhttp3.RequestBody fileType, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "FilePassword")
+    okhttp3.RequestBody filePassword);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.DELETE(value = "api/Child/DeleteMobileDocument?")
+    public abstract retrofit2.Call<okhttp3.ResponseBody> deleteDocument(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetPanAadhaarManualDetails?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getAadhaarDetails(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.FormUrlEncoded()
+    @retrofit2.http.POST(value = "api/Child/SaveAadhaarCardDetails")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> postAadhaarDetails(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "UserAssestmentYearId")
+    java.lang.String UserAssestmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "UserId")
+    java.lang.String UserId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "FatherName")
+    java.lang.String FatherName, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "AadhaarCardNumber")
+    java.lang.String AadhaarCardNumber, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "Address1")
+    java.lang.String Address1, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "Address2")
+    java.lang.String Address2, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "City")
+    java.lang.String City, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "StateId")
+    java.lang.String StateId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Field(value = "PinCode")
+    java.lang.String PinCode);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetDocumentsByFileType?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getAadhaarDocumentList(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "UserAssestmentYearId")
+    java.lang.String UserAssestmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "FileType")
+    java.lang.String FileType);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetAllBankAccounts?")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.NewItrBase>> getBankList(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "UserAssestmentYearId")
+    java.lang.String UserAssestmentYearId);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetSpecificBankAccountDetails?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getBankDetail(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.PUT(value = "api/Child/UpdateBankAccountDetails?")
+    public abstract retrofit2.Call<okhttp3.ResponseBody> putBankDetails(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/SaveBankAccountDetails")
+    public abstract retrofit2.Call<java.lang.Void> postBankDetails(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.DELETE(value = "api/Child/DeleteBankDetails?")
+    public abstract retrofit2.Call<okhttp3.ResponseBody> deleteBank(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetOtherIncome?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> getOtherIncome(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.PUT(value = "api/Child/UpdateOtherIncome?")
+    public abstract retrofit2.Call<okhttp3.ResponseBody> putOtherIncome(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/AddOtherIncome")
+    public abstract retrofit2.Call<java.lang.Void> postOtherIncome(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/BusinessRange")
+    public abstract retrofit2.Call<java.lang.Void> postBusinessRange(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.NewItrBase newItrBase);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/AddComment")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.Comment> postComment(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.Comment comment);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/HraCalculator")
+    public abstract retrofit2.Call<java.lang.Void> hra_calculation(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.UsefulToolsModel usefulToolsModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/HraRentReceipt?")
+    public abstract retrofit2.Call<java.lang.Void> hra_rentReceipt(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.UsefulToolsModel usefulToolsModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/supportMessage/SendEmail")
+    @retrofit2.http.Multipart()
+    public abstract retrofit2.Call<okhttp3.ResponseBody> mailRentReceipt(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Email")
+    java.lang.String email, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part()
+    okhttp3.MultipartBody.Part file);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/IncomeTaxCalculator")
+    public abstract retrofit2.Call<java.lang.Void> tax_calculation(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.UsefulToolsModel usefulToolsModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Order/AllOrders?")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.AllOrderStatusModel>> getAllOrder(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Refer2Earn/GetRefralCode?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.ReferEarnModel> getReferCode(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Id")
+    java.lang.String Id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Refer2Earn/GetEarnings?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.ReferEarnModel> getReferEarnings(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Id")
+    java.lang.String Id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Refer2Earn/GetCouponWithdrawn?")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.ReferEarnModel>> getCouponWithdrawl(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Id")
+    java.lang.String Id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Refer2Earn/GetBankDetails?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.ReferEarnModel> getWithdrawlBank(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Id")
+    java.lang.String Id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Refer2Earn/AddCouponBankDetails")
+    public abstract retrofit2.Call<java.lang.Void> postAddCouponBankDetails(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.ReferEarnModel referEarnModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/BlogInformation/GetTop10Blog")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.MoreModel>> getBlogs();
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "/api/UserPaymentDetail/GetPaymentLink")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.MoreModel>> getCustomPaymentList(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "Id")
+    java.lang.String Id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/ContactUs")
+    public abstract retrofit2.Call<java.lang.Void> postContactUs(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.MoreModel moreModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/UserPaymentDetail/GetPackageByUserAssestmentYearId")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.NewItrBase> GetPackageId(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "ProcessMode")
+    java.lang.String processMode);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "/api/OrderStatus/UpdateDocumentStatus")
+    @retrofit2.http.Multipart()
+    public abstract retrofit2.Call<okhttp3.ResponseBody> statusUploadFile(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part()
+    okhttp3.MultipartBody.Part file, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "StatusUpdate")
+    okhttp3.RequestBody statusUpdate, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "UserAssessmentYearId")
+    okhttp3.RequestBody userAssessmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "FilePassword")
+    okhttp3.RequestBody filePassword);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "/api/OrderStatus/UpdateDocumentStatus")
+    @retrofit2.http.Multipart()
+    public abstract retrofit2.Call<okhttp3.ResponseBody> statusUploadFile1(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part()
+    okhttp3.MultipartBody.Part file, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "StatusUpdate")
+    okhttp3.RequestBody statusUpdate, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "FilePassword")
+    okhttp3.RequestBody filePassword);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "/api/OrderStatus/UpdateDocumentStatus")
+    @retrofit2.http.Multipart()
+    public abstract retrofit2.Call<okhttp3.ResponseBody> statusUpdate(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "StatusUpdate")
+    okhttp3.RequestBody statusUpdate, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "UserAssessmentYearId")
+    okhttp3.RequestBody userAssessmentYearId, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Part(value = "FilePassword")
+    okhttp3.RequestBody filePassword);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.GET(value = "api/Child/GetComments?")
+    public abstract retrofit2.Call<java.util.List<dell.com.allindiaitr.models.Chat>> getChat(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "id")
+    java.lang.String id);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/Child/AddComment")
+    public abstract retrofit2.Call<java.lang.Void> postChat(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.Chat chat);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/UserPaymentDetail/GetCouponByCouponCode?")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.CouponModel> postCouponCode(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.CouponModel couponModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST()
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.PaymentModel> postPayTMGateway(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Url()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Header(value = "Authorization")
+    java.lang.String token, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Body()
+    dell.com.allindiaitr.models.PaymentModel paymentModel);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/PayTMGateway/PaytmResponceCheck")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.PaymentModel> checkStatus(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "mid")
+    java.lang.String mid, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "ORDER_ID")
+    java.lang.String ORDERID, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "checksum")
+    java.lang.String CHECKSUMHASH);
+    
+    @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.POST(value = "api/PayUGateway/Payment")
+    public abstract retrofit2.Call<dell.com.allindiaitr.models.PaymentModel> PayUGateway(@org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "mid")
+    java.lang.String mid, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "ORDER_ID")
+    java.lang.String ORDERID, @org.jetbrains.annotations.NotNull()
+    @retrofit2.http.Query(value = "checksum")
+    java.lang.String CHECKSUMHASH);
+}

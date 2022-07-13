@@ -1,0 +1,357 @@
+package dell.com.allindiaitr.usefultools;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0012\u0010z\u001a\u00020{2\b\u0010|\u001a\u0004\u0018\u00010CH\u0014J\b\u0010}\u001a\u00020~H\u0002J\b\u0010\u007f\u001a\u00020{H\u0002J\u001b\u0010\u0080\u0001\u001a\u00020{2\u0007\u0010\u0081\u0001\u001a\u00020\n2\u0007\u0010\u0082\u0001\u001a\u00020\nH\u0002J\u0012\u0010\u0083\u0001\u001a\u00020{2\u0007\u0010\u0084\u0001\u001a\u00020\nH\u0002J\t\u0010\u0085\u0001\u001a\u00020{H\u0016J\u0015\u0010\u0086\u0001\u001a\u00020{2\n\u0010\u0087\u0001\u001a\u0005\u0018\u00010\u0088\u0001H\u0014J\u0015\u0010\u0089\u0001\u001a\u00020~2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u0001H\u0016J\t\u0010\u008c\u0001\u001a\u00020{H\u0002J\u001b\u0010\u008d\u0001\u001a\u00020{2\u0007\u0010\u0081\u0001\u001a\u00020\n2\u0007\u0010\u0082\u0001\u001a\u00020\nH\u0002J\t\u0010\u008e\u0001\u001a\u00020{H\u0002J\u000b\u0010\u008f\u0001\u001a\u0004\u0018\u00010\nH\u0002J\u0013\u0010\u0090\u0001\u001a\u00020\n2\b\u0010\u0091\u0001\u001a\u00030\u0092\u0001H\u0002J\u001b\u0010\u0093\u0001\u001a\u00020{2\u0007\u0010\u0081\u0001\u001a\u00020\n2\u0007\u0010\u0082\u0001\u001a\u00020\nH\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR \u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082.\u00a2\u0006\u0002\n\u0000R\"\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\n0\u0019X\u0086\u000e\u00a2\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u0010\u0010\u001f\u001a\u0004\u0018\u00010 X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010!\u001a\u00020\"X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R\u001a\u0010\'\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\r\"\u0004\b)\u0010\u000fR\u001a\u0010*\u001a\u00020+X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R\u001a\u00100\u001a\u000201X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R \u00106\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u0013\"\u0004\b8\u0010\u0015R\u001c\u00109\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\r\"\u0004\b;\u0010\u000fR \u0010<\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u0010\u0013\"\u0004\b>\u0010\u0015R\u001a\u0010?\u001a\u00020\u0004X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u0006\"\u0004\bA\u0010\bR\u000e\u0010B\u001a\u00020CX\u0082.\u00a2\u0006\u0002\n\u0000R \u0010D\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bE\u0010\u0013\"\u0004\bF\u0010\u0015R\u001a\u0010G\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bH\u0010\r\"\u0004\bI\u0010\u000fR \u0010J\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bK\u0010\u0013\"\u0004\bL\u0010\u0015R\u001a\u0010M\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bN\u0010\u0006\"\u0004\bO\u0010\bR \u0010P\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bQ\u0010\u0013\"\u0004\bR\u0010\u0015R \u0010S\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bT\u0010\u0013\"\u0004\bU\u0010\u0015R\u001a\u0010V\u001a\u00020WX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bX\u0010Y\"\u0004\bZ\u0010[R \u0010\\\u001a\b\u0012\u0004\u0012\u00020\n0]X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b^\u0010_\"\u0004\b`\u0010aR \u0010b\u001a\b\u0012\u0004\u0012\u00020\n0]X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bc\u0010_\"\u0004\bd\u0010aR\u001c\u0010e\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bf\u0010\r\"\u0004\bg\u0010\u000fR \u0010h\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bi\u0010\u0013\"\u0004\bj\u0010\u0015R\u001a\u0010k\u001a\u000201X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bl\u00103\"\u0004\bm\u00105R \u0010n\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bo\u0010\u0013\"\u0004\bp\u0010\u0015R\u001a\u0010q\u001a\u00020rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bs\u0010t\"\u0004\bu\u0010vR \u0010w\u001a\b\u0012\u0004\u0012\u00020\n0\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bx\u0010\u0013\"\u0004\by\u0010\u0015\u00a8\u0006\u0094\u0001"}, d2 = {"Ldell/com/allindiaitr/usefultools/RentReceiptActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "PERMISSIONS_REQUEST_CODE", "", "getPERMISSIONS_REQUEST_CODE", "()I", "setPERMISSIONS_REQUEST_CODE", "(I)V", "Permission", "", "address", "getAddress", "()Ljava/lang/String;", "setAddress", "(Ljava/lang/String;)V", "addressLineArrayList", "Ljava/util/ArrayList;", "getAddressLineArrayList", "()Ljava/util/ArrayList;", "setAddressLineArrayList", "(Ljava/util/ArrayList;)V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "appPermissions", "", "getAppPermissions", "()[Ljava/lang/String;", "setAppPermissions", "([Ljava/lang/String;)V", "[Ljava/lang/String;", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "calendar", "Ljava/util/Calendar;", "getCalendar", "()Ljava/util/Calendar;", "setCalendar", "(Ljava/util/Calendar;)V", "currentDateTimeString", "getCurrentDateTimeString", "setCurrentDateTimeString", "document", "Lcom/itextpdf/text/Document;", "getDocument", "()Lcom/itextpdf/text/Document;", "setDocument", "(Lcom/itextpdf/text/Document;)V", "fromDate", "Ljava/util/Date;", "getFromDate", "()Ljava/util/Date;", "setFromDate", "(Ljava/util/Date;)V", "fromDateArrayList", "getFromDateArrayList", "setFromDateArrayList", "fromDateString", "getFromDateString", "setFromDateString", "landLordPanArrayList", "getLandLordPanArrayList", "setLandLordPanArrayList", "lastMonthRent", "getLastMonthRent$app_debug", "setLastMonthRent$app_debug", "mContext", "Landroid/content/Context;", "monthArrayList", "getMonthArrayList", "setMonthArrayList", "newToDateString", "getNewToDateString", "setNewToDateString", "ownerNameArrayList", "getOwnerNameArrayList", "setOwnerNameArrayList", "receiptCount", "getReceiptCount", "setReceiptCount", "receiptNoArrayList", "getReceiptNoArrayList", "setReceiptNoArrayList", "rentReceivedArrayList", "getRentReceivedArrayList", "setRentReceivedArrayList", "sdf", "Ljava/text/SimpleDateFormat;", "getSdf", "()Ljava/text/SimpleDateFormat;", "setSdf", "(Ljava/text/SimpleDateFormat;)V", "stateIdArrayList", "", "getStateIdArrayList", "()Ljava/util/List;", "setStateIdArrayList", "(Ljava/util/List;)V", "stateNameArrayList", "getStateNameArrayList", "setStateNameArrayList", "stateString", "getStateString", "setStateString", "tenantNameArrayList", "getTenantNameArrayList", "setTenantNameArrayList", "toDate", "getToDate", "setToDate", "toDateArrayList", "getToDateArrayList", "setToDateArrayList", "usefulToolsModel", "Ldell/com/allindiaitr/models/UsefulToolsModel;", "getUsefulToolsModel", "()Ldell/com/allindiaitr/models/UsefulToolsModel;", "setUsefulToolsModel", "(Ldell/com/allindiaitr/models/UsefulToolsModel;)V", "yearArrayList", "getYearArrayList", "setYearArrayList", "attachBaseContext", "", "newBase", "checkAndRequestPermissions", "", "checkDate", "intentForPDFView", "file", "directory", "mailRentReceipt", "pdfFile", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "pdf", "pdfViwerwithFilePicker", "postRentReceipt", "readJSONFromAsset", "saveImage", "myBitmap", "Landroid/graphics/Bitmap;", "viewPdf", "app_debug"})
+public final class RentReceiptActivity extends androidx.appcompat.app.AppCompatActivity {
+    private android.content.Context mContext;
+    private dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public com.itextpdf.text.Document document;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String currentDateTimeString;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> receiptNoArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> ownerNameArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> addressLineArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> rentReceivedArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> fromDateArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> toDateArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tenantNameArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> landLordPanArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> monthArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> yearArrayList;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String address;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String fromDateString;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String stateString;
+    private int receiptCount;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String[] appPermissions;
+    private int PERMISSIONS_REQUEST_CODE;
+    @org.jetbrains.annotations.NotNull()
+    public java.text.SimpleDateFormat sdf;
+    private int lastMonthRent;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.List<java.lang.String> stateIdArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.List<java.lang.String> stateNameArrayList;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.Date toDate;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.Date fromDate;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.Calendar calendar;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String newToDateString;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.UsefulToolsModel usefulToolsModel;
+    private java.lang.String Permission;
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.itextpdf.text.Document getDocument() {
+        return null;
+    }
+    
+    public final void setDocument(@org.jetbrains.annotations.NotNull()
+    com.itextpdf.text.Document p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCurrentDateTimeString() {
+        return null;
+    }
+    
+    public final void setCurrentDateTimeString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getReceiptNoArrayList() {
+        return null;
+    }
+    
+    public final void setReceiptNoArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getOwnerNameArrayList() {
+        return null;
+    }
+    
+    public final void setOwnerNameArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getAddressLineArrayList() {
+        return null;
+    }
+    
+    public final void setAddressLineArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getRentReceivedArrayList() {
+        return null;
+    }
+    
+    public final void setRentReceivedArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getFromDateArrayList() {
+        return null;
+    }
+    
+    public final void setFromDateArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getToDateArrayList() {
+        return null;
+    }
+    
+    public final void setToDateArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTenantNameArrayList() {
+        return null;
+    }
+    
+    public final void setTenantNameArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getLandLordPanArrayList() {
+        return null;
+    }
+    
+    public final void setLandLordPanArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getMonthArrayList() {
+        return null;
+    }
+    
+    public final void setMonthArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getYearArrayList() {
+        return null;
+    }
+    
+    public final void setYearArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAddress() {
+        return null;
+    }
+    
+    public final void setAddress(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getFromDateString() {
+        return null;
+    }
+    
+    public final void setFromDateString(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getStateString() {
+        return null;
+    }
+    
+    public final void setStateString(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    public final int getReceiptCount() {
+        return 0;
+    }
+    
+    public final void setReceiptCount(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String[] getAppPermissions() {
+        return null;
+    }
+    
+    public final void setAppPermissions(@org.jetbrains.annotations.NotNull()
+    java.lang.String[] p0) {
+    }
+    
+    public final int getPERMISSIONS_REQUEST_CODE() {
+        return 0;
+    }
+    
+    public final void setPERMISSIONS_REQUEST_CODE(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.text.SimpleDateFormat getSdf() {
+        return null;
+    }
+    
+    public final void setSdf(@org.jetbrains.annotations.NotNull()
+    java.text.SimpleDateFormat p0) {
+    }
+    
+    public final int getLastMonthRent$app_debug() {
+        return 0;
+    }
+    
+    public final void setLastMonthRent$app_debug(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<java.lang.String> getStateIdArrayList() {
+        return null;
+    }
+    
+    public final void setStateIdArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.List<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<java.lang.String> getStateNameArrayList() {
+        return null;
+    }
+    
+    public final void setStateNameArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.List<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Date getToDate() {
+        return null;
+    }
+    
+    public final void setToDate(@org.jetbrains.annotations.NotNull()
+    java.util.Date p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Date getFromDate() {
+        return null;
+    }
+    
+    public final void setFromDate(@org.jetbrains.annotations.NotNull()
+    java.util.Date p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Calendar getCalendar() {
+        return null;
+    }
+    
+    public final void setCalendar(@org.jetbrains.annotations.NotNull()
+    java.util.Calendar p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNewToDateString() {
+        return null;
+    }
+    
+    public final void setNewToDateString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.UsefulToolsModel getUsefulToolsModel() {
+        return null;
+    }
+    
+    public final void setUsefulToolsModel(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.UsefulToolsModel p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    private final java.lang.String readJSONFromAsset() {
+        return null;
+    }
+    
+    private final boolean checkAndRequestPermissions() {
+        return false;
+    }
+    
+    private final void checkDate() {
+    }
+    
+    private final void pdf() {
+    }
+    
+    private final void intentForPDFView(java.lang.String file, java.lang.String directory) {
+    }
+    
+    private final void viewPdf(java.lang.String file, java.lang.String directory) {
+    }
+    
+    private final void pdfViwerwithFilePicker(java.lang.String file, java.lang.String directory) {
+    }
+    
+    private final void postRentReceipt() {
+    }
+    
+    private final void mailRentReceipt(java.lang.String pdfFile) {
+    }
+    
+    private final java.lang.String saveImage(android.graphics.Bitmap myBitmap) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public RentReceiptActivity() {
+        super();
+    }
+}

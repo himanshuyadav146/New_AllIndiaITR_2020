@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "companytype": "Private-Other than Governmemt and PSU Organisation"
+  },
+  {
+    "id": "2",
+    "companytype": "PSU Organisation"
+  }, {
+  "id": "3",
+  "companytype": "Government Organisation"
+}, {
+  "id": "4",
+  "companytype": "Pensioners"
+}
+]

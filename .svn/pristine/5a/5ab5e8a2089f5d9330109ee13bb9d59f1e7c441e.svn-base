@@ -1,0 +1,78 @@
+package dell.com.allindiaitr.adapter;
+
+import java.lang.System;
+
+@kotlin.Suppress(names = {"NAME_SHADOWING"})
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\u0018\u00002\u00020\u0001B1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u00a2\u0006\u0002\u0010\nJ\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016J\u0018\u0010\u0010\u001a\u00020\u00112\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016J6\u0010\u0012\u001a\u0004\u0018\u00010\u00132\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00132\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0016J\u0010\u0010\u0019\u001a\u00020\u000e2\u0006\u0010\r\u001a\u00020\u000eH\u0016J\u0010\u0010\u001a\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0016J\b\u0010\u001b\u001a\u00020\u000eH\u0016J\u0010\u0010\u001c\u001a\u00020\u00112\u0006\u0010\r\u001a\u00020\u000eH\u0016J.\u0010\u001d\u001a\u0004\u0018\u00010\u00132\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u001e\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00132\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0016J\b\u0010\u001f\u001a\u00020\u0015H\u0016J\u0018\u0010 \u001a\u00020\u00152\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006!"}, d2 = {"Ldell/com/allindiaitr/adapter/ITRStatusAdapter;", "Landroid/widget/BaseExpandableListAdapter;", "mContext", "Landroid/content/Context;", "expandable_list_view", "Landroid/widget/ExpandableListView;", "efilingStatusesList", "", "Ldell/com/allindiaitr/models/NewItrBase;", "efilingStatusFieldList", "(Landroid/content/Context;Landroid/widget/ExpandableListView;Ljava/util/List;Ljava/util/List;)V", "getChild", "", "groupPosition", "", "childPosition", "getChildId", "", "getChildView", "Landroid/view/View;", "isLastChild", "", "convertView", "parent", "Landroid/view/ViewGroup;", "getChildrenCount", "getGroup", "getGroupCount", "getGroupId", "getGroupView", "isExpanded", "hasStableIds", "isChildSelectable", "app_debug"})
+public final class ITRStatusAdapter extends android.widget.BaseExpandableListAdapter {
+    private final android.content.Context mContext = null;
+    private final android.widget.ExpandableListView expandable_list_view = null;
+    private final java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusesList = null;
+    private final java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusFieldList = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public java.lang.Object getGroup(int groupPosition) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public boolean isChildSelectable(int groupPosition, int childPosition) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public boolean hasStableIds() {
+        return false;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View getGroupView(int groupPosition, boolean isExpanded, @org.jetbrains.annotations.Nullable()
+    android.view.View convertView, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup parent) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public int getChildrenCount(int groupPosition) {
+        return 0;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public java.lang.Object getChild(int groupPosition, int childPosition) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public long getGroupId(int groupPosition) {
+        return 0L;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View getChildView(int groupPosition, int childPosition, boolean isLastChild, @org.jetbrains.annotations.Nullable()
+    android.view.View convertView, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup parent) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public long getChildId(int groupPosition, int childPosition) {
+        return 0L;
+    }
+    
+    @java.lang.Override()
+    public int getGroupCount() {
+        return 0;
+    }
+    
+    public ITRStatusAdapter(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    android.widget.ExpandableListView expandable_list_view, @org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusesList, @org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusFieldList) {
+        super();
+    }
+}

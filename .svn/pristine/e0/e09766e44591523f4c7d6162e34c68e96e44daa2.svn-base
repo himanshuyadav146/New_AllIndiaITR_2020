@@ -1,0 +1,130 @@
+package dell.com.allindiaitr.utils;
+
+import java.lang.System;
+
+@kotlin.Suppress(names = {"NAME_SHADOWING"})
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0017\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006B\u0007\b\u0016\u00a2\u0006\u0002\u0010\u0007J\u001e\u0010+\u001a\u00020,2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010-\u001a\u00020\u0005J\u0006\u0010.\u001a\u00020,J\u000e\u0010/\u001a\u00020,2\u0006\u00100\u001a\u00020\u0005J\u000e\u00101\u001a\u00020,2\u0006\u0010\u0002\u001a\u00020\u0003J\u001e\u00102\u001a\u00020,2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010-\u001a\u00020\u0005J\u0016\u00103\u001a\u00020,2\u0006\u00104\u001a\u00020\u00032\u0006\u00105\u001a\u00020\u0005J\u0016\u00106\u001a\u00020,2\u0006\u00104\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005J&\u00107\u001a\u00020,2\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020\u00052\u0006\u0010=\u001a\u00020\u0005J\u0016\u0010>\u001a\u00020,2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\n\u001a\u00020\u000bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0017X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001bR\u001a\u0010\u0002\u001a\u00020\u0003X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u001d\"\u0004\b\u001e\u0010\u001fR\u001a\u0010 \u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010(\"\u0004\b)\u0010*\u00a8\u0006?"}, d2 = {"Ldell/com/allindiaitr/utils/AlertDialogueManager;", "", "mContext", "Landroid/content/Context;", "message", "", "(Landroid/content/Context;Ljava/lang/String;)V", "()V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "builder", "Landroidx/appcompat/app/AlertDialog$Builder;", "getBuilder", "()Landroidx/appcompat/app/AlertDialog$Builder;", "setBuilder", "(Landroidx/appcompat/app/AlertDialog$Builder;)V", "dialog", "Landroid/app/Dialog;", "getDialog", "()Landroid/app/Dialog;", "setDialog", "(Landroid/app/Dialog;)V", "inflater", "Landroid/view/LayoutInflater;", "getInflater", "()Landroid/view/LayoutInflater;", "setInflater", "(Landroid/view/LayoutInflater;)V", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mMessage", "getMMessage", "()Ljava/lang/String;", "setMMessage", "(Ljava/lang/String;)V", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "errorMessageDialogue", "", "title", "hideDialog", "progressBuilder", "msg", "referAndEarnDialogue", "showAlertMessagePDFPath", "showRateUsView", "context", "ack", "showViewAlertDialog", "targetView", "chatActivity", "Ldell/com/allindiaitr/submitDocument/ChatActivity;", "camraImage", "Landroid/widget/ImageView;", "s", "s1", "updateVersionDialogue", "app_debug"})
+public final class AlertDialogueManager {
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mMessage;
+    @org.jetbrains.annotations.NotNull()
+    public android.view.LayoutInflater inflater;
+    @org.jetbrains.annotations.NotNull()
+    public androidx.appcompat.app.AlertDialog.Builder builder;
+    @org.jetbrains.annotations.NotNull()
+    public android.app.Dialog dialog;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMMessage() {
+        return null;
+    }
+    
+    public final void setMMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.view.LayoutInflater getInflater() {
+        return null;
+    }
+    
+    public final void setInflater(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.appcompat.app.AlertDialog.Builder getBuilder() {
+        return null;
+    }
+    
+    public final void setBuilder(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.app.AlertDialog.Builder p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.app.Dialog getDialog() {
+        return null;
+    }
+    
+    public final void setDialog(@org.jetbrains.annotations.NotNull()
+    android.app.Dialog p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    public final void progressBuilder(@org.jetbrains.annotations.NotNull()
+    java.lang.String msg) {
+    }
+    
+    public final void errorMessageDialogue(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, @org.jetbrains.annotations.NotNull()
+    java.lang.String title) {
+    }
+    
+    public final void showAlertMessagePDFPath(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, @org.jetbrains.annotations.NotNull()
+    java.lang.String title) {
+    }
+    
+    public final void hideDialog() {
+    }
+    
+    public final void updateVersionDialogue(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    public final void referAndEarnDialogue(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext) {
+    }
+    
+    public final void showViewAlertDialog(@org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    public final void targetView(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.submitDocument.ChatActivity chatActivity, @org.jetbrains.annotations.NotNull()
+    android.widget.ImageView camraImage, @org.jetbrains.annotations.NotNull()
+    java.lang.String s, @org.jetbrains.annotations.NotNull()
+    java.lang.String s1) {
+    }
+    
+    public final void showRateUsView(@org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.lang.String ack) {
+    }
+    
+    public AlertDialogueManager(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+        super();
+    }
+    
+    public AlertDialogueManager() {
+        super();
+    }
+}

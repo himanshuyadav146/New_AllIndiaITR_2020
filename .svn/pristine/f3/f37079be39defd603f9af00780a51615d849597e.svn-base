@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_size_eight">8sp</dimen>
+    <dimen name="text_size_ten">10sp</dimen>
+    <dimen name="text_size_twelve">12sp</dimen>
+    <dimen name="text_size_thirteen">13sp</dimen>
+    <dimen name="text_size_fourteen">14sp</dimen>
+    <dimen name="text_size_fifteen">15sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+    <dimen name="text_size_eighteen">18sp</dimen>
+    <dimen name="text_size_twenty">20sp</dimen>
+    <dimen name="text_size_twenty_four">24sp</dimen>
+    <dimen name="text_size_thirty">30sp</dimen>
+
+    <dimen name="field_border">0.5dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="fifteen">13dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="thirty_five">50dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="forty_five">45dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="big_image_size">200dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="fourteen">14dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+
+    <dimen name="collapsed_dimen">13dp</dimen>
+    <dimen name="expanded_dimen">18dp</dimen>
+
+
+    //*************************************For Old Layouts
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="main_heading">17dp</dimen>
+    <dimen name="heading">15dp</dimen>
+    <dimen name="sub_heading">14dp</dimen>
+    <dimen name="button_heading">16dp</dimen>
+
+
+    <dimen name="dots_height">50dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+
+    <!--New Dimentions-->
+    <dimen name="font_size_ten">10sp</dimen>
+    <dimen name="font_size_eleven">11sp</dimen>
+    <dimen name="font_size_twelve">12sp</dimen>
+    <dimen name="font_size_thirteen">13sp</dimen>
+    <dimen name="font_size_fourteen">14sp</dimen>
+    <dimen name="font_size_fifteen">15sp</dimen>
+    <dimen name="font_size_sixteen">16sp</dimen>
+    <dimen name="font_size_eighteen">18sp</dimen>
+    <dimen name="font_size_twenty">20sp</dimen>
+    <dimen name="font_size_twenty_two">22sp</dimen>
+    <dimen name="font_size_twenty_four">24sp</dimen>
+    <dimen name="font_size_twenty_six">26sp</dimen>
+    <dimen name="font_size_twenty_eighfont_size_sixteent">28sp</dimen>
+    <dimen name="font_size_thirty">30sp</dimen>
+    <dimen name="font_size_thirty_two">32sp</dimen>
+
+    <dimen name="elevation_size">6dp</dimen>
+    <dimen name="hollow_border">1dp</dimen>
+    <dimen name="slide_top">30dp</dimen>
+    <dimen name="slide_bottom">5dp</dimen>
+    <dimen name="slide_left">30dp</dimen>
+    <dimen name="slide_right">30dp</dimen>
+    <dimen name="slide_img">225dp</dimen>
+    <dimen name="slide1_padding">40dp</dimen>
+    <dimen name="slide2_padding">35dp</dimen>
+    <dimen name="slide3_padding">65dp</dimen>
+
+    <dimen name="appbar">45dp</dimen>
+    <dimen name="logo_img">130dp</dimen>
+    <dimen name="log_margin">30dp</dimen>
+    <dimen name="log_height">50dp</dimen>
+    <dimen name="log_img_fb_google">35dp</dimen>
+    <dimen name="small_btn_height">25dp</dimen>
+
+    <dimen name="forgot_pass_img">70dp</dimen>
+
+    <dimen name="margin_common">15dp</dimen>
+
+    <dimen name="card_dashboard_height">100dp</dimen>
+    <dimen name="card_dashboard_img">90dp</dimen>
+
+    <dimen name="user_list_btn_section">150dp</dimen>
+    <dimen name="child_card_height">70dp</dimen>
+    <dimen name="child_card_btn">28dp</dimen>
+    <dimen name="parent_card_height">80dp</dimen>
+
+    <dimen name="or_width">40dp</dimen>
+    <dimen name="or_margin_top">130dp</dimen>
+
+    <dimen name="card_arrow">18dp</dimen>
+
+    <dimen name="form_element_height">40dp</dimen>
+    <dimen name="form_element_margin">15dp</dimen>
+    <dimen name="form_element_marg">5dp</dimen>
+
+    <dimen name="itr_option_card_height">140dp</dimen>
+    <dimen name="itr_card_img_tick">20dp</dimen>
+    <dimen name="itr_card_img">60dp</dimen>
+
+    <dimen name="top_sec_width">30dp</dimen>
+    <dimen name="top_sec_padding">7dp</dimen>
+    <dimen name="line_thickness">2dp</dimen>
+
+    <dimen name="upload_card_height">142dp</dimen>
+    <dimen name="form16_card_height">45dp</dimen>
+
+    <dimen name="text_padding">12dp</dimen>
+    <dimen name="spacing">2dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">49dp</dimen>
+
+</resources>

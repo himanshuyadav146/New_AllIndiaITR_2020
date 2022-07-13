@@ -1,0 +1,430 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0013\n\u0002\u0010\b\n\u0002\b9\n\u0002\u0010\u000b\n\u0002\b\u001c\u0018\u0000 m2\u00020\u0001:\u0001mB\u0007\b\u0016\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\t\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR \u0010\u000e\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u000b\"\u0004\b\u0010\u0010\rR \u0010\u0011\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0006\"\u0004\b\u0013\u0010\bR \u0010\u0014\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0006\"\u0004\b\u0016\u0010\bR\"\u0010\u0017\u001a\u0004\u0018\u00010\u00188\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u001d\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR \u0010\u001e\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u000b\"\u0004\b \u0010\rR \u0010!\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u0006\"\u0004\b#\u0010\bR \u0010$\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b%\u0010\u0006\"\u0004\b&\u0010\bR \u0010\'\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u000b\"\u0004\b)\u0010\rR \u0010*\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b+\u0010\u0006\"\u0004\b,\u0010\bR \u0010-\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010\u0006\"\u0004\b/\u0010\bR \u00100\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b1\u0010\u0006\"\u0004\b2\u0010\bR \u00103\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010\u0006\"\u0004\b5\u0010\bR \u00106\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u0006\"\u0004\b8\u0010\bR \u00109\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\u0006\"\u0004\b;\u0010\bR \u0010<\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u0010\u0006\"\u0004\b>\u0010\bR \u0010?\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u0006\"\u0004\bA\u0010\bR \u0010B\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bC\u0010\u0006\"\u0004\bD\u0010\bR \u0010E\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bF\u0010\u0006\"\u0004\bG\u0010\bR \u0010H\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bI\u0010\u000b\"\u0004\bJ\u0010\rR \u0010K\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bL\u0010\u000b\"\u0004\bM\u0010\rR \u0010N\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bO\u0010\u0006\"\u0004\bP\u0010\bR\"\u0010Q\u001a\u0004\u0018\u00010R8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010W\u001a\u0004\bS\u0010T\"\u0004\bU\u0010VR \u0010X\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bY\u0010\u0006\"\u0004\bZ\u0010\bR \u0010[\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\\\u0010\u0006\"\u0004\b]\u0010\bR \u0010^\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b_\u0010\u0006\"\u0004\b`\u0010\bR\"\u0010a\u001a\u0004\u0018\u00010\u00188\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u001d\u001a\u0004\bb\u0010\u001a\"\u0004\bc\u0010\u001cR \u0010d\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\be\u0010\u000b\"\u0004\bf\u0010\rR \u0010g\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bh\u0010\u000b\"\u0004\bi\u0010\rR \u0010j\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bk\u0010\u0006\"\u0004\bl\u0010\b\u00a8\u0006n"}, d2 = {"Ldell/com/allindiaitr/models/MoreModel;", "", "()V", "amount", "", "getAmount", "()Ljava/lang/String;", "setAmount", "(Ljava/lang/String;)V", "blogCategoryId", "getBlogCategoryId", "()Ljava/lang/Object;", "setBlogCategoryId", "(Ljava/lang/Object;)V", "blogContent", "getBlogContent", "setBlogContent", "blogKey", "getBlogKey", "setBlogKey", "blogTitle", "getBlogTitle", "setBlogTitle", "blogView", "", "getBlogView", "()Ljava/lang/Integer;", "setBlogView", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "categoryName", "getCategoryName", "setCategoryName", "comments", "getComments", "setComments", "createdDate", "getCreatedDate", "setCreatedDate", "description", "getDescription", "setDescription", "email", "getEmail", "setEmail", "emailId", "getEmailId", "setEmailId", "firstName", "getFirstName", "setFirstName", "id", "getId", "setId", "imagePath", "getImagePath", "setImagePath", "lastName", "getLastName", "setLastName", "metaDescription", "getMetaDescription", "setMetaDescription", "metaKeywords", "getMetaKeywords", "setMetaKeywords", "metaTitle", "getMetaTitle", "setMetaTitle", "name", "getName", "setName", "ogDescription", "getOgDescription", "setOgDescription", "ogTitle", "getOgTitle", "setOgTitle", "packageId", "getPackageId", "setPackageId", "paymentStatus", "", "getPaymentStatus", "()Ljava/lang/Boolean;", "setPaymentStatus", "(Ljava/lang/Boolean;)V", "Ljava/lang/Boolean;", "phoneNo", "getPhoneNo", "setPhoneNo", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "processMode", "getProcessMode", "setProcessMode", "recId", "getRecId", "setRecId", "twitterDescription", "getTwitterDescription", "setTwitterDescription", "twitterTitle", "getTwitterTitle", "setTwitterTitle", "userAssessmentYearId", "getUserAssessmentYearId", "setUserAssessmentYearId", "Companion", "app_debug"})
+public final class MoreModel {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MetaTitle")
+    private java.lang.String metaTitle;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MetaKeywords")
+    private java.lang.String metaKeywords;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MetaDescription")
+    private java.lang.String metaDescription;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BlogTitle")
+    private java.lang.String blogTitle;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BlogContent")
+    private java.lang.Object blogContent;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ImagePath")
+    private java.lang.String imagePath;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CreatedDate")
+    private java.lang.String createdDate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "RecId")
+    private java.lang.Integer recId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BlogCategoryId")
+    private java.lang.Object blogCategoryId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CategoryName")
+    private java.lang.Object categoryName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BlogView")
+    private java.lang.Integer blogView;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "OgTitle")
+    private java.lang.Object ogTitle;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "OgDescription")
+    private java.lang.Object ogDescription;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TwitterTitle")
+    private java.lang.Object twitterTitle;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TwitterDescription")
+    private java.lang.Object twitterDescription;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BlogKey")
+    private java.lang.String blogKey;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Id")
+    private java.lang.String id;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserAssessmentYearId")
+    private java.lang.String userAssessmentYearId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Email")
+    private java.lang.String email;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ProcessMode")
+    private java.lang.String processMode;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageId")
+    private java.lang.String packageId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Amount")
+    private java.lang.String amount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FirstName")
+    private java.lang.String firstName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "LastName")
+    private java.lang.String lastName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Description")
+    private java.lang.Object description;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PaymentStatus")
+    private java.lang.Boolean paymentStatus;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Name")
+    private java.lang.String name;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EmailId")
+    private java.lang.String emailId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNo")
+    private java.lang.String phoneNo;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Comments")
+    private java.lang.String comments;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.MoreModel.Companion Companion = null;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMetaTitle() {
+        return null;
+    }
+    
+    public final void setMetaTitle(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMetaKeywords() {
+        return null;
+    }
+    
+    public final void setMetaKeywords(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMetaDescription() {
+        return null;
+    }
+    
+    public final void setMetaDescription(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getBlogTitle() {
+        return null;
+    }
+    
+    public final void setBlogTitle(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getBlogContent() {
+        return null;
+    }
+    
+    public final void setBlogContent(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getImagePath() {
+        return null;
+    }
+    
+    public final void setImagePath(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCreatedDate() {
+        return null;
+    }
+    
+    public final void setCreatedDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getRecId() {
+        return null;
+    }
+    
+    public final void setRecId(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getBlogCategoryId() {
+        return null;
+    }
+    
+    public final void setBlogCategoryId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getCategoryName() {
+        return null;
+    }
+    
+    public final void setCategoryName(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getBlogView() {
+        return null;
+    }
+    
+    public final void setBlogView(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getOgTitle() {
+        return null;
+    }
+    
+    public final void setOgTitle(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getOgDescription() {
+        return null;
+    }
+    
+    public final void setOgDescription(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getTwitterTitle() {
+        return null;
+    }
+    
+    public final void setTwitterTitle(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getTwitterDescription() {
+        return null;
+    }
+    
+    public final void setTwitterDescription(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getBlogKey() {
+        return null;
+    }
+    
+    public final void setBlogKey(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getUserAssessmentYearId() {
+        return null;
+    }
+    
+    public final void setUserAssessmentYearId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getProcessMode() {
+        return null;
+    }
+    
+    public final void setProcessMode(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageId() {
+        return null;
+    }
+    
+    public final void setPackageId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAmount() {
+        return null;
+    }
+    
+    public final void setAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getFirstName() {
+        return null;
+    }
+    
+    public final void setFirstName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getLastName() {
+        return null;
+    }
+    
+    public final void setLastName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getDescription() {
+        return null;
+    }
+    
+    public final void setDescription(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean getPaymentStatus() {
+        return null;
+    }
+    
+    public final void setPaymentStatus(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmailId() {
+        return null;
+    }
+    
+    public final void setEmailId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNo() {
+        return null;
+    }
+    
+    public final void setPhoneNo(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getComments() {
+        return null;
+    }
+    
+    public final void setComments(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    public MoreModel() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/MoreModel$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/MoreModel;", "getInstance", "()Ldell/com/allindiaitr/models/MoreModel;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.MoreModel getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

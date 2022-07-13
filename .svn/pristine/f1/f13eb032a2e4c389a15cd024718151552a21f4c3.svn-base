@@ -1,0 +1,42 @@
+package dell.com.allindiaitr.helper;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\u0018\u0000 \n2\u00020\u0001:\u0001\nB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u00068F\u00a2\u0006\u0006\u001a\u0004\b\b\u0010\t\u00a8\u0006\u000b"}, d2 = {"Ldell/com/allindiaitr/helper/AppSignatureHelper;", "Landroid/content/ContextWrapper;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "appSignatures", "Ljava/util/ArrayList;", "", "getAppSignatures", "()Ljava/util/ArrayList;", "Companion", "app_debug"})
+public final class AppSignatureHelper extends android.content.ContextWrapper {
+    private static final java.lang.String TAG = "AppSignatureHelper";
+    private static final java.lang.String HASH_TYPE = "SHA-256";
+    private static final int NUM_HASHED_BYTES = 9;
+    private static final int NUM_BASE64_CHAR = 11;
+    public static final dell.com.allindiaitr.helper.AppSignatureHelper.Companion Companion = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getAppSignatures() {
+        return null;
+    }
+    
+    public AppSignatureHelper(@org.jetbrains.annotations.NotNull()
+    android.content.Context context) {
+        super(null);
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\t\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\u001a\u0010\f\u001a\u0004\u0018\u00010\u00042\u0006\u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u0004H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u0006X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\u0006X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\bR\u000e\u0010\u000b\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000f"}, d2 = {"Ldell/com/allindiaitr/helper/AppSignatureHelper$Companion;", "", "()V", "HASH_TYPE", "", "NUM_BASE64_CHAR", "", "getNUM_BASE64_CHAR", "()I", "NUM_HASHED_BYTES", "getNUM_HASHED_BYTES", "TAG", "hash", "packageName", "signature", "app_debug"})
+    public static final class Companion {
+        
+        public final int getNUM_HASHED_BYTES() {
+            return 0;
+        }
+        
+        public final int getNUM_BASE64_CHAR() {
+            return 0;
+        }
+        
+        private final java.lang.String hash(java.lang.String packageName, java.lang.String signature) {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

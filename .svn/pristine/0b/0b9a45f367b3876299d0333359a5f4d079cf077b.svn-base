@@ -1,0 +1,205 @@
+package dell.com.allindiaitr.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0012\u0010F\u001a\u00020G2\b\u0010H\u001a\u0004\u0018\u00010-H\u0014J\b\u0010I\u001a\u00020GH\u0002J\b\u0010J\u001a\u00020GH\u0016J\u0012\u0010K\u001a\u00020G2\b\u0010L\u001a\u0004\u0018\u00010MH\u0014J\b\u0010N\u001a\u00020GH\u0014J\b\u0010O\u001a\u00020GH\u0002J\u000e\u0010P\u001a\u00020G2\u0006\u0010=\u001a\u00020\nR\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0006\"\u0004\b\u0011\u0010\bR\u001a\u0010\u0012\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0006\"\u0004\b\u0014\u0010\bR\u001a\u0010\u0015\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\f\"\u0004\b\u0017\u0010\u000eR\u001a\u0010\u0018\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0006\"\u0004\b\u001a\u0010\bR\u001a\u0010\u001b\u001a\u00020\u001cX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u001e\"\u0004\b\u001f\u0010 R\u0010\u0010!\u001a\u0004\u0018\u00010\"X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010#\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010\f\"\u0004\b%\u0010\u000eR\u001a\u0010&\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010\u0006\"\u0004\b(\u0010\bR\u001a\u0010)\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b*\u0010\u0006\"\u0004\b+\u0010\bR\u001a\u0010,\u001a\u00020-X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010/\"\u0004\b0\u00101R\u001a\u00102\u001a\u000203X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R\u0010\u00108\u001a\u0004\u0018\u000109X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010:\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010\u0006\"\u0004\b<\u0010\bR\u001a\u0010=\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b>\u0010\f\"\u0004\b?\u0010\u000eR\u001a\u0010@\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bA\u0010\u0006\"\u0004\bB\u0010\bR\u001a\u0010C\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bD\u0010\u0006\"\u0004\bE\u0010\b\u00a8\u0006Q"}, d2 = {"Ldell/com/allindiaitr/home/DashboardActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "ITRDescription", "", "getITRDescription", "()Ljava/lang/String;", "setITRDescription", "(Ljava/lang/String;)V", "ITRIsActive", "", "getITRIsActive", "()Z", "setITRIsActive", "(Z)V", "ITRType", "getITRType", "setITRType", "Refer2EarnShowDescription", "getRefer2EarnShowDescription", "setRefer2EarnShowDescription", "Refer2EarnShowIsActive", "getRefer2EarnShowIsActive", "setRefer2EarnShowIsActive", "Refer2EarnShowType", "getRefer2EarnShowType", "setRefer2EarnShowType", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "kycIsActive", "getKycIsActive", "setKycIsActive", "kycIsDescription", "getKycIsDescription", "setKycIsDescription", "kycIsType", "getKycIsType", "setKycIsType", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "runOnce", "Ldell/com/allindiaitr/sliderscreen/RunOnce;", "undermaintenanceDescription", "getUndermaintenanceDescription", "setUndermaintenanceDescription", "undermaintenanceIsActive", "getUndermaintenanceIsActive", "setUndermaintenanceIsActive", "undermaintenanceType", "getUndermaintenanceType", "setUndermaintenanceType", "versionName", "getVersionName", "setVersionName", "attachBaseContext", "", "newBase", "getVersionUpdate", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onResume", "setRecyclerView", "visibilityLayout", "app_debug"})
+public final class DashboardActivity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    private boolean Refer2EarnShowIsActive;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String Refer2EarnShowDescription;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String Refer2EarnShowType;
+    private boolean undermaintenanceIsActive;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String undermaintenanceDescription;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String undermaintenanceType;
+    private boolean kycIsActive;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String kycIsDescription;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String kycIsType;
+    private boolean ITRIsActive;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String ITRDescription;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String ITRType;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String versionName;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    private dell.com.allindiaitr.sliderscreen.RunOnce runOnce;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    public final boolean getRefer2EarnShowIsActive() {
+        return false;
+    }
+    
+    public final void setRefer2EarnShowIsActive(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRefer2EarnShowDescription() {
+        return null;
+    }
+    
+    public final void setRefer2EarnShowDescription(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRefer2EarnShowType() {
+        return null;
+    }
+    
+    public final void setRefer2EarnShowType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final boolean getUndermaintenanceIsActive() {
+        return false;
+    }
+    
+    public final void setUndermaintenanceIsActive(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUndermaintenanceDescription() {
+        return null;
+    }
+    
+    public final void setUndermaintenanceDescription(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUndermaintenanceType() {
+        return null;
+    }
+    
+    public final void setUndermaintenanceType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final boolean getKycIsActive() {
+        return false;
+    }
+    
+    public final void setKycIsActive(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKycIsDescription() {
+        return null;
+    }
+    
+    public final void setKycIsDescription(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKycIsType() {
+        return null;
+    }
+    
+    public final void setKycIsType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final boolean getITRIsActive() {
+        return false;
+    }
+    
+    public final void setITRIsActive(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITRDescription() {
+        return null;
+    }
+    
+    public final void setITRDescription(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITRType() {
+        return null;
+    }
+    
+    public final void setITRType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getVersionName() {
+        return null;
+    }
+    
+    public final void setVersionName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    protected void onResume() {
+    }
+    
+    private final void getVersionUpdate() {
+    }
+    
+    public final void visibilityLayout(boolean undermaintenanceIsActive) {
+    }
+    
+    private final void setRecyclerView() {
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public DashboardActivity() {
+        super();
+    }
+}

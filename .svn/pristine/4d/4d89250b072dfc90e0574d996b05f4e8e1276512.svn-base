@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_rent_receipt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="dell.com.allindiaitr.usefultools.NewRentReceiptActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar">
+
+    </include>
+
+
+    <Button
+        android:id="@+id/printButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_element_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/form_element_margin"
+        android:layout_marginLeft="@dimen/form_element_margin"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:baselineAligned="false"
+        android:text="@string/print"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_sixteen"
+        android:background="@drawable/button_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/printButton"
+       >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/personalInfoLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginRight="@dimen/form_element_margin"
+                android:layout_marginLeft="@dimen/form_element_margin"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_persionl_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_fifteen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Your Name *"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/tenantNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_email"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/emailIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/rent_recipt_rent_details"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_fifteen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_landloard_name"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/landlordNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/landlord_pan"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/landlordPanEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:inputType="textCapCharacters"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve"
+                    android:maxLength="10"/>
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_rent_month"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/totalRentReceivedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/rent_recipt_rent_duration"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="3"
+                        android:textSize="@dimen/font_size_twelve"
+                        android:background="@drawable/text_field">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/fromDateTextView"
+                            android:padding="@dimen/ten"
+                            android:gravity = "center|left|left"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/fifteen"
+                            android:layout_height="@dimen/fifteen"
+                            app:srcCompat="@drawable/ic_calendar_filled"
+                            android:layout_marginEnd="@dimen/twelve"
+                            android:layout_gravity="center_vertical|end"/>
+                    </FrameLayout>
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/fromDateTextView"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="@dimen/form_element_height"-->
+<!--                        android:layout_weight="3"-->
+<!--                        android:background="@drawable/text_field"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textSize="@dimen/font_size_twelve"-->
+<!--                        android:drawableRight="@drawable/ic_calendar_filled"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="To"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/font_size_twelve" />
+
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/form_element_height"
+                        android:orientation="horizontal"
+                        android:layout_weight="3"
+                        android:textSize="@dimen/font_size_twelve"
+                        android:background="@drawable/text_field">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/toDateTextView"
+                            android:padding="@dimen/ten"
+                            android:gravity = "center|left|left"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/fifteen"
+                            android:layout_height="@dimen/fifteen"
+                            app:srcCompat="@drawable/ic_calendar_filled"
+                            android:layout_marginEnd="@dimen/twelve"
+                            android:layout_gravity="center_vertical|end"/>
+                    </FrameLayout>
+
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/toDateTextView"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="@dimen/form_element_height"-->
+<!--                        android:layout_weight="3"-->
+<!--                        android:background="@drawable/text_field"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textSize="@dimen/font_size_twelve"-->
+<!--                        android:drawableRight="@drawable/ic_calendar_filled"/>-->
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Address of Premises"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_fifteen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_address_1"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/addressLineEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_city"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/townCityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_twelve" />
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_state"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <Spinner
+                    android:id="@+id/stateEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/bg_spinner"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_twelve"
+                    android:textColor="@color/lighter_black" />
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/rent_recipt_pincode"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/font_size_twelve" />
+
+                <EditText
+                    android:id="@+id/pinCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_element_height"
+                    android:background="@drawable/text_field"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:layout_marginBottom="70dp"
+                    android:textSize="@dimen/font_size_twelve"
+                    android:maxLength="6"/>
+                />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

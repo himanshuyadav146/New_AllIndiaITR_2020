@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_rent_receipt"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context=".usefultools.RentReceiptActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <Button
+            android:id="@+id/printButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:baselineAligned="false"
+            android:text="@string/print"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_fourteen"
+            android:background="@drawable/button_background"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/printButton">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/personalInfoLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five"
+                    android:layout_marginRight="@dimen/thirty"
+                    android:layout_marginLeft="@dimen/thirty">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:text="@string/personal_info"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_fourteen"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/name"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/tenantNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/your_email"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/emailIdEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:text="@string/rent_details"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_fourteen"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/landlord_name"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/landlordNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/landlord_pan"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/landlordPanEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:inputType="textCapCharacters"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:maxLength="10"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/rent_paid"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/totalRentReceivedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:inputType="number"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:text="@string/rent_duration"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                    <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/forty"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+                            android:background="@drawable/text_field">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/fromDateTextView"
+                                android:paddingBottom="@dimen/twelve"
+                                android:paddingTop="@dimen/twelve"
+                                android:paddingStart="@dimen/twelve"
+                                android:paddingEnd="@dimen/thirty_five"
+                                android:background="@null"
+                                android:textColor="@color/lighter_black"
+                                android:textSize="@dimen/text_size_twelve"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/fifteen"
+                                android:layout_height="@dimen/fifteen"
+                                app:srcCompat="@drawable/ic_calendar_filled"
+                                android:layout_marginEnd="@dimen/twelve"
+                                android:layout_gravity="center_vertical|end"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="To"
+                            android:layout_marginLeft="@dimen/five"
+                            android:layout_marginRight="@dimen/five"
+                            android:textColor="@color/lighter_black"
+                            android:textSize="@dimen/text_size_twelve" />
+
+                    <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/forty"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+                            android:background="@drawable/text_field">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/toDateTextView"
+                                android:paddingBottom="@dimen/twelve"
+                                android:paddingTop="@dimen/twelve"
+                                android:paddingStart="@dimen/twelve"
+                                android:paddingEnd="@dimen/thirty_five"
+                                android:background="@null"
+                                android:textColor="@color/lighter_black"
+                                android:textSize="@dimen/text_size_twelve"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/fifteen"
+                                android:layout_height="@dimen/fifteen"
+                                app:srcCompat="@drawable/ic_calendar_filled"
+                                android:layout_marginEnd="@dimen/twelve"
+                                android:layout_gravity="center_vertical|end"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:text="Address of Premises"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_fourteen"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="Address Line *"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/addressLineEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="Town / City *"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/townCityEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="State *"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <Spinner
+                        android:id="@+id/stateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/bg_spinner"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/five"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:textColor="@color/lighter_black" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="Pincode *"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                        android:id="@+id/pinCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:inputType="number"
+                        android:padding="@dimen/twelve"
+                        android:singleLine="true"
+                        android:layout_marginBottom="@dimen/sixty"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:maxLength="6"/>
+
+            </LinearLayout>
+            
+        </ScrollView>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

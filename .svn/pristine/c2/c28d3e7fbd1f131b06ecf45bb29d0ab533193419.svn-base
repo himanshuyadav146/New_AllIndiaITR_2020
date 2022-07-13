@@ -1,0 +1,332 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b!\n\u0002\u0010\u0002\n\u0002\b\u001c\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010&\u001a\u0004\u0018\u00010\u0004J\b\u0010\'\u001a\u0004\u0018\u00010\u0004J\b\u0010(\u001a\u0004\u0018\u00010\u0004J\b\u0010)\u001a\u0004\u0018\u00010\u0004J\b\u0010*\u001a\u0004\u0018\u00010\u0004J\r\u0010+\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0002\u0010,J\b\u0010-\u001a\u0004\u0018\u00010\u0004J\b\u0010.\u001a\u0004\u0018\u00010\u0004J\b\u0010/\u001a\u0004\u0018\u00010\u0004J\r\u00100\u001a\u0004\u0018\u00010\u000f\u00a2\u0006\u0002\u00101J\b\u00102\u001a\u0004\u0018\u00010\u0004J\b\u00103\u001a\u0004\u0018\u00010\u0004J\b\u00104\u001a\u0004\u0018\u00010\u0004J\b\u00105\u001a\u0004\u0018\u00010\u0004J\b\u00106\u001a\u0004\u0018\u00010\"J\b\u00107\u001a\u0004\u0018\u00010\u0004J\b\u00108\u001a\u0004\u0018\u00010\u0004J\b\u00109\u001a\u0004\u0018\u00010\u0004J\r\u0010:\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0002\u0010,J\b\u0010;\u001a\u0004\u0018\u00010\u0004J\b\u0010<\u001a\u0004\u0018\u00010\u0004J\b\u0010=\u001a\u0004\u0018\u00010\u0004J\b\u0010>\u001a\u0004\u0018\u00010\u0004J\b\u0010?\u001a\u0004\u0018\u00010\u0004J\b\u0010@\u001a\u0004\u0018\u00010\u0004J\b\u0010A\u001a\u0004\u0018\u00010\u0004J\u000e\u0010B\u001a\n\u0012\u0004\u0012\u00020\u001e\u0018\u00010\u001dJ\u000e\u0010C\u001a\u00020D2\u0006\u0010\u0003\u001a\u00020\u0004J\u000e\u0010E\u001a\u00020D2\u0006\u0010\u0005\u001a\u00020\u0004J\u000e\u0010F\u001a\u00020D2\u0006\u0010\u001f\u001a\u00020\u0004J\u000e\u0010G\u001a\u00020D2\u0006\u0010\u0006\u001a\u00020\u0004J\u000e\u0010H\u001a\u00020D2\u0006\u0010\u0007\u001a\u00020\u0004J\u000e\u0010I\u001a\u00020D2\u0006\u0010\b\u001a\u00020\tJ\u000e\u0010J\u001a\u00020D2\u0006\u0010\u000b\u001a\u00020\u0004J\u000e\u0010K\u001a\u00020D2\u0006\u0010\f\u001a\u00020\u0004J\u000e\u0010L\u001a\u00020D2\u0006\u0010\r\u001a\u00020\u0004J\u000e\u0010M\u001a\u00020D2\u0006\u0010\u000e\u001a\u00020\u000fJ\u000e\u0010N\u001a\u00020D2\u0006\u0010 \u001a\u00020\u0004J\u000e\u0010O\u001a\u00020D2\u0006\u0010\u0011\u001a\u00020\u0004J\u000e\u0010P\u001a\u00020D2\u0006\u0010\u0012\u001a\u00020\u0004J\u000e\u0010Q\u001a\u00020D2\u0006\u0010\u0013\u001a\u00020\u0004J\u000e\u0010R\u001a\u00020D2\u0006\u0010!\u001a\u00020\"J\u000e\u0010S\u001a\u00020D2\u0006\u0010\u0014\u001a\u00020\u0004J\u000e\u0010T\u001a\u00020D2\u0006\u0010\u0015\u001a\u00020\u0004J\u000e\u0010U\u001a\u00020D2\u0006\u0010#\u001a\u00020\u0004J\u000e\u0010V\u001a\u00020D2\u0006\u0010\u0016\u001a\u00020\tJ\u000e\u0010W\u001a\u00020D2\u0006\u0010\u0017\u001a\u00020\u0004J\u000e\u0010X\u001a\u00020D2\u0006\u0010$\u001a\u00020\u0004J\u000e\u0010Y\u001a\u00020D2\u0006\u0010\u0018\u001a\u00020\u0004J\u000e\u0010Z\u001a\u00020D2\u0006\u0010\u0019\u001a\u00020\u0004J\u000e\u0010[\u001a\u00020D2\u0006\u0010%\u001a\u00020\u0004J\u000e\u0010\\\u001a\u00020D2\u0006\u0010\u001a\u001a\u00020\u0004J\u000e\u0010]\u001a\u00020D2\u0006\u0010\u001b\u001a\u00020\u0004J\u0014\u0010^\u001a\u00020D2\f\u0010_\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001dR\u0014\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\u0004\u0018\u00010\t8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0004\n\u0002\u0010\nR\u0014\u0010\u000b\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\u0004\u0018\u00010\u000f8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0004\n\u0002\u0010\u0010R\u0014\u0010\u0011\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0012\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0015\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0016\u001a\u0004\u0018\u00010\t8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0004\n\u0002\u0010\nR\u0014\u0010\u0017\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0018\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0019\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001a\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001b\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u001c\u001a\n\u0012\u0004\u0012\u00020\u001e\u0018\u00010\u001d8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001f\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010 \u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010!\u001a\u0004\u0018\u00010\"8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010#\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010$\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010%\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006`"}, d2 = {"Ldell/com/allindiaitr/models/PaymentModel;", "", "()V", "ActualAmount", "", "CHECKSUMHASH", "CompanyAddress", "CompanyName", "CouponId", "", "Ljava/lang/Integer;", "GSTIN", "IsCouponApply", "IsGSTIN", "IsMobile", "", "Ljava/lang/Boolean;", "ORDERID", "PackageId", "PackageType", "PaymentType", "ProcessMode", "ServiceTax", "StateId", "TXNID", "TotalAmount", "UserAssestmentYearId", "UserId", "UserPackageAddOnsList", "", "Ldell/com/allindiaitr/models/ModelSelectedPackages;", "checksum", "mID", "parameters", "Ldell/com/allindiaitr/models/Parameters;", "rESPMSG", "status", "transactionId", "getActualAmount", "getCHECKSUMHASH", "getChecksum", "getCompanyAddress", "getCompanyName", "getCouponId", "()Ljava/lang/Integer;", "getGSTIN", "getIsCouponApply", "getIsGSTIN", "getIsMobile", "()Ljava/lang/Boolean;", "getMID", "getORDERID", "getPackageId", "getPackageType", "getParameters", "getPaymentType", "getProcessMode", "getRESPMSG", "getServiceTax", "getStateId", "getStatus", "getTXNID", "getTotalAmount", "getTransactionId", "getUserAssestmentYearId", "getUserId", "getUserPackageAddOnsList", "setActualAmount", "", "setCHECKSUMHASH", "setChecksum", "setCompanyAddress", "setCompanyName", "setCouponId", "setGSTIN", "setIsCouponApply", "setIsGSTIN", "setIsMobile", "setMID", "setORDERID", "setPackageId", "setPackageType", "setParameters", "setPaymentType", "setProcessMode", "setRESPMSG", "setServiceTax", "setStateId", "setStatus", "setTXNID", "setTotalAmount", "setTransactionId", "setUserAssestmentYearId", "setUserId", "setUserPackageAddOnsList", "userPackageAddOnsList", "app_debug"})
+public final class PaymentModel {
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "checksum")
+    private java.lang.String checksum;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TransactionId")
+    private java.lang.String transactionId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ORDERID")
+    private java.lang.String ORDERID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "parameters")
+    private dell.com.allindiaitr.models.Parameters parameters;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "GSTIN")
+    private java.lang.String GSTIN;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CompanyName")
+    private java.lang.String CompanyName;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CompanyAddress")
+    private java.lang.String CompanyAddress;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "StateId")
+    private java.lang.String StateId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "status")
+    private java.lang.String status;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "RESPMSG")
+    private java.lang.String rESPMSG;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserPackageAddOnsList")
+    private java.util.List<dell.com.allindiaitr.models.ModelSelectedPackages> UserPackageAddOnsList;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserId")
+    private java.lang.String UserId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserAssestmentYearId")
+    private java.lang.String UserAssestmentYearId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageId")
+    private java.lang.String PackageId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ProcessMode")
+    private java.lang.String ProcessMode;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageType")
+    private java.lang.String PackageType;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsMobile")
+    private java.lang.Boolean IsMobile;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PaymentType")
+    private java.lang.String PaymentType;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ActualAmount")
+    private java.lang.String ActualAmount;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ServiceTax")
+    private java.lang.Integer ServiceTax;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TotalAmount")
+    private java.lang.String TotalAmount;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsCouponApply")
+    private java.lang.String IsCouponApply;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CouponId")
+    private java.lang.Integer CouponId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsGSTIN")
+    private java.lang.String IsGSTIN;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MID")
+    private java.lang.String mID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TXNID")
+    private java.lang.String TXNID;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CHECKSUMHASH")
+    private java.lang.String CHECKSUMHASH;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getStatus() {
+        return null;
+    }
+    
+    public final void setStatus(@org.jetbrains.annotations.NotNull()
+    java.lang.String status) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getRESPMSG() {
+        return null;
+    }
+    
+    public final void setRESPMSG(@org.jetbrains.annotations.NotNull()
+    java.lang.String rESPMSG) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<dell.com.allindiaitr.models.ModelSelectedPackages> getUserPackageAddOnsList() {
+        return null;
+    }
+    
+    public final void setUserPackageAddOnsList(@org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.ModelSelectedPackages> userPackageAddOnsList) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCHECKSUMHASH() {
+        return null;
+    }
+    
+    public final void setCHECKSUMHASH(@org.jetbrains.annotations.NotNull()
+    java.lang.String CHECKSUMHASH) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTXNID() {
+        return null;
+    }
+    
+    public final void setTXNID(@org.jetbrains.annotations.NotNull()
+    java.lang.String TXNID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMID() {
+        return null;
+    }
+    
+    public final void setMID(@org.jetbrains.annotations.NotNull()
+    java.lang.String mID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getIsGSTIN() {
+        return null;
+    }
+    
+    public final void setIsGSTIN(@org.jetbrains.annotations.NotNull()
+    java.lang.String IsGSTIN) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getCouponId() {
+        return null;
+    }
+    
+    public final void setORDERID(@org.jetbrains.annotations.NotNull()
+    java.lang.String ORDERID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getORDERID() {
+        return null;
+    }
+    
+    public final void setCouponId(int CouponId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getIsCouponApply() {
+        return null;
+    }
+    
+    public final void setIsCouponApply(@org.jetbrains.annotations.NotNull()
+    java.lang.String IsCouponApply) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTotalAmount() {
+        return null;
+    }
+    
+    public final void setTotalAmount(@org.jetbrains.annotations.NotNull()
+    java.lang.String TotalAmount) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getServiceTax() {
+        return null;
+    }
+    
+    public final void setServiceTax(int ServiceTax) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getActualAmount() {
+        return null;
+    }
+    
+    public final void setActualAmount(@org.jetbrains.annotations.NotNull()
+    java.lang.String ActualAmount) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPaymentType() {
+        return null;
+    }
+    
+    public final void setPaymentType(@org.jetbrains.annotations.NotNull()
+    java.lang.String PaymentType) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean getIsMobile() {
+        return null;
+    }
+    
+    public final void setIsMobile(boolean IsMobile) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageType() {
+        return null;
+    }
+    
+    public final void setPackageType(@org.jetbrains.annotations.NotNull()
+    java.lang.String PackageType) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getProcessMode() {
+        return null;
+    }
+    
+    public final void setProcessMode(@org.jetbrains.annotations.NotNull()
+    java.lang.String ProcessMode) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageId() {
+        return null;
+    }
+    
+    public final void setPackageId(@org.jetbrains.annotations.NotNull()
+    java.lang.String PackageId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getUserAssestmentYearId() {
+        return null;
+    }
+    
+    public final void setUserAssestmentYearId(@org.jetbrains.annotations.NotNull()
+    java.lang.String UserAssestmentYearId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getUserId() {
+        return null;
+    }
+    
+    public final void setUserId(@org.jetbrains.annotations.NotNull()
+    java.lang.String UserId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getGSTIN() {
+        return null;
+    }
+    
+    public final void setGSTIN(@org.jetbrains.annotations.NotNull()
+    java.lang.String GSTIN) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCompanyName() {
+        return null;
+    }
+    
+    public final void setCompanyName(@org.jetbrains.annotations.NotNull()
+    java.lang.String CompanyName) {
+    }
+    
+    public final void setCompanyAddress(@org.jetbrains.annotations.NotNull()
+    java.lang.String CompanyAddress) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCompanyAddress() {
+        return null;
+    }
+    
+    public final void setStateId(@org.jetbrains.annotations.NotNull()
+    java.lang.String StateId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getStateId() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getChecksum() {
+        return null;
+    }
+    
+    public final void setChecksum(@org.jetbrains.annotations.NotNull()
+    java.lang.String checksum) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTransactionId() {
+        return null;
+    }
+    
+    public final void setTransactionId(@org.jetbrains.annotations.NotNull()
+    java.lang.String transactionId) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.Parameters getParameters() {
+        return null;
+    }
+    
+    public final void setParameters(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.Parameters parameters) {
+    }
+    
+    public PaymentModel() {
+        super();
+    }
+}

@@ -1,0 +1,14 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.custom_payment_card.view.*
+
+class CustomPaymentHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    val tv_email_id = itemView.tv_email_id
+    val tv_phone_no = itemView.tv_phone_no
+    val tv_description = itemView.tv_description
+    val tv_total_amount = itemView.tv_total_amount
+    val btn_paynow = itemView.btn_paynow
+    val payment_complete = itemView.payment_complete
+}

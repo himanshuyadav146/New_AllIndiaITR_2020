@@ -1,0 +1,222 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\u0006\n\u0002\b\u0015\n\u0002\u0010 \n\u0002\b\u0018\u0018\u0000 :2\u00020\u0001:\u0001:B\u0007\b\u0016\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\t\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR\"\u0010\f\u001a\u0004\u0018\u00010\r8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0012\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R \u0010\u0013\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0006\"\u0004\b\u0015\u0010\bR \u0010\u0016\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0006\"\u0004\b\u0018\u0010\bR \u0010\u0019\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0006\"\u0004\b\u001b\u0010\bR \u0010\u001c\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u0006\"\u0004\b\u001e\u0010\bR\"\u0010\u001f\u001a\u0004\u0018\u00010\r8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0012\u001a\u0004\b \u0010\u000f\"\u0004\b!\u0010\u0011R&\u0010\"\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010#8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\'R \u0010(\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u0006\"\u0004\b*\u0010\bR \u0010+\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010\u0006\"\u0004\b-\u0010\bR \u0010.\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\u0006\"\u0004\b0\u0010\bR \u00101\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u0010\u0006\"\u0004\b3\u0010\bR \u00104\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b5\u0010\u0006\"\u0004\b6\u0010\bR\"\u00107\u001a\u0004\u0018\u00010\r8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0012\u001a\u0004\b8\u0010\u000f\"\u0004\b9\u0010\u0011\u00a8\u0006;"}, d2 = {"Ldell/com/allindiaitr/models/ReferEarnModel;", "", "()V", "accountNumber", "", "getAccountNumber", "()Ljava/lang/String;", "setAccountNumber", "(Ljava/lang/String;)V", "amount", "getAmount", "setAmount", "balanceAmount", "", "getBalanceAmount", "()Ljava/lang/Double;", "setBalanceAmount", "(Ljava/lang/Double;)V", "Ljava/lang/Double;", "bankName", "getBankName", "setBankName", "couponCode", "getCouponCode", "setCouponCode", "createdDate", "getCreatedDate", "setCreatedDate", "date", "getDate", "setDate", "earningAmount", "getEarningAmount", "setEarningAmount", "earningsUserListModel", "", "getEarningsUserListModel", "()Ljava/util/List;", "setEarningsUserListModel", "(Ljava/util/List;)V", "iFSCCode", "getIFSCCode", "setIFSCCode", "name", "getName", "setName", "parentId", "getParentId", "setParentId", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "status", "getStatus", "setStatus", "withdrawnAmount", "getWithdrawnAmount", "setWithdrawnAmount", "Companion", "app_debug"})
+public final class ReferEarnModel {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BalanceAmount")
+    private java.lang.Double balanceAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EarningAmount")
+    private java.lang.Double earningAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "WithdrawnAmount")
+    private java.lang.Double withdrawnAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EarningsUserList")
+    private java.util.List<dell.com.allindiaitr.models.ReferEarnModel> earningsUserListModel;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CouponCode")
+    private java.lang.String couponCode;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Amount")
+    private java.lang.String amount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CreatedDate")
+    private java.lang.String createdDate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Status")
+    private java.lang.String status;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Name")
+    private java.lang.String name;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BankName")
+    private java.lang.String bankName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AccountNumber")
+    private java.lang.String accountNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IFSCCode")
+    private java.lang.String iFSCCode;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Date")
+    private java.lang.String date;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ParentId")
+    private java.lang.String parentId;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.ReferEarnModel.Companion Companion = null;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getBalanceAmount() {
+        return null;
+    }
+    
+    public final void setBalanceAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getEarningAmount() {
+        return null;
+    }
+    
+    public final void setEarningAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Double getWithdrawnAmount() {
+        return null;
+    }
+    
+    public final void setWithdrawnAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.Double p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<dell.com.allindiaitr.models.ReferEarnModel> getEarningsUserListModel() {
+        return null;
+    }
+    
+    public final void setEarningsUserListModel(@org.jetbrains.annotations.Nullable()
+    java.util.List<dell.com.allindiaitr.models.ReferEarnModel> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCouponCode() {
+        return null;
+    }
+    
+    public final void setCouponCode(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAmount() {
+        return null;
+    }
+    
+    public final void setAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCreatedDate() {
+        return null;
+    }
+    
+    public final void setCreatedDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getStatus() {
+        return null;
+    }
+    
+    public final void setStatus(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getBankName() {
+        return null;
+    }
+    
+    public final void setBankName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAccountNumber() {
+        return null;
+    }
+    
+    public final void setAccountNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getIFSCCode() {
+        return null;
+    }
+    
+    public final void setIFSCCode(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getDate() {
+        return null;
+    }
+    
+    public final void setDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getParentId() {
+        return null;
+    }
+    
+    public final void setParentId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    public ReferEarnModel() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/ReferEarnModel$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/ReferEarnModel;", "getInstance", "()Ldell/com/allindiaitr/models/ReferEarnModel;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.ReferEarnModel getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

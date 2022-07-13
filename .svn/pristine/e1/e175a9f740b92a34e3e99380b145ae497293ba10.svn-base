@@ -1,0 +1,244 @@
+package dell.com.allindiaitr.submitDocument;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0012\u0010W\u001a\u00020X2\b\u0010Y\u001a\u0004\u0018\u00010BH\u0014J\b\u0010Z\u001a\u00020[H\u0002J\b\u00107\u001a\u00020XH\u0002J\"\u0010\\\u001a\u00020X2\u0006\u0010]\u001a\u00020\u00052\u0006\u0010^\u001a\u00020\u00052\b\u0010_\u001a\u0004\u0018\u000100H\u0014J\b\u0010`\u001a\u00020XH\u0016J\u0012\u0010a\u001a\u00020X2\b\u0010b\u001a\u0004\u0018\u00010cH\u0016J\u0012\u0010d\u001a\u00020X2\b\u0010e\u001a\u0004\u0018\u00010fH\u0014J\u0012\u0010g\u001a\u00020[2\b\u0010h\u001a\u0004\u0018\u00010iH\u0016J\b\u0010j\u001a\u00020XH\u0014J\b\u0010k\u001a\u00020XH\u0014J\b\u0010l\u001a\u00020XH\u0014J\b\u0010m\u001a\u00020XH\u0014J\b\u0010n\u001a\u00020XH\u0002J\u0010\u0010o\u001a\u00020\f2\u0006\u0010p\u001a\u00020qH\u0002J\b\u0010r\u001a\u00020XH\u0002R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR \u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R \u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000e\"\u0004\b\u0013\u0010\u0010R \u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u000e\"\u0004\b\u0016\u0010\u0010R \u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u000e\"\u0004\b\u0019\u0010\u0010R\u001a\u0010\u001a\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u0007\"\u0004\b\u001c\u0010\tR\u001a\u0010\u001d\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u0007\"\u0004\b\u001f\u0010\tR\u001a\u0010 \u001a\u00020!X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010#\"\u0004\b$\u0010%R\"\u0010&\u001a\b\u0012\u0004\u0012\u00020\f0\'X\u0086\u000e\u00a2\u0006\u0010\n\u0002\u0010,\u001a\u0004\b(\u0010)\"\u0004\b*\u0010+R\u0010\u0010-\u001a\u0004\u0018\u00010.X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010/\u001a\u000200X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b1\u00102\"\u0004\b3\u00104R\u001a\u00105\u001a\u000206X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u00108\"\u0004\b9\u0010:R\u001c\u0010;\u001a\u0004\u0018\u00010<X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@R\u001a\u0010A\u001a\u00020BX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR\u000e\u0010G\u001a\u00020HX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010I\u001a\u00020JX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bK\u0010L\"\u0004\bM\u0010NR\u001a\u0010O\u001a\u00020\fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bP\u0010Q\"\u0004\bR\u0010SR\u001c\u0010T\u001a\u0004\u0018\u00010\fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bU\u0010Q\"\u0004\bV\u0010S\u00a8\u0006s"}, d2 = {"Ldell/com/allindiaitr/submitDocument/ChatActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "CAMERA", "", "getCAMERA", "()I", "setCAMERA", "(I)V", "CommentArrayList", "Ljava/util/ArrayList;", "", "getCommentArrayList", "()Ljava/util/ArrayList;", "setCommentArrayList", "(Ljava/util/ArrayList;)V", "CommentTypeArrayList", "getCommentTypeArrayList", "setCommentTypeArrayList", "CreatedByArrayList", "getCreatedByArrayList", "setCreatedByArrayList", "CreatedDateArrayList", "getCreatedDateArrayList", "setCreatedDateArrayList", "GALLERY", "getGALLERY", "setGALLERY", "PERMISSIONS_REQUEST_CODE", "getPERMISSIONS_REQUEST_CODE", "setPERMISSIONS_REQUEST_CODE", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPermissions", "", "getAppPermissions", "()[Ljava/lang/String;", "setAppPermissions", "([Ljava/lang/String;)V", "[Ljava/lang/String;", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "brodcostIntent", "Landroid/content/Intent;", "getBrodcostIntent", "()Landroid/content/Intent;", "setBrodcostIntent", "(Landroid/content/Intent;)V", "chat", "Ldell/com/allindiaitr/models/Chat;", "getChat", "()Ldell/com/allindiaitr/models/Chat;", "setChat", "(Ldell/com/allindiaitr/models/Chat;)V", "chatArrayAdapter", "Ldell/com/allindiaitr/adapter/ChatArrayAdapter;", "getChatArrayAdapter", "()Ldell/com/allindiaitr/adapter/ChatArrayAdapter;", "setChatArrayAdapter", "(Ldell/com/allindiaitr/adapter/ChatArrayAdapter;)V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mMessageReceiver", "Landroid/content/BroadcastReceiver;", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "password", "getPassword", "()Ljava/lang/String;", "setPassword", "(Ljava/lang/String;)V", "postPath", "getPostPath", "setPostPath", "attachBaseContext", "", "newBase", "checkAndRequestPermissions", "", "onActivityResult", "requestCode", "resultCode", "data", "onBackPressed", "onClick", "v", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "onPause", "onRestart", "onResume", "onStop", "postChat", "saveImage", "myBitmap", "Landroid/graphics/Bitmap;", "uploadFile", "app_debug"})
+public final class ChatActivity extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> CommentTypeArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> CommentArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> CreatedByArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> CreatedDateArrayList;
+    @org.jetbrains.annotations.Nullable()
+    private dell.com.allindiaitr.adapter.ChatArrayAdapter chatArrayAdapter;
+    private int PERMISSIONS_REQUEST_CODE;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String[] appPermissions;
+    private int GALLERY;
+    private int CAMERA;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String postPath;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String password;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.Chat chat;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Intent brodcostIntent;
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    private final android.content.BroadcastReceiver mMessageReceiver = null;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getCommentTypeArrayList() {
+        return null;
+    }
+    
+    public final void setCommentTypeArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getCommentArrayList() {
+        return null;
+    }
+    
+    public final void setCommentArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getCreatedByArrayList() {
+        return null;
+    }
+    
+    public final void setCreatedByArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getCreatedDateArrayList() {
+        return null;
+    }
+    
+    public final void setCreatedDateArrayList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.adapter.ChatArrayAdapter getChatArrayAdapter() {
+        return null;
+    }
+    
+    public final void setChatArrayAdapter(@org.jetbrains.annotations.Nullable()
+    dell.com.allindiaitr.adapter.ChatArrayAdapter p0) {
+    }
+    
+    public final int getPERMISSIONS_REQUEST_CODE() {
+        return 0;
+    }
+    
+    public final void setPERMISSIONS_REQUEST_CODE(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String[] getAppPermissions() {
+        return null;
+    }
+    
+    public final void setAppPermissions(@org.jetbrains.annotations.NotNull()
+    java.lang.String[] p0) {
+    }
+    
+    public final int getGALLERY() {
+        return 0;
+    }
+    
+    public final void setGALLERY(int p0) {
+    }
+    
+    public final int getCAMERA() {
+        return 0;
+    }
+    
+    public final void setCAMERA(int p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPostPath() {
+        return null;
+    }
+    
+    public final void setPostPath(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPassword() {
+        return null;
+    }
+    
+    public final void setPassword(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.Chat getChat() {
+        return null;
+    }
+    
+    public final void setChat(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.Chat p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Intent getBrodcostIntent() {
+        return null;
+    }
+    
+    public final void setBrodcostIntent(@org.jetbrains.annotations.NotNull()
+    android.content.Intent p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void onPause() {
+    }
+    
+    @java.lang.Override()
+    protected void onRestart() {
+    }
+    
+    @java.lang.Override()
+    protected void onStop() {
+    }
+    
+    private final boolean checkAndRequestPermissions() {
+        return false;
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    private final void getChat() {
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.Nullable()
+    android.view.View v) {
+    }
+    
+    @java.lang.Override()
+    protected void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    private final java.lang.String saveImage(android.graphics.Bitmap myBitmap) {
+        return null;
+    }
+    
+    private final void uploadFile() {
+    }
+    
+    private final void postChat() {
+    }
+    
+    @java.lang.Override()
+    protected void onResume() {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public ChatActivity() {
+        super();
+    }
+}

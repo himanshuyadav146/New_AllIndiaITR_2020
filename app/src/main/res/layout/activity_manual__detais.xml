@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manualProcess.Manual_DetaisActivity">
+
+    <include
+        layout="@layout/app_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty">
+
+            <TextView
+                android:id="@+id/tv_formtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/sixteen"
+                android:text="@string/mainual_formtitle">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mainual_form_subtitle">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen">
+                <TextView
+                    android:id="@+id/tv_incom_sal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/mainual_form_details_sal1">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_incom_sa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true">
+                </TextView>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_incom_sa2"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen">
+                <TextView
+                    android:id="@+id/tv_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/mainual_form_details_house">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_house2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true">
+                </TextView>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_house2"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen">
+                <TextView
+                    android:id="@+id/tv_deduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/mainual_form_details_deduction">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_deduction2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true">
+                </TextView>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_deduction2"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen">
+                <TextView
+                    android:id="@+id/tv_taxable_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/mainual_form_details_taxable">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_taxable_income2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true">
+                </TextView>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_taxable_income2"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen">
+                <TextView
+                    android:id="@+id/tv_tds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/mainual_form_details_tds">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_taxable_tds2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true">
+                </TextView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:id="@+id/requestCallbackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/fifteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/fifteen"
+        android:layout_marginBottom="@dimen/ten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_background"
+        android:textSize="@dimen/text_size_fourteen"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"/>
+</RelativeLayout>

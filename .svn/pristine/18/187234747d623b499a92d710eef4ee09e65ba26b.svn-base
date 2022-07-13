@@ -1,0 +1,14 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_order_payment.view.*
+
+class CardOrderPaymentViewHolder (itemView: View): RecyclerView.ViewHolder(itemView){
+
+    val mImg_package=itemView.img_package
+    val mTv_package_title=itemView.tv_package_title
+    val mTv_package_desc=itemView.tv_package_desc
+    val mSwitch_package=itemView.switch_package
+    val mTv_package_cost=itemView.tv_package_cost
+}

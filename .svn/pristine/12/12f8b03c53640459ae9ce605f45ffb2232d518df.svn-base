@@ -1,0 +1,195 @@
+package dell.com.allindiaitr.submitDocument;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\b\u0010?\u001a\u00020@H\u0002J\b\u0010A\u001a\u00020@H\u0002J\b\u0010B\u001a\u00020@H\u0002J\b\u0010C\u001a\u00020@H\u0002J\u0012\u0010D\u001a\u00020@2\b\u0010E\u001a\u0004\u0018\u00010)H\u0014J\b\u0010F\u001a\u00020@H\u0002J\b\u0010G\u001a\u00020@H\u0002J\b\u0010H\u001a\u00020@H\u0002J\b\u0010I\u001a\u00020@H\u0002J\b\u0010J\u001a\u00020@H\u0002J\u0006\u0010K\u001a\u00020@J\b\u0010L\u001a\u00020@H\u0002J\b\u0010M\u001a\u00020@H\u0002J\b\u0010N\u001a\u00020@H\u0016J\b\u0010O\u001a\u00020@H\u0002J\u0012\u0010P\u001a\u00020@2\b\u0010Q\u001a\u0004\u0018\u00010RH\u0016J\u0012\u0010S\u001a\u00020@2\b\u0010T\u001a\u0004\u0018\u00010UH\u0014J\u0012\u0010V\u001a\u00020W2\b\u0010X\u001a\u0004\u0018\u00010YH\u0016R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\f\u001a\u00020\rX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R \u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R \u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0016\"\u0004\b\u001b\u0010\u0018R\u001c\u0010\u001c\u001a\u0004\u0018\u00010\u001dX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u001a\u0010\"\u001a\u00020#X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\'R\u001a\u0010(\u001a\u00020)X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R\u001a\u0010.\u001a\u00020\u0014X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u00100\"\u0004\b1\u00102R\u001a\u00103\u001a\u00020#X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010%\"\u0004\b5\u0010\'R\u001c\u00106\u001a\u0004\u0018\u00010\u001dX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u001f\"\u0004\b8\u0010!R\u001a\u00109\u001a\u00020:X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010<\"\u0004\b=\u0010>\u00a8\u0006Z"}, d2 = {"Ldell/com/allindiaitr/submitDocument/ITROrderStatusActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "childParams", "Landroid/widget/FrameLayout$LayoutParams;", "getChildParams", "()Landroid/widget/FrameLayout$LayoutParams;", "setChildParams", "(Landroid/widget/FrameLayout$LayoutParams;)V", "efilingStatusFieldList", "", "Ldell/com/allindiaitr/models/NewItrBase;", "getEfilingStatusFieldList", "()Ljava/util/List;", "setEfilingStatusFieldList", "(Ljava/util/List;)V", "efilingStatusesList", "getEfilingStatusesList", "setEfilingStatusesList", "email_id", "", "getEmail_id$app_debug", "()Ljava/lang/String;", "setEmail_id$app_debug", "(Ljava/lang/String;)V", "expParentParams", "Landroid/widget/LinearLayout$LayoutParams;", "getExpParentParams", "()Landroid/widget/LinearLayout$LayoutParams;", "setExpParentParams", "(Landroid/widget/LinearLayout$LayoutParams;)V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "newItrBase", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "setNewItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "parentParams", "getParentParams", "setParentParams", "phn_number", "getPhn_number$app_debug", "setPhn_number$app_debug", "prevExpandPosition", "", "getPrevExpandPosition", "()I", "setPrevExpandPosition", "(I)V", "activeEFiled", "", "activeExpertAssign", "activePaymentSuccess", "activeReviewInfo", "attachBaseContext", "newBase", "buttonDisable", "buttonEnable", "getStatus", "isActive", "isVisibleEFiledLayout", "isVisibleExpertAssignLayout", "isVisiblePaymentSuccessLayout", "isVisibleReviewInfoLayout", "onBackPressed", "onCall", "onClick", "v", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "", "item", "Landroid/view/MenuItem;", "app_debug"})
+public final class ITROrderStatusActivity extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    private dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    private int prevExpandPosition;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusesList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.List<dell.com.allindiaitr.models.NewItrBase> efilingStatusFieldList;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.NewItrBase newItrBase;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String phn_number;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String email_id;
+    @org.jetbrains.annotations.NotNull()
+    public android.widget.LinearLayout.LayoutParams parentParams;
+    @org.jetbrains.annotations.NotNull()
+    public android.widget.LinearLayout.LayoutParams expParentParams;
+    @org.jetbrains.annotations.NotNull()
+    public android.widget.FrameLayout.LayoutParams childParams;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    public final int getPrevExpandPosition() {
+        return 0;
+    }
+    
+    public final void setPrevExpandPosition(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<dell.com.allindiaitr.models.NewItrBase> getEfilingStatusesList() {
+        return null;
+    }
+    
+    public final void setEfilingStatusesList(@org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<dell.com.allindiaitr.models.NewItrBase> getEfilingStatusFieldList() {
+        return null;
+    }
+    
+    public final void setEfilingStatusFieldList(@org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    public final void setNewItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhn_number$app_debug() {
+        return null;
+    }
+    
+    public final void setPhn_number$app_debug(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail_id$app_debug() {
+        return null;
+    }
+    
+    public final void setEmail_id$app_debug(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.widget.LinearLayout.LayoutParams getParentParams() {
+        return null;
+    }
+    
+    public final void setParentParams(@org.jetbrains.annotations.NotNull()
+    android.widget.LinearLayout.LayoutParams p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.widget.LinearLayout.LayoutParams getExpParentParams() {
+        return null;
+    }
+    
+    public final void setExpParentParams(@org.jetbrains.annotations.NotNull()
+    android.widget.LinearLayout.LayoutParams p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.widget.FrameLayout.LayoutParams getChildParams() {
+        return null;
+    }
+    
+    public final void setChildParams(@org.jetbrains.annotations.NotNull()
+    android.widget.FrameLayout.LayoutParams p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.Nullable()
+    android.view.View v) {
+    }
+    
+    private final void onCall() {
+    }
+    
+    private final void getStatus() {
+    }
+    
+    private final void buttonEnable() {
+    }
+    
+    private final void buttonDisable() {
+    }
+    
+    private final void isVisiblePaymentSuccessLayout() {
+    }
+    
+    public final void isVisibleExpertAssignLayout() {
+    }
+    
+    private final void isVisibleReviewInfoLayout() {
+    }
+    
+    private final void isVisibleEFiledLayout() {
+    }
+    
+    private final void isActive() {
+    }
+    
+    private final void activePaymentSuccess() {
+    }
+    
+    private final void activeExpertAssign() {
+    }
+    
+    private final void activeReviewInfo() {
+    }
+    
+    private final void activeEFiled() {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public ITROrderStatusActivity() {
+        super();
+    }
+}

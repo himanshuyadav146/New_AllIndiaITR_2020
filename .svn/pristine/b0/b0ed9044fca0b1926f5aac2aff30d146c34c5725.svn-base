@@ -1,0 +1,155 @@
+package dell.com.allindiaitr.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u00109\u001a\u00020:H\u0002J\u0012\u0010;\u001a\u00020:2\b\u0010<\u001a\u0004\u0018\u00010=H\u0016J\u0012\u0010>\u001a\u00020:2\b\u0010?\u001a\u0004\u0018\u00010(H\u0016J&\u0010@\u001a\u0004\u0018\u00010A2\u0006\u0010B\u001a\u00020C2\b\u0010D\u001a\u0004\u0018\u00010E2\b\u0010<\u001a\u0004\u0018\u00010=H\u0016R \u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u000bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR \u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0007\"\u0004\b\u001d\u0010\tR\u001a\u0010\u001e\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u0018\"\u0004\b \u0010\u001aR\u001a\u0010!\u001a\u00020\"X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R\u001a\u0010\'\u001a\u00020(X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R \u0010-\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010\u0007\"\u0004\b/\u0010\tR\u001a\u00100\u001a\u000201X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R\u001a\u00106\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u0018\"\u0004\b8\u0010\u001a\u00a8\u0006F"}, d2 = {"Ldell/com/allindiaitr/home/EarningsFragment;", "Landroidx/fragment/app/Fragment;", "()V", "amountList", "Ljava/util/ArrayList;", "", "getAmountList", "()Ljava/util/ArrayList;", "setAmountList", "(Ljava/util/ArrayList;)V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "getAppPreferences", "()Ldell/com/allindiaitr/utils/AppPreferences;", "setAppPreferences", "(Ldell/com/allindiaitr/utils/AppPreferences;)V", "balanceString", "getBalanceString", "()Ljava/lang/String;", "setBalanceString", "(Ljava/lang/String;)V", "dateList", "getDateList", "setDateList", "earningString", "getEarningString", "setEarningString", "fragmentCommunicator", "Ldell/com/allindiaitr/interfaces/FragmentCommunicator;", "getFragmentCommunicator", "()Ldell/com/allindiaitr/interfaces/FragmentCommunicator;", "setFragmentCommunicator", "(Ldell/com/allindiaitr/interfaces/FragmentCommunicator;)V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "nameList", "getNameList", "setNameList", "viewPager", "Landroidx/viewpager/widget/ViewPager;", "getViewPager", "()Landroidx/viewpager/widget/ViewPager;", "setViewPager", "(Landroidx/viewpager/widget/ViewPager;)V", "withdrawlString", "getWithdrawlString", "setWithdrawlString", "getReferEarnings", "", "onActivityCreated", "savedInstanceState", "Landroid/os/Bundle;", "onAttach", "context", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "app_debug"})
+public final class EarningsFragment extends androidx.fragment.app.Fragment {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String balanceString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String earningString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String withdrawlString;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> nameList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> amountList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> dateList;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.FragmentCommunicator fragmentCommunicator;
+    @org.jetbrains.annotations.NotNull()
+    public androidx.viewpager.widget.ViewPager viewPager;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.utils.AppPreferences getAppPreferences() {
+        return null;
+    }
+    
+    public final void setAppPreferences(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.utils.AppPreferences p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getBalanceString() {
+        return null;
+    }
+    
+    public final void setBalanceString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getEarningString() {
+        return null;
+    }
+    
+    public final void setEarningString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getWithdrawlString() {
+        return null;
+    }
+    
+    public final void setWithdrawlString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getNameList() {
+        return null;
+    }
+    
+    public final void setNameList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getAmountList() {
+        return null;
+    }
+    
+    public final void setAmountList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getDateList() {
+        return null;
+    }
+    
+    public final void setDateList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.FragmentCommunicator getFragmentCommunicator() {
+        return null;
+    }
+    
+    public final void setFragmentCommunicator(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.FragmentCommunicator p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.viewpager.widget.ViewPager getViewPager() {
+        return null;
+    }
+    
+    public final void setViewPager(@org.jetbrains.annotations.NotNull()
+    androidx.viewpager.widget.ViewPager p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onActivityCreated(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    public void onAttach(@org.jetbrains.annotations.Nullable()
+    android.content.Context context) {
+    }
+    
+    private final void getReferEarnings() {
+    }
+    
+    public EarningsFragment() {
+        super();
+    }
+}

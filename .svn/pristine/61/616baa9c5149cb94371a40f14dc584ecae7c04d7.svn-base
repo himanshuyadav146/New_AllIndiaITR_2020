@@ -1,0 +1,85 @@
+package dell.com.allindiaitr.adapter
+
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import dell.com.allindiaitr.R
+import dell.com.allindiaitr.holders.DashboardHolder
+import dell.com.allindiaitr.submitDocument.StartEFilingActivity
+import dell.com.allindiaitr.models.NewItrBase
+import dell.com.allindiaitr.usefultools.HouseRentCalculatorActivity
+import dell.com.allindiaitr.usefultools.IncomeTaxCalculatorActivity
+import dell.com.allindiaitr.usefultools.NewRentReceiptActivity
+import dell.com.allindiaitr.usefultools.RentReceiptActivity
+
+class DashboardAdapter(private val mContext: Context,
+                       private val heading: List<String>,
+                       private val description: List<String>,
+                       private val images: List<Int>): RecyclerView.Adapter<DashboardHolder>() {
+
+    var newItrBase = NewItrBase.instance
+
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): DashboardHolder {
+        return DashboardHolder(
+            LayoutInflater.from(mContext).inflate(
+                R.layout.card_services,
+                p0,
+                false
+            )
+        )
+    }
+
+    override fun getItemCount(): Int {
+        return heading.size
+    }
+
+    override fun onBindViewHolder(p0: DashboardHolder, p1: Int) {
+        p0.heading_textView?.text = heading[p1].toString()
+        p0.desc_textView?.text = description[p1].toString()
+        p0.service_imageView?.setImageResource(images[p1])
+        if (p1 == 1 || p1 == 2 || p1 == 3)
+        {
+            p0.free_imageView?.setImageResource(R.drawable.ic_free)
+        }
+        else {
+            p0.free_imageView?.visibility = View.GONE
+        }
+        p0.itemView.setOnClickListener {
+            when(p1){
+                0 -> {
+                    newItrBase.orderMode = "Orders"
+                    val intent = Intent(mContext, StartEFilingActivity::class.java)
+//                    (mContext as Activity).finish()
+//                    (mContext).overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                    mContext.startActivity(intent)
+
+                }
+                1 -> {
+                    val intent = Intent(mContext, IncomeTaxCalculatorActivity::class.java)
+                    (mContext as Activity).overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                    mContext.startActivity(intent)
+                }
+                2 -> {
+                    val intent = Intent(mContext, HouseRentCalculatorActivity::class.java)
+                    (mContext as Activity).overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                    mContext.startActivity(intent)
+                }
+                3 -> {
+//                    val intent = Intent(mContext, RentReceiptActivity::class.java)
+//                    (mContext as Activity).overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+//                    mContext.startActivity(intent)
+
+
+                    val intent = Intent(mContext, NewRentReceiptActivity::class.java)
+                    (mContext as Activity).overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                    mContext.startActivity(intent)
+                }
+            }
+        }
+    }
+
+}

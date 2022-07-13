@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:id="@+id/activity_status_update_details"
+                tools:context=".submitDocument.StatusUpdateDetailsActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/btn_continue">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fifteen">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_details"
+                    android:textSize="@dimen/text_size_fourteen"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginLeft="@dimen/fifteen" />
+
+            <LinearLayout
+                    android:id="@+id/linearlayout_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/fifteen">
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/linear_upload_form16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="65dp"
+                    android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/card_uploadform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:layout_marginBottom="5dp"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="1dp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                app:srcCompat="@drawable/ic_camera"/>
+
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                app:srcCompat="@drawable/ic_upload"
+                                android:tint="@color/colorPrimary"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/fifteen"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginRight="@dimen/fifteen"
+                                android:layout_marginLeft="@dimen/fifteen"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:gravity="center_vertical"
+                                android:layout_centerHorizontal="true">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/upload_form16_pension"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/text_size_sixteen"
+                                    android:textColor="@color/light_black"
+                                    android:textStyle="normal"
+                                    android:fontFamily="sans-serif-medium"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/upload_form16_instruction"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_grey"/>
+
+                <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/upload_section"
+                        android:layout_above="@+id/bottom_section">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:id="@+id/listLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/my_recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clipToPadding="false"
+                                    android:paddingBottom="16dp"
+                                    android:paddingTop="16dp"
+                                    android:scrollbars="vertical" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/button_background"
+            android:text="@string/cont"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_fourteen"/>
+
+</RelativeLayout>

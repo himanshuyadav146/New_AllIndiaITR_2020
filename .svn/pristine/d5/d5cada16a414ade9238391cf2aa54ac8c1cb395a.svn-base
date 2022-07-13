@@ -1,0 +1,929 @@
+package dell.com.allindiaitr.submitDocument
+
+import android.app.Activity
+import android.content.ActivityNotFoundException
+import android.content.Context
+import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
+import android.graphics.Typeface
+import android.net.Uri
+import android.os.Build
+import android.os.Bundle
+import android.util.TypedValue
+import android.view.MenuItem
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.res.ResourcesCompat
+import androidx.core.text.HtmlCompat
+import androidx.core.view.ViewCompat
+import dell.com.allindiaitr.R
+import dell.com.allindiaitr.home.AllOrdersActivity
+import dell.com.allindiaitr.home.DashboardActivity
+import dell.com.allindiaitr.interfaces.API_Interface
+import dell.com.allindiaitr.models.*
+import dell.com.allindiaitr.utils.*
+import kotlinx.android.synthetic.main.activity_itrorder_status.*
+import kotlinx.android.synthetic.main.activity_itrorder_status.toolbar
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
+class ITROrderStatusActivity : AppCompatActivity(), View.OnClickListener {
+
+    lateinit var mContext: Context
+    private var appPreferences: AppPreferences? = null
+    lateinit var apI_Interface : API_Interface
+    var prevExpandPosition: Int = -1
+    lateinit var efilingStatusesList : List<NewItrBase>
+    var efilingStatusFieldList: List<NewItrBase> = emptyList()
+    var newItrBase = NewItrBase.instance
+    internal var phn_number: String? = null
+    internal var email_id:String? = null
+    lateinit var parentParams: LinearLayout.LayoutParams
+    lateinit var expParentParams:LinearLayout.LayoutParams
+    lateinit var childParams: FrameLayout.LayoutParams
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_itrorder_status)
+        mContext = this
+        appPreferences = AppPreferences(this)
+        apI_Interface = APIClient().getClient().create(API_Interface::class.java)
+
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        toolbar_title.text =getString(R.string.title_orderstatus)
+        if (ConnectionDetector().isConnectingToInternet(mContext))
+            getStatus()
+        else
+            Toast.makeText(mContext, resources.getString(R.string.error_message), Toast.LENGTH_SHORT).show()
+
+        parentParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT)
+        parentParams.leftMargin = 7
+        childParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT)
+        childParams.bottomMargin = 50
+        childParams.rightMargin = 7
+        expParentParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT)
+
+        if (newItrBase.itrStatus == "payment success") {
+            rl_inprogress.visibility = RelativeLayout.VISIBLE
+            rl_completed.visibility = RelativeLayout.GONE
+            img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+            tv_status.text = "ITR Inprogress"
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                tv_status.setTextColor(mContext.getColor(R.color.red))
+            else
+                tv_status.setTextColor(Color.parseColor("#FF6463"))
+            rl_chat.visibility = View.VISIBLE
+            btn_e_verify.visibility = View.GONE
+            note.visibility = View.GONE
+
+        }
+        else if (newItrBase.itrStatus == "ITR Inprogress")
+        {
+            rl_inprogress.visibility = RelativeLayout.VISIBLE
+            rl_completed.visibility = RelativeLayout.GONE
+            img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+            tv_status.text = "ITR Inprogress"
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                tv_status.setTextColor(mContext.getColor(R.color.red))
+            else
+                tv_status.setTextColor(Color.parseColor("#FF6463"))
+            rl_chat.visibility = View.VISIBLE
+            btn_e_verify.visibility = View.GONE
+            note.visibility = View.GONE
+        }
+        else {
+            if (newItrBase.eVerifyPaymentDone == false) {
+                rl_inprogress.visibility = RelativeLayout.GONE
+                rl_completed.visibility = RelativeLayout.VISIBLE
+                tv_acknowledgementno.text = newItrBase.acknowledgementNo.toString()
+                img_itr_status.setImageResource(R.drawable.ic_e_filed)
+                tv_status.text = "E-Filed"
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    tv_status.setTextColor(mContext.getColor(R.color.colorPrimary))
+                else
+                    tv_status.setTextColor(Color.parseColor("#00B894"))
+                rl_chat.visibility = View.GONE
+                btn_e_verify.visibility = View.VISIBLE
+                note.visibility = View.VISIBLE
+            }
+
+//            else {
+//                rl_inprogress.visibility = RelativeLayout.GONE
+//                rl_completed.visibility = RelativeLayout.VISIBLE
+//                tv_acknowledgementno.text = newItrBase.acknowledgementNo.toString()
+//                img_itr_status.setImageResource(R.drawable.ic_e_filed)
+//                tv_status.text = "E-Filed"
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+//                    tv_status.setTextColor(mContext.getColor(R.color.colorPrimary))
+//                else
+//                    tv_status.setTextColor(Color.parseColor("#00B894"))
+//                rl_chat.visibility = View.VISIBLE
+//                btn_e_verify.visibility = View.GONE
+//                note.visibility = View.GONE
+//            }
+
+//            if (newItrBase.rateUsVisible) {
+//                AlertDialogueManager().showRateUsView(mContext, newItrBase.acknowledgementNo.toString())
+//            }
+        }
+
+        ll_payment_success.setOnClickListener(this)
+        ll_expert_assign.setOnClickListener(this)
+        ll_review_info.setOnClickListener(this)
+        ll_e_filed.setOnClickListener(this)
+        ll_payment_success.isClickable = false
+        ll_expert_assign.isClickable = false
+        ll_review_info.isClickable = false
+        ll_e_filed.isClickable = false
+        btn_chat.setOnClickListener(this)
+        btn_call.setOnClickListener(this)
+        btn_email.setOnClickListener(this)
+        btn_e_verify.setOnClickListener(this)
+    }
+
+//    private fun initializer(){
+//
+//        if (expandable_list_view != null) {
+//
+//            expandable_list_view!!.setOnGroupExpandListener { groupPosition ->
+//                if (prevExpandPosition != -1
+//                    && groupPosition != prevExpandPosition) {
+//                    expandable_list_view.collapseGroup(prevExpandPosition)
+//                }
+//                prevExpandPosition = groupPosition
+//            }
+//
+//            expandable_list_view!!.setOnGroupCollapseListener {
+//            }
+//
+//            expandable_list_view!!.setOnChildClickListener { _, _, _, _, _ ->
+//                false
+//            }
+//        }
+//    }
+
+    override fun attachBaseContext(newBase:Context?){
+        mContext= newBase!!
+        appPreferences= AppPreferences(newBase!!)
+        val lang:String=appPreferences?.selectedLanguage!!
+        //  setAppLocal(lang)
+        super.attachBaseContext(MyContextWrapper.wrap(newBase,lang))
+
+    }
+
+
+    override fun onClick(v: View?) {
+        when(v!!.id) {
+            R.id.ll_payment_success -> {
+                isVisiblePaymentSuccessLayout()
+                img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                tv_status.text = "ITR Inprogress"
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    tv_status.setTextColor(mContext.getColor(R.color.red))
+                else
+                    tv_status.setTextColor(Color.parseColor("#FF6463"))
+            }
+            R.id.ll_expert_assign -> {
+                isVisibleExpertAssignLayout()
+                img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                tv_status.text = "ITR Inprogress"
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    tv_status.setTextColor(mContext.getColor(R.color.red))
+                else
+                    tv_status.setTextColor(Color.parseColor("#FF6463"))
+            }
+            R.id.ll_review_info -> {
+                isVisibleReviewInfoLayout()
+                img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                tv_status.text = "ITR Inprogress"
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    tv_status.setTextColor(mContext.getColor(R.color.red))
+                else
+                    tv_status.setTextColor(Color.parseColor("#FF6463"))
+
+            }
+            R.id.ll_e_filed -> {
+                isVisibleEFiledLayout()
+                img_itr_status.setImageResource(R.drawable.ic_e_filed)
+                tv_status.text = "E-Filed"
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    tv_status.setTextColor(mContext.getColor(R.color.colorPrimary))
+                else
+                    tv_status.setTextColor(Color.parseColor("#00B894"))
+            }
+            R.id.btn_chat -> {
+                val intent = Intent(applicationContext, ChatActivity::class.java)
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                startActivity(intent)
+            }
+            R.id.rl_chat -> {
+                val intent = Intent(applicationContext, ChatActivity::class.java)
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                startActivity(intent)
+            }
+            R.id.btn_e_verify -> {
+                val intent = Intent(applicationContext, EVerifyActivity::class.java)
+
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+                startActivity(intent)
+            }
+            R.id.btn_call -> {
+                onCall()
+            }
+            R.id.btn_email -> {
+                try {
+                    if (email_id == null || email_id!!.isEmpty()) {
+                        btn_email.isEnabled = false
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                            btn_email.setCardBackgroundColor(mContext.getColorStateList(R.color.lightest_grey_forstatus))
+                        else
+                            btn_email.setCardBackgroundColor(Color.parseColor("#F8F8F8"))
+                    } else {
+                        btn_email.isEnabled = true
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                            btn_email.setCardBackgroundColor(mContext.getColorStateList(R.color.colorPrimary))
+                        else
+                            btn_email.setCardBackgroundColor(Color.parseColor("#00B894"))
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("mailto:$email_id"))
+                        startActivity(intent)
+                    }
+                } catch (e: ActivityNotFoundException) {
+                    //TODO smth
+                }
+
+            }
+        }
+    }
+
+    private fun onCall(){
+        if (phn_number == null || phn_number!!.isEmpty()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                btn_call.setCardBackgroundColor(mContext.getColorStateList(R.color.lightest_grey_forstatus))
+            else
+                btn_call.setCardBackgroundColor(Color.parseColor("#F8F8F8"))
+        }
+        else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                btn_call.setCardBackgroundColor(mContext.getColorStateList(R.color.dark_yellow))
+            else
+                btn_call.setCardBackgroundColor(Color.parseColor("#FFAB2A"))
+            val callIntent = Intent(Intent.ACTION_DIAL)
+            callIntent.data = Uri.parse("tel:$phn_number")
+            startActivity(callIntent)
+        }
+    }
+
+    private fun getStatus(){
+        var dialog = AlertDialogueManager(mContext,getString(R.string.dilog_pleasewait))
+
+        val call = apI_Interface.getITRStatus(newItrBase.selectedUser_userAssessmentYearUserID.toString())
+        call.enqueue(object : Callback<NewItrBase>{
+            override fun onResponse(call: Call<NewItrBase>?, response: Response<NewItrBase>?) {
+                try {
+                    if (response!!.isSuccessful){
+                        dialog.hideDialog()
+                        username_textView.text = "${response.body().firstName} ${response.body().lastName}"
+//                        pan_textView.text = "PAN No.: ${response.body().panNumber}"
+//                        dob_textView.text = "DOB: ${response.body().dateOfBirth}"
+//                        mobile_textView.text = "Mob No.: +91 ${response.body().phoneNumber}"
+
+                        pan_textView.text = getString(R.string.user_pan)+": ${response.body().panNumber}"
+                        dob_textView.text = getString(R.string.user_dob)+": ${response.body().dateOfBirth}"
+                        mobile_textView.text = getString(R.string.orderstatus_mobno)+": +91 ${response.body().phoneNumber}"
+
+                        if (response.body().efilingStatuses!!.isNotEmpty()) {
+                            efilingStatusesList = response.body().efilingStatuses!!
+                            if (response.body().efilingStatusField != null)
+                                efilingStatusFieldList = response.body().efilingStatusField!!
+
+                            for (i in efilingStatusesList.indices) {
+                                if (efilingStatusesList[i].status.equals("Payment Success") && efilingStatusesList[i].isActivate == true)
+                                {
+                                    ll_payment_success.isClickable = true
+                                    tv_payment_desc.text = efilingStatusesList[i].description?.takeUnless { it.isEmpty() } ?: ""
+                                    expandlayout_payment_success.isExpanded = true
+                                    isVisiblePaymentSuccessLayout()
+
+                                    img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                                    tv_status.text = "ITR Inprogress"
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                        tv_status.setTextColor(mContext.getColor(R.color.red))
+                                    else
+                                        tv_status.setTextColor(Color.parseColor("#FF6463"))
+                                    buttonDisable()
+                                }
+                                if (efilingStatusesList[i].status.equals("Assign Expert") && efilingStatusesList[i].isActivate == true)
+                                {
+                                    ll_payment_success.isClickable = false
+                                    ll_expert_assign.isClickable = true
+
+                                    tv_taxexpert.text = efilingStatusesList[i].description?.takeUnless { it.isEmpty() } ?: ""
+                                    expandlayout_expert_assign.isExpanded = true
+                                    isVisibleExpertAssignLayout()
+
+                                    img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                                    tv_status.text = "ITR Inprogress"
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                        tv_status.setTextColor(mContext.getColor(R.color.red))
+                                    else
+                                        tv_status.setTextColor(Color.parseColor("#FF6463"))
+
+                                    buttonEnable()
+
+                                    phn_number = efilingStatusesList[i].phoneNumber?.takeUnless { it.isEmpty() } ?: ""
+                                    email_id = efilingStatusesList[i].emailId?.takeUnless { it.isEmpty() } ?: ""
+
+                                }
+                                if (efilingStatusesList[i].status.equals("Review Information") && efilingStatusesList[i].isActivate == true)
+                                {
+                                    ll_payment_success.isClickable = false
+                                    ll_expert_assign.isClickable = true
+                                    ll_review_info.isClickable = true
+
+                                    tv_review_info.text = "Thank you for providing the details to us. Our Tax Experts will review them and will contact you for additional details."
+                                    expandlayout_review_info.isExpanded = true
+                                    isVisibleReviewInfoLayout()
+
+                                    img_itr_status.setImageResource(R.drawable.ic_itr_inprogress)
+                                    tv_status.text = "ITR Inprogress"
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                        tv_status.setTextColor(mContext.getColor(R.color.red))
+                                    else
+                                        tv_status.setTextColor(Color.parseColor("#FF6463"))
+
+                                    for (j in efilingStatusFieldList.indices) {
+                                        if (efilingStatusFieldList.isEmpty()) {
+                                            tv_review_info.text = efilingStatusesList[i].description?.takeUnless { it.isEmpty() } ?: ""
+                                            btn_review_info.visibility = View.GONE
+                                            ll_show.visibility = View.GONE
+                                        } else {
+                                            newItrBase.efilingStatusField = efilingStatusFieldList
+                                            tv_review_info.text =
+                                                "Some of the information mentioned-below is incorrect. Kindly update."
+                                            btn_review_info.visibility = View.VISIBLE
+                                            ll_show.visibility = View.VISIBLE
+                                            val tv = TextView(applicationContext)
+                                            tv.text = HtmlCompat.fromHtml("&#9670;  " + efilingStatusFieldList[j].label, HtmlCompat.FROM_HTML_MODE_LEGACY)
+                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                                tv.setTextColor(mContext.getColor(R.color.lighter_black))
+                                            else
+                                                tv.setTextColor(Color.parseColor("#505050"))
+                                            tv.typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
+                                            ll_show.addView(tv)
+                                            btn_review_info.setOnClickListener {
+                                                val intent = Intent(applicationContext, StatusUpdateDetailsActivity::class.java)
+                                                finish()
+//                                                intent.putExtra("LIST", efilingStatusFieldList as Serializable)
+                                                startActivity(intent)
+                                            }
+                                        }
+                                    }
+                                    buttonEnable()
+                                }
+                                if (efilingStatusesList[i].status.equals("Return Filed") && efilingStatusesList[i].isActivate == true)
+                                {
+                                    ll_payment_success.isClickable = false
+                                    ll_expert_assign.isClickable = true
+                                    ll_review_info.isClickable = true
+                                    ll_e_filed.isClickable = true
+
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                        img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+                                    else
+                                        ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+
+                                    expandlayout_e_filed.isExpanded = true
+                                    isVisibleEFiledLayout()
+
+                                    if (newItrBase.eVerifyPaymentDone == false) {
+                                        rl_inprogress.visibility = RelativeLayout.GONE
+                                        rl_completed.visibility = RelativeLayout.VISIBLE
+                                        tv_acknowledgementno.text = newItrBase.acknowledgementNo.toString()
+                                        img_itr_status.setImageResource(R.drawable.ic_e_filed)
+                                        tv_status.text = "E-Filed"
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                            tv_status.setTextColor(mContext.getColor(R.color.colorPrimary))
+                                        else
+                                            tv_status.setTextColor(Color.parseColor("#00B894"))
+                                        rl_chat.visibility = View.GONE
+                                        btn_e_verify.visibility = View.VISIBLE
+                                        note.visibility = View.VISIBLE
+                                    }
+                                    else {
+                                        rl_inprogress.visibility = RelativeLayout.GONE
+                                        rl_completed.visibility = RelativeLayout.VISIBLE
+                                        tv_acknowledgementno.text = newItrBase.acknowledgementNo.toString()
+                                        img_itr_status.setImageResource(R.drawable.ic_e_filed)
+                                        tv_status.text = "E-Filed"
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                                            tv_status.setTextColor(mContext.getColor(R.color.colorPrimary))
+                                        else
+                                            tv_status.setTextColor(Color.parseColor("#00B894"))
+                                        rl_chat.visibility = View.VISIBLE
+                                        btn_e_verify.visibility = View.GONE
+                                        note.visibility = View.GONE
+                                    }
+                                    if (newItrBase.rateUsVisible) {
+                                     AlertDialogueManager().showRateUsView(mContext, newItrBase.acknowledgementNo.toString())
+                                        }
+                                }
+                            }
+                        }
+                    }
+                    else {
+                        dialog.hideDialog()
+                        Toast.makeText(mContext, resources.getString(R.string.error_message), Toast.LENGTH_SHORT).show()
+                    }
+                }
+                catch (e: Exception){
+                    dialog.hideDialog()
+                    Toast.makeText(mContext, resources.getString(R.string.error_message), Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<NewItrBase>?, t: Throwable?) {
+                dialog.hideDialog()
+                Toast.makeText(mContext, resources.getString(R.string.error_message), Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
+    private fun buttonEnable() {
+        btn_call.isEnabled = true
+        btn_email.isEnabled = true
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            btn_call.setCardBackgroundColor(mContext.getColorStateList(R.color.dark_yellow))
+            btn_email.setCardBackgroundColor(mContext.getColorStateList(R.color.colorPrimary))
+        }
+        else {
+            btn_call.setCardBackgroundColor(Color.parseColor("#FFAB2A"))
+            btn_email.setCardBackgroundColor(Color.parseColor("#00B894"))
+        }
+    }
+
+    private fun buttonDisable() {
+        btn_call.isEnabled = false
+        btn_email.isEnabled = false
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            btn_call.setCardBackgroundColor(mContext.getColorStateList(R.color.lightest_grey_forstatus))
+            btn_email.setCardBackgroundColor(mContext.getColorStateList(R.color.lightest_grey_forstatus))
+        }
+        else {
+            btn_call.setCardBackgroundColor(Color.parseColor("#F8F8F8"))
+            btn_email.setCardBackgroundColor(Color.parseColor("#F8F8F8"))
+        }
+    }
+
+    private fun isVisiblePaymentSuccessLayout() {
+        expandlayout_payment_success.expand()
+        expandlayout_expert_assign.collapse()
+        expandlayout_review_info.collapse()
+        expandlayout_e_filed.collapse()
+
+        img_payment_success.setImageResource(R.drawable.ic_check_black_24dp)
+        img_payment_success.requestLayout()
+        img_payment_success.layoutParams.height = resources.getDimension(R.dimen.expanded_dimen).toInt()
+        img_payment_success.layoutParams.width = resources.getDimension(R.dimen.expanded_dimen).toInt()
+
+        img_expert_assign.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_expert_assign.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        img_review_info.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_review_info.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        img_e_filed.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_e_filed.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_payment_success.setColorFilter(mContext.getColor(R.color.white))
+            img_expert_assign.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            img_review_info.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            img_e_filed.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_review_info.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+        }
+        else {
+            img_payment_success.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_expert_assign.setColorFilter(Color.parseColor("#F8F8F8"))
+            img_review_info.setColorFilter(Color.parseColor("#F8F8F8"))
+            img_e_filed.setColorFilter(Color.parseColor("#F8F8F8"))
+            view_payment_success.setBackgroundColor(Color.parseColor("#F8F8F8"))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#F8F8F8"))
+            view_review_info.setBackgroundColor(Color.parseColor("#F8F8F8"))
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+            img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+            ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+        }
+
+        ll_expert_assign.layoutParams = parentParams
+        ll_review_info.layoutParams = parentParams
+        ll_e_filed.layoutParams = parentParams
+
+        ll_payment_success.layoutParams = expParentParams
+
+        exp_ll_expert_assign.layoutParams = childParams
+        exp_ll_review_info.layoutParams = childParams
+        exp_ll_e_filed.layoutParams = childParams
+
+        txt_payment_success.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_sixteen))
+        txt_payment_success.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.NORMAL else Typeface.BOLD)
+
+        txt_expert_assign.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_expert_assign.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_review_info.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_review_info.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_e_filed.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_e_filed.typeface = Typeface.defaultFromStyle(if (txt_e_filed.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        if (ll_payment_success.isClickable) {
+            isActive()
+        }
+    }
+
+    fun isVisibleExpertAssignLayout() {
+        expandlayout_payment_success.collapse()
+        expandlayout_expert_assign.expand()
+        expandlayout_review_info.collapse()
+        expandlayout_e_filed.collapse()
+
+        img_expert_assign.setImageResource(R.drawable.ic_check_black_24dp)
+        img_expert_assign.requestLayout()
+        img_expert_assign.layoutParams.height = resources.getDimension(R.dimen.expanded_dimen).toInt()
+        img_expert_assign.layoutParams.width = resources.getDimension(R.dimen.expanded_dimen).toInt()
+
+        img_payment_success.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.setImageResource(R.drawable.ic_check_black_24dp)
+
+        img_review_info.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_review_info.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        img_e_filed.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_e_filed.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_expert_assign.setColorFilter(mContext.getColor(R.color.white))
+            img_payment_success.setColorFilter(mContext.getColor(R.color.white))
+            img_review_info.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            img_e_filed.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_review_info.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+        }
+        else {
+            img_expert_assign.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_payment_success.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_review_info.setColorFilter(Color.parseColor("#F8F8F8"))
+            img_e_filed.setColorFilter(Color.parseColor("#F8F8F8"))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#F8F8F8"))
+            view_review_info.setBackgroundColor(Color.parseColor("#F8F8F8"))
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+            img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+            ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+        }
+
+        ll_payment_success.layoutParams = parentParams
+        ll_review_info.layoutParams = parentParams
+        ll_e_filed.layoutParams = parentParams
+
+        ll_expert_assign.layoutParams = expParentParams
+
+        exp_ll_payment_success.layoutParams = childParams
+        exp_ll_review_info.layoutParams = childParams
+        exp_ll_e_filed.layoutParams = childParams
+
+        txt_payment_success.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_payment_success.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_expert_assign.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_sixteen))
+        txt_expert_assign.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.NORMAL else Typeface.BOLD)
+
+        txt_review_info.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_review_info.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_e_filed.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_e_filed.typeface = Typeface.defaultFromStyle(if (txt_e_filed.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        if (ll_expert_assign.isClickable) {
+            isActive()
+        }
+    }
+
+    private fun isVisibleReviewInfoLayout() {
+        expandlayout_payment_success.collapse()
+        expandlayout_expert_assign.collapse()
+        expandlayout_review_info.expand()
+        expandlayout_e_filed.collapse()
+
+        img_review_info.setImageResource(R.drawable.ic_check_black_24dp)
+        img_review_info.requestLayout()
+        img_review_info.layoutParams.height = resources.getDimension(R.dimen.expanded_dimen).toInt()
+        img_review_info.layoutParams.width = resources.getDimension(R.dimen.expanded_dimen).toInt()
+
+        img_payment_success.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.setImageResource(R.drawable.ic_check_black_24dp)
+
+        img_expert_assign.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_expert_assign.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_expert_assign.setImageResource(R.drawable.ic_check_black_24dp)
+
+        img_e_filed.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_e_filed.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_review_info.setColorFilter(mContext.getColor(R.color.white))
+            img_payment_success.setColorFilter(mContext.getColor(R.color.white))
+            img_expert_assign.setColorFilter(mContext.getColor(R.color.white))
+            img_e_filed.setColorFilter(mContext.getColor(R.color.lightest_grey_forstatus))
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            view_review_info.setBackgroundColor(mContext.getColor(R.color.lightest_grey_forstatus))
+        }
+        else {
+            img_review_info.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_payment_success.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_expert_assign.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_e_filed.setColorFilter(Color.parseColor("#F8F8F8"))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#00B894"))
+            view_review_info.setBackgroundColor(Color.parseColor("#F8F8F8"))
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.lightest_grey_forstatus)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(248, 248, 248)))
+        }
+
+        ll_payment_success.layoutParams = parentParams
+        ll_expert_assign.layoutParams = parentParams
+        ll_e_filed.layoutParams = parentParams
+
+        ll_review_info.layoutParams = expParentParams
+
+        exp_ll_payment_success.layoutParams = childParams
+        exp_ll_expert_assign.layoutParams = childParams
+        exp_ll_e_filed.layoutParams = childParams
+
+        txt_review_info.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_sixteen))
+        txt_review_info.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.NORMAL else Typeface.BOLD)
+
+        txt_payment_success.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_payment_success.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_expert_assign.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_expert_assign.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_e_filed.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_e_filed.typeface = Typeface.defaultFromStyle(if (txt_e_filed.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        if (ll_review_info.isClickable) {
+            isActive()
+        }
+    }
+
+    private fun isVisibleEFiledLayout() {
+        expandlayout_payment_success.collapse()
+        expandlayout_expert_assign.collapse()
+        expandlayout_review_info.collapse()
+        expandlayout_e_filed.expand()
+
+        img_e_filed.setImageResource(R.drawable.ic_check_black_24dp)
+        img_e_filed.requestLayout()
+        img_e_filed.layoutParams.height = resources.getDimension(R.dimen.expanded_dimen).toInt()
+        img_e_filed.layoutParams.width = resources.getDimension(R.dimen.expanded_dimen).toInt()
+
+        img_payment_success.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_payment_success.setImageResource(R.drawable.ic_check_black_24dp)
+
+        img_expert_assign.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_expert_assign.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_expert_assign.setImageResource(R.drawable.ic_check_black_24dp)
+
+        img_review_info.layoutParams.height = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_review_info.layoutParams.width = resources.getDimension(R.dimen.collapsed_dimen).toInt()
+        img_review_info.setImageResource(R.drawable.ic_check_black_24dp)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_review_info.setColorFilter(mContext.getColor(R.color.white))
+            img_payment_success.setColorFilter(mContext.getColor(R.color.white))
+            img_expert_assign.setColorFilter(mContext.getColor(R.color.white))
+            img_e_filed.setColorFilter(mContext.getColor(R.color.white))
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            view_review_info.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+        }
+        else {
+            img_review_info.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_payment_success.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_expert_assign.setColorFilter(Color.parseColor("#FFFFFF"))
+            img_e_filed.setColorFilter(Color.parseColor("#FFFFFF"))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#00B894"))
+            view_review_info.setBackgroundColor(Color.parseColor("#00B894"))
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+        }
+
+        ll_payment_success.layoutParams = parentParams
+        ll_expert_assign.layoutParams = parentParams
+        ll_review_info.layoutParams = parentParams
+
+        ll_e_filed.layoutParams = expParentParams
+
+        exp_ll_payment_success.layoutParams = childParams
+        exp_ll_expert_assign.layoutParams = childParams
+        exp_ll_review_info.layoutParams = childParams
+
+        txt_e_filed.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_sixteen))
+        txt_e_filed.typeface = Typeface.defaultFromStyle(if (txt_e_filed.isClickable) Typeface.NORMAL else Typeface.BOLD)
+
+        txt_payment_success.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_payment_success.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_expert_assign.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_expert_assign.typeface = Typeface.defaultFromStyle(if (txt_expert_assign.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        txt_review_info.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.text_size_fifteen))
+        txt_review_info.typeface = Typeface.defaultFromStyle(if (txt_review_info.isClickable) Typeface.BOLD else Typeface.NORMAL)
+
+        if (ll_e_filed.isClickable) {
+            isActive()
+        }
+    }
+
+    private fun isActive() {
+        if (ll_payment_success.isClickable) {
+            activePaymentSuccess()
+        }
+        if (ll_expert_assign.isClickable) {
+            activeExpertAssign()
+        }
+        if (ll_review_info.isClickable) {
+            activeReviewInfo()
+        }
+        if (ll_e_filed.isClickable) {
+            activeEFiled()
+        }
+    }
+
+    private fun activePaymentSuccess() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+        else
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+    }
+
+    private fun activeExpertAssign() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+        }
+    }
+
+    private fun activeReviewInfo() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+        }
+    }
+
+    private fun activeEFiled() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            img_payment_success.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_payment_success.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_expert_assign.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_expert_assign.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_review_info.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+            view_review_info.setBackgroundColor(mContext.getColor(R.color.colorPrimary))
+            img_e_filed.backgroundTintList = mContext.getColorStateList(R.color.colorPrimary)
+        }
+        else {
+            ViewCompat.setBackgroundTintList(img_payment_success, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_payment_success.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_expert_assign, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_expert_assign.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_review_info, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+            view_review_info.setBackgroundColor(Color.parseColor("#00B894"))
+            ViewCompat.setBackgroundTintList(img_e_filed, ColorStateList.valueOf(Color.rgb(0, 184, 148)))
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        var id = item!!.itemId
+        if (id == android.R.id.home){
+            val imm = mContext.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+            if(newItrBase.getisNotification())
+            {
+                val intent = Intent(applicationContext, DashboardActivity::class.java)
+                this@ITROrderStatusActivity.finish()
+                newItrBase.setisNotification(false)
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                startActivity(intent)
+                //finish()
+            }
+            else if (newItrBase.orderMode.equals("AllOrders")) {
+                val intent = Intent(applicationContext, AllOrdersActivity::class.java)
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                startActivity(intent)
+                finish()
+            }
+            else {
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        if(newItrBase.getisNotification())
+        {
+            val intent = Intent(applicationContext, DashboardActivity::class.java)
+            this@ITROrderStatusActivity.finish()
+            newItrBase.setisNotification(false)
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            startActivity(intent)
+            //finish()
+        }
+        else if (newItrBase.orderMode.equals("AllOrders")) {
+            val intent = Intent(applicationContext, AllOrdersActivity::class.java)
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            startActivity(intent)
+            finish()
+        }
+        else {
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            super.onBackPressed()
+        }
+    }
+}

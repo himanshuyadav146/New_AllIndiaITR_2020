@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_add_foreign_bank_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                    <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            app:srcCompat="@drawable/ic_hra_calculator_icon"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:layout_marginLeft="@dimen/twenty_five"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"/>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                        <TextView
+                                android:id="@+id/tv_refund_payable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_fourteen"
+                                android:textColor="@color/dark_grey"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="-10dp"/>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u20B9 "
+                                    android:textSize="36sp"/>
+
+                            <TextView
+                                    android:id="@+id/taxStatusTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="50sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_money"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:layout_marginTop="10dp">
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="@color/lightest_grey">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="@string/title_gross_total"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/totalIncomeTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="@string/title_desuction_80"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/deductionTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="@color/lightest_grey">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="@string/title_tax_income"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/netTaxableIncomeTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="Total Tax"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/totalTaxTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="@color/lightest_grey">
+
+                    <TextView
+                            android:layout_column="1"
+                            android:text="@string/title_tax_paid"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/taxPaidTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                    <TextView
+                            android:id="@+id/taxPayableTextView"
+                            android:layout_column="1"
+                            android:text="@string/title_tax_payable"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:textColor="@color/lighter_black"/>
+
+                    <TextView
+                            android:id="@+id/finalResultTextView"
+                            android:textSize="@dimen/text_size_fourteen"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:gravity="right"
+                            android:textColor="@color/lighter_black"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/calculate_again_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:background="@drawable/button_background"
+            android:text="@string/calculate_again"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_fourteen"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://192.168.1.61:9004/</domain>
+    </domain-config>
+</network-security-config>
+
+
+<!--<network-security-config>-->
+<!--<debug-overrides>-->
+    <!--<trust-anchors>-->
+        <!--<certificates src="@raw/debug_cas"/>-->
+    <!--</trust-anchors>-->
+<!--</debug-overrides>-->
+<!--</network-security-config>-->

@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "659925296240",
+    "firebase_url": "https://all-india-itr-android.firebaseio.com",
+    "project_id": "all-india-itr-android",
+    "storage_bucket": "all-india-itr-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659925296240:android:ddf9bd587bc5dee6",
+        "android_client_info": {
+          "package_name": "dell.com.allindiaitr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659925296240-k8vf03pkklnp1mlsbbbpr5f1t78q5jd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dell.com.allindiaitr",
+            "certificate_hash": "68784be930a17b538939d66e09c99a71558599fe"
+          }
+        },
+        {
+          "client_id": "659925296240-fkfrnckbqkep9csv761ann07bfhhn45v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dell.com.allindiaitr",
+            "certificate_hash": "f2d3d8f3659a1fb0c411ffa9fd018ff33421c143"
+          }
+        },
+        {
+          "client_id": "659925296240-8isog9fo83hek75etivtgnpbkorq0qsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dell.com.allindiaitr",
+            "certificate_hash": "f4d95b052988c82ae5cac9a384f9c8127ebcfa67"
+          }
+        },
+        {
+          "client_id": "659925296240-edvlu81vduk7nhvlub34rlf1c3svi09k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOcV3pabYPD7b1TrUHTMD5pJzM0vBfHP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659925296240-q4oiipg1l781lcc8lksbtekoctrj08g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

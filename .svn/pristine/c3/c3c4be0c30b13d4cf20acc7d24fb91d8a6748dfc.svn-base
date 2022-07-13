@@ -1,0 +1,261 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b1\u0018\u0000 B2\u00020\u0001:\u0001BB\u0007\b\u0016\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010\u0005\"\u0004\b\u0006\u0010\u0007R \u0010\b\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR \u0010\u000e\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u000b\"\u0004\b\u0010\u0010\rR\"\u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0017\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\"\u0010\u0018\u001a\u0004\u0018\u00010\u00128\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0017\u001a\u0004\b\u0019\u0010\u0014\"\u0004\b\u001a\u0010\u0016R \u0010\u001b\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u000b\"\u0004\b\u001d\u0010\rR \u0010\u001e\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u000b\"\u0004\b \u0010\rR \u0010!\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u000b\"\u0004\b#\u0010\rR \u0010$\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b%\u0010\u000b\"\u0004\b&\u0010\rR \u0010\'\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u000b\"\u0004\b)\u0010\rR \u0010*\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b+\u0010\u000b\"\u0004\b,\u0010\rR \u0010-\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010\u000b\"\u0004\b/\u0010\rR \u00100\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b1\u0010\u000b\"\u0004\b2\u0010\rR \u00103\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010\u000b\"\u0004\b5\u0010\rR \u00106\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u000b\"\u0004\b8\u0010\rR \u00109\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\u000b\"\u0004\b;\u0010\rR \u0010<\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u0010\u000b\"\u0004\b>\u0010\rR \u0010?\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u000b\"\u0004\bA\u0010\r\u00a8\u0006C"}, d2 = {"Ldell/com/allindiaitr/models/AllOrderStatusModel;", "", "()V", "acknowledgementNo", "getAcknowledgementNo", "()Ljava/lang/Object;", "setAcknowledgementNo", "(Ljava/lang/Object;)V", "assestmentYear", "", "getAssestmentYear", "()Ljava/lang/String;", "setAssestmentYear", "(Ljava/lang/String;)V", "dateOfBirth", "getDateOfBirth", "setDateOfBirth", "eVerifyDone", "", "getEVerifyDone", "()Ljava/lang/Boolean;", "setEVerifyDone", "(Ljava/lang/Boolean;)V", "Ljava/lang/Boolean;", "eVerifyPaymentDone", "getEVerifyPaymentDone", "setEVerifyPaymentDone", "emailId", "getEmailId", "setEmailId", "financialYear", "getFinancialYear", "setFinancialYear", "iTRProcess", "getITRProcess", "setITRProcess", "name", "getName", "setName", "packageName", "getPackageName", "setPackageName", "panNumber", "getPanNumber", "setPanNumber", "paymentDate", "getPaymentDate", "setPaymentDate", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "processMode", "getProcessMode", "setProcessMode", "processStatus", "getProcessStatus", "setProcessStatus", "totalAmount", "getTotalAmount", "setTotalAmount", "transactionId", "getTransactionId", "setTransactionId", "userAssestmentYearId", "getUserAssestmentYearId", "setUserAssestmentYearId", "Companion", "app_debug"})
+public final class AllOrderStatusModel {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserAssestmentYearId")
+    private java.lang.String userAssestmentYearId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TransactionId")
+    private java.lang.String transactionId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Name")
+    private java.lang.String name;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EmailId")
+    private java.lang.String emailId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PanNumber")
+    private java.lang.String panNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FinancialYear")
+    private java.lang.String financialYear;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AssestmentYear")
+    private java.lang.String assestmentYear;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ProcessMode")
+    private java.lang.String processMode;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ITRProcess")
+    private java.lang.String iTRProcess;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ProcessStatus")
+    private java.lang.String processStatus;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TotalAmount")
+    private java.lang.String totalAmount;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PaymentDate")
+    private java.lang.String paymentDate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageName")
+    private java.lang.String packageName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DateOfBirth")
+    private java.lang.String dateOfBirth;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AcknowledgementNo")
+    private java.lang.Object acknowledgementNo;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EVerifyPaymentDone")
+    private java.lang.Boolean eVerifyPaymentDone;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EVerifyDone")
+    private java.lang.Boolean eVerifyDone;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.AllOrderStatusModel.Companion Companion = null;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getUserAssestmentYearId() {
+        return null;
+    }
+    
+    public final void setUserAssestmentYearId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTransactionId() {
+        return null;
+    }
+    
+    public final void setTransactionId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmailId() {
+        return null;
+    }
+    
+    public final void setEmailId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPanNumber() {
+        return null;
+    }
+    
+    public final void setPanNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getFinancialYear() {
+        return null;
+    }
+    
+    public final void setFinancialYear(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAssestmentYear() {
+        return null;
+    }
+    
+    public final void setAssestmentYear(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getProcessMode() {
+        return null;
+    }
+    
+    public final void setProcessMode(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getITRProcess() {
+        return null;
+    }
+    
+    public final void setITRProcess(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getProcessStatus() {
+        return null;
+    }
+    
+    public final void setProcessStatus(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTotalAmount() {
+        return null;
+    }
+    
+    public final void setTotalAmount(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPaymentDate() {
+        return null;
+    }
+    
+    public final void setPaymentDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageName() {
+        return null;
+    }
+    
+    public final void setPackageName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getDateOfBirth() {
+        return null;
+    }
+    
+    public final void setDateOfBirth(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getAcknowledgementNo() {
+        return null;
+    }
+    
+    public final void setAcknowledgementNo(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean getEVerifyPaymentDone() {
+        return null;
+    }
+    
+    public final void setEVerifyPaymentDone(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean getEVerifyDone() {
+        return null;
+    }
+    
+    public final void setEVerifyDone(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    public AllOrderStatusModel() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/AllOrderStatusModel$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/AllOrderStatusModel;", "getInstance", "()Ldell/com/allindiaitr/models/AllOrderStatusModel;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.AllOrderStatusModel getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

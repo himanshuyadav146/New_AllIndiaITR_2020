@@ -1,0 +1,150 @@
+[
+  {
+    "Id": "1",
+    "State": "ANDAMAN AND NICOBAR ISLANDS"
+  },
+  {
+    "Id": "2",
+    "State": "ANDHRA PRADESH"
+  },
+  {
+    "Id": "3",
+    "State": "ARUNACHAL PRADESH"
+  },
+  {
+    "Id": "4",
+    "State": "ASSAM"
+  },
+  {
+    "Id": "5",
+    "State": "BIHAR"
+  },
+  {
+    "Id": "6",
+    "State": "CHANDIGARH"
+  },
+  {
+    "Id": "7",
+    "State": "DADRA AND NAGAR HAVELI"
+  },
+  {
+    "Id": "8",
+    "State": "DAMAN AND DIU"
+  },
+  {
+    "Id": "9",
+    "State": "DELHI"
+  },
+  {
+    "Id": "10",
+    "State": "GOA"
+  },
+  {
+    "Id": "11",
+    "State": "GUJARAT"
+  },
+  {
+    "Id": "12",
+    "State": "HARYANA"
+  },
+  {
+    "Id": "13",
+    "State": "HIMACHAL PRADESH"
+  },
+  {
+    "Id": "14",
+    "State": "JAMMU AND KASHMIR"
+  },
+  {
+    "Id": "15",
+    "State": "KARNATAKA"
+  },
+  {
+    "Id": "16",
+    "State": "KERALA"
+  },
+  {
+    "Id": "17",
+    "State": "LAKHSWADEEP"
+  },
+  {
+    "Id": "18",
+    "State": "MADHYA PRADESH"
+  },
+  {
+    "Id": "19",
+    "State": "MAHARASHTRA"
+  },
+  {
+    "Id": "20",
+    "State": "MANIPUR"
+  },
+  {
+    "Id": "21",
+    "State": "MEGHALAYA"
+  },
+  {
+    "Id": "22",
+    "State": "MIZORAM"
+  },
+  {
+    "Id": "23",
+    "State": "NAGALAND"
+  },
+  {
+    "Id": "24",
+    "State": "ORISSA"
+  },
+  {
+    "Id": "25",
+    "State": "PONDICHERRY"
+  },
+  {
+    "Id": "26",
+    "State": "PUNJAB"
+  },
+  {
+    "Id": "27",
+    "State": "RAJASTHAN"
+  },
+  {
+    "Id": "28",
+    "State": "SIKKIM"
+  },
+  {
+    "Id": "29",
+    "State": "TAMIL NADU"
+  },
+  {
+    "Id": "30",
+    "State": "TRIPURA"
+  },
+  {
+    "Id": "31",
+    "State": "UTTAR PRADESH"
+  },
+  {
+    "Id": "32",
+    "State": "WEST BENGAL"
+  },
+  {
+    "Id": "33",
+    "State": "CHHATISHGARH"
+  },
+  {
+    "Id": "34",
+    "State": "UTTARANCHAL"
+  },
+  {
+    "Id": "35",
+    "State": "JHARKHAND"
+  },
+  {
+    "Id": "36",
+    "State": "TELANGANA"
+  },
+  {
+    "Id": "99",
+    "State": "FOREIGN"
+  }
+]

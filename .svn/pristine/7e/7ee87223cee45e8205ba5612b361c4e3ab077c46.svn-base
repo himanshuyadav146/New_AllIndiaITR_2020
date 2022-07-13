@@ -1,0 +1,38 @@
+package dell.com.allindiaitr.firebase;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \t2\u00020\u0001:\u0001\tB\u0007\b\u0012\u00a2\u0006\u0002\u0010\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\b\u00a8\u0006\n"}, d2 = {"Ldell/com/allindiaitr/firebase/FirebaseAnalyticsClass;", "", "()V", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "Companion", "app_debug"})
+public final class FirebaseAnalyticsClass {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.firebase.FirebaseAnalyticsClass.Companion Companion = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    private FirebaseAnalyticsClass() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/firebase/FirebaseAnalyticsClass$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/firebase/FirebaseAnalyticsClass;", "getInstance", "()Ldell/com/allindiaitr/firebase/FirebaseAnalyticsClass;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.firebase.FirebaseAnalyticsClass getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

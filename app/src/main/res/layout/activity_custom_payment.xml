@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.CustomPaymentActivity"
+        android:background="@color/white">
+
+    <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/app_toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/toolbar"/>
+
+    <FrameLayout
+            android:id="@+id/relativelayout_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fifteen"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/no_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/group_248"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="@dimen/eighty"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Pending Payment Request Yet!"
+                android:textColor="@color/light_grey"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_size_sixteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/fifteen"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seems like you have not get any\nPending Payment Request."
+                android:textColor="@color/light_grey"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

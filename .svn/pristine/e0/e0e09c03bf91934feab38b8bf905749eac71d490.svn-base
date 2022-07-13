@@ -1,0 +1,14 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.chat_text_adapter.view.*
+
+class ChatArrayHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    val userchatText = itemView.userchatText
+    val adminchatText = itemView.adminchatText
+    val userCreateDateText = itemView.userCreateDateText
+    val adminDateText = itemView.adminDateText
+    val userLayout = itemView.userLayout
+    val adminLayout = itemView.adminLayout
+}

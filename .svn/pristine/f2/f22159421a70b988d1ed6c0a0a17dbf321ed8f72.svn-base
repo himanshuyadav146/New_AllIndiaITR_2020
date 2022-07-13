@@ -1,0 +1,13 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.new_bankaccount_adapter.view.*
+
+class BankListHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    val card_info_img = itemView.card_info_img
+    val bankName = itemView.bankName
+    val accountNumber = itemView.accountNumber
+    val menuIconImage = itemView.menuIconImage
+    val notify_msg = itemView.notify_msg
+}

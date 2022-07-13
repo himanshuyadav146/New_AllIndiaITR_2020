@@ -1,0 +1,193 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0017\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 62\u00020\u0001:\u00016B\u0007\b\u0012\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\t\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR \u0010\f\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u0006\"\u0004\b\u000e\u0010\bR \u0010\u000f\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0006\"\u0004\b\u0011\u0010\bR \u0010\u0012\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0006\"\u0004\b\u0014\u0010\bR \u0010\u0015\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0006\"\u0004\b\u0017\u0010\bR \u0010\u0018\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0006\"\u0004\b\u001a\u0010\bR\u001e\u0010\u001b\u001a\u00020\u001c8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u001e\"\u0004\b\u001f\u0010 R \u0010!\u001a\u0004\u0018\u00010\"8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R \u0010\'\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u0006\"\u0004\b)\u0010\bR \u0010*\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b+\u0010\u0006\"\u0004\b,\u0010\bR \u0010-\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010\u0006\"\u0004\b/\u0010\bR \u00100\u001a\u0004\u0018\u0001018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105\u00a8\u00067"}, d2 = {"Ldell/com/allindiaitr/models/LogInwithOTPModel;", "", "()V", "Code", "", "getCode", "()Ljava/lang/String;", "setCode", "(Ljava/lang/String;)V", "CreatedTime", "getCreatedTime", "setCreatedTime", "Id", "getId", "setId", "access_token", "getAccess_token", "setAccess_token", "deviceId", "getDeviceId", "setDeviceId", "deviceType", "getDeviceType", "setDeviceType", "email", "getEmail", "setEmail", "flagValue", "", "getFlagValue", "()I", "setFlagValue", "(I)V", "loginModel", "Ldell/com/allindiaitr/models/LogInModel;", "getLoginModel", "()Ldell/com/allindiaitr/models/LogInModel;", "setLoginModel", "(Ldell/com/allindiaitr/models/LogInModel;)V", "message", "getMessage", "setMessage", "password", "getPassword", "setPassword", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "token", "Ldell/com/allindiaitr/models/Token;", "getToken", "()Ldell/com/allindiaitr/models/Token;", "setToken", "(Ldell/com/allindiaitr/models/Token;)V", "Companion", "app_debug"})
+public final class LogInwithOTPModel {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Email")
+    private java.lang.String email;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Password")
+    private java.lang.String password;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DeviceType")
+    private java.lang.String deviceType;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DeviceId")
+    private java.lang.String deviceId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FlagValue")
+    private int flagValue;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Message")
+    private java.lang.String message;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "LoginModel")
+    private dell.com.allindiaitr.models.LogInModel loginModel;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Token")
+    private dell.com.allindiaitr.models.Token token;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "access_token")
+    private java.lang.String access_token;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Id")
+    private java.lang.String Id;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Code")
+    private java.lang.String Code;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CreatedTime")
+    private java.lang.String CreatedTime;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.LogInwithOTPModel.Companion Companion = null;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPassword() {
+        return null;
+    }
+    
+    public final void setPassword(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getDeviceType() {
+        return null;
+    }
+    
+    public final void setDeviceType(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getDeviceId() {
+        return null;
+    }
+    
+    public final void setDeviceId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    public final int getFlagValue() {
+        return 0;
+    }
+    
+    public final void setFlagValue(int p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMessage() {
+        return null;
+    }
+    
+    public final void setMessage(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.LogInModel getLoginModel() {
+        return null;
+    }
+    
+    public final void setLoginModel(@org.jetbrains.annotations.Nullable()
+    dell.com.allindiaitr.models.LogInModel p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.Token getToken() {
+        return null;
+    }
+    
+    public final void setToken(@org.jetbrains.annotations.Nullable()
+    dell.com.allindiaitr.models.Token p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAccess_token() {
+        return null;
+    }
+    
+    public final void setAccess_token(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCode() {
+        return null;
+    }
+    
+    public final void setCode(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCreatedTime() {
+        return null;
+    }
+    
+    public final void setCreatedTime(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    private LogInwithOTPModel() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/LogInwithOTPModel$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/LogInwithOTPModel;", "getInstance", "()Ldell/com/allindiaitr/models/LogInwithOTPModel;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.LogInwithOTPModel getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

@@ -1,0 +1,32 @@
+package dell.com.allindiaitr.holders;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0019\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0019\u0010\u000e\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\tR\u0019\u0010\u0010\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\r\u00a8\u0006\u0012"}, d2 = {"Ldell/com/allindiaitr/holders/DashboardHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Landroid/view/View;)V", "desc_textView", "Landroid/widget/TextView;", "kotlin.jvm.PlatformType", "getDesc_textView", "()Landroid/widget/TextView;", "free_imageView", "Landroid/widget/ImageView;", "getFree_imageView", "()Landroid/widget/ImageView;", "heading_textView", "getHeading_textView", "service_imageView", "getService_imageView", "app_debug"})
+public final class DashboardHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+    private final android.widget.ImageView service_imageView = null;
+    private final android.widget.TextView heading_textView = null;
+    private final android.widget.TextView desc_textView = null;
+    private final android.widget.ImageView free_imageView = null;
+    
+    public final android.widget.ImageView getService_imageView() {
+        return null;
+    }
+    
+    public final android.widget.TextView getHeading_textView() {
+        return null;
+    }
+    
+    public final android.widget.TextView getDesc_textView() {
+        return null;
+    }
+    
+    public final android.widget.ImageView getFree_imageView() {
+        return null;
+    }
+    
+    public DashboardHolder(@org.jetbrains.annotations.NotNull()
+    android.view.View itemView) {
+        super(null);
+    }
+}

@@ -1,0 +1,71 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u0000 \u00182\u00020\u0001:\u0001\u0018B\u0007\b\u0012\u00a2\u0006\u0002\u0010\u0002J.\u0010\u0012\u001a*\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060\u0004j\u0014\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u0006`\u0013J\f\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00070\rJ6\u0010\u0015\u001a\u00020\u00162.\u0010\u0003\u001a*\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060\u0004j\u0014\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u0006`\u0013J\u0014\u0010\u0017\u001a\u00020\u00162\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00070\rR0\u0010\u0003\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR$\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00070\r8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011\u00a8\u0006\u0019"}, d2 = {"Ldell/com/allindiaitr/models/UserListHolder;", "", "()V", "listData", "Ljava/util/HashMap;", "", "", "Ldell/com/allindiaitr/models/NewItrBase;", "getListData", "()Ljava/util/HashMap;", "setListData", "(Ljava/util/HashMap;)V", "userList", "", "getUserList", "()Ljava/util/List;", "setUserList", "(Ljava/util/List;)V", "getlistData", "Lkotlin/collections/HashMap;", "getuserList", "setlistData", "", "setuserList", "Companion", "app_debug"})
+public final class UserListHolder {
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "userList")
+    private java.util.List<dell.com.allindiaitr.models.NewItrBase> userList;
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "listData")
+    private java.util.HashMap<java.lang.String, java.util.List<dell.com.allindiaitr.models.NewItrBase>> listData;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.UserListHolder.Companion Companion = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<dell.com.allindiaitr.models.NewItrBase> getUserList() {
+        return null;
+    }
+    
+    public final void setUserList(@org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.HashMap<java.lang.String, java.util.List<dell.com.allindiaitr.models.NewItrBase>> getListData() {
+        return null;
+    }
+    
+    public final void setListData(@org.jetbrains.annotations.NotNull()
+    java.util.HashMap<java.lang.String, java.util.List<dell.com.allindiaitr.models.NewItrBase>> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<dell.com.allindiaitr.models.NewItrBase> getuserList() {
+        return null;
+    }
+    
+    public final void setuserList(@org.jetbrains.annotations.NotNull()
+    java.util.List<dell.com.allindiaitr.models.NewItrBase> userList) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.HashMap<java.lang.String, java.util.List<dell.com.allindiaitr.models.NewItrBase>> getlistData() {
+        return null;
+    }
+    
+    public final void setlistData(@org.jetbrains.annotations.NotNull()
+    java.util.HashMap<java.lang.String, java.util.List<dell.com.allindiaitr.models.NewItrBase>> listData) {
+    }
+    
+    private UserListHolder() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/UserListHolder$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/UserListHolder;", "getInstance", "()Ldell/com/allindiaitr/models/UserListHolder;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.UserListHolder getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

@@ -1,0 +1,59 @@
+package dell.com.allindiaitr.utils
+
+import android.content.Context
+import android.graphics.Bitmap
+import android.net.Uri
+import android.os.Environment
+import android.provider.MediaStore
+import android.widget.Toast
+import id.zelory.compressor.Compressor
+import java.io.File
+
+
+fun getFile(actualImage:File,mContext:Context):File{
+
+    var compressedImage:File?=null
+
+    if(actualImage==null){
+        Toast.makeText(mContext, "Please Select an Image", Toast.LENGTH_SHORT).show();
+    }else{
+
+         compressedImage = Compressor(mContext).compressToFile(actualImage)
+        var compressedImage =Compressor(mContext)
+            .setMaxWidth(1000)
+            .setMaxHeight(1000)
+            .setQuality(100)
+            .setCompressFormat(Bitmap.CompressFormat.JPEG)
+            .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath())
+            .compressToFile(actualImage)
+
+    }
+    return compressedImage!!;
+}
+
+
+
+ fun getRealPathFromURI(contentURI: Uri,mContext: Context): String {
+    var result: String? = ""
+    try {
+        val cursor = mContext.contentResolver.query(contentURI, null, null, null, null)
+//            val cursor =
+        if (cursor == null) {
+            result = contentURI.path
+        } else {
+            cursor.moveToFirst()
+            var idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA)
+            if (idx == -1) {
+                idx = idx + 2
+                result = cursor.getString(idx)
+            } else {
+                result = cursor.getString(idx)
+            }
+            cursor.close()
+        }
+    } catch (e: java.lang.Exception) {
+        e.printStackTrace()
+    }
+
+    return result!!
+}

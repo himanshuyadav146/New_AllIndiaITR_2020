@@ -1,0 +1,27 @@
+package dell.com.allindiaitr.holders;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0019\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\tR\u0019\u0010\f\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\r\u0010\t\u00a8\u0006\u000e"}, d2 = {"Ldell/com/allindiaitr/holders/SelectITRHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Landroid/view/View;)V", "mob_no_textView", "Landroid/widget/TextView;", "kotlin.jvm.PlatformType", "getMob_no_textView", "()Landroid/widget/TextView;", "pan_no_textView", "getPan_no_textView", "username_textView", "getUsername_textView", "app_debug"})
+public final class SelectITRHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+    private final android.widget.TextView username_textView = null;
+    private final android.widget.TextView pan_no_textView = null;
+    private final android.widget.TextView mob_no_textView = null;
+    
+    public final android.widget.TextView getUsername_textView() {
+        return null;
+    }
+    
+    public final android.widget.TextView getPan_no_textView() {
+        return null;
+    }
+    
+    public final android.widget.TextView getMob_no_textView() {
+        return null;
+    }
+    
+    public SelectITRHolder(@org.jetbrains.annotations.NotNull()
+    android.view.View itemView) {
+        super(null);
+    }
+}

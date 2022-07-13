@@ -1,0 +1,336 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0019\n\u0002\u0010\u000e\n\u0002\b8\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010\u0005\"\u0004\b\u0006\u0010\u0007R \u0010\b\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\u0005\"\u0004\b\n\u0010\u0007R \u0010\u000b\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\u0005\"\u0004\b\r\u0010\u0007R \u0010\u000e\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0005\"\u0004\b\u0010\u0010\u0007R \u0010\u0011\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0005\"\u0004\b\u0013\u0010\u0007R \u0010\u0014\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0005\"\u0004\b\u0016\u0010\u0007R \u0010\u0017\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u0005\"\u0004\b\u0019\u0010\u0007R \u0010\u001a\u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u001d\"\u0004\b\u001e\u0010\u001fR \u0010 \u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\u001d\"\u0004\b\"\u0010\u001fR \u0010#\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010\u0005\"\u0004\b%\u0010\u0007R \u0010&\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010\u0005\"\u0004\b(\u0010\u0007R \u0010)\u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b*\u0010\u001d\"\u0004\b+\u0010\u001fR \u0010,\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b-\u0010\u0005\"\u0004\b.\u0010\u0007R \u0010/\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b0\u0010\u0005\"\u0004\b1\u0010\u0007R \u00102\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b3\u0010\u0005\"\u0004\b4\u0010\u0007R \u00105\u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b6\u0010\u001d\"\u0004\b7\u0010\u001fR \u00108\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b9\u0010\u0005\"\u0004\b:\u0010\u0007R \u0010;\u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b<\u0010\u001d\"\u0004\b=\u0010\u001fR \u0010>\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b?\u0010\u0005\"\u0004\b@\u0010\u0007R \u0010A\u001a\u0004\u0018\u00010\u001b8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bB\u0010\u001d\"\u0004\bC\u0010\u001fR \u0010D\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bE\u0010\u0005\"\u0004\bF\u0010\u0007R \u0010G\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bH\u0010\u0005\"\u0004\bI\u0010\u0007R \u0010J\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bK\u0010\u0005\"\u0004\bL\u0010\u0007R \u0010M\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bN\u0010\u0005\"\u0004\bO\u0010\u0007R \u0010P\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bQ\u0010\u0005\"\u0004\bR\u0010\u0007\u00a8\u0006S"}, d2 = {"Ldell/com/allindiaitr/models/PersonalDetail;", "", "()V", "aadharCardNumber", "getAadharCardNumber", "()Ljava/lang/Object;", "setAadharCardNumber", "(Ljava/lang/Object;)V", "area", "getArea", "setArea", "assestmentYearId", "getAssestmentYearId", "setAssestmentYearId", "buildingPremises", "getBuildingPremises", "setBuildingPremises", "city", "getCity", "setCity", "country", "getCountry", "setCountry", "countryId", "getCountryId", "setCountryId", "dateOfBirth", "", "getDateOfBirth", "()Ljava/lang/String;", "setDateOfBirth", "(Ljava/lang/String;)V", "email", "getEmail", "setEmail", "employerTypeId", "getEmployerTypeId", "setEmployerTypeId", "fatherName", "getFatherName", "setFatherName", "firstName", "getFirstName", "setFirstName", "flatNumber", "getFlatNumber", "setFlatNumber", "gender", "getGender", "setGender", "id", "getId", "setId", "lastName", "getLastName", "setLastName", "middleName", "getMiddleName", "setMiddleName", "panNumber", "getPanNumber", "setPanNumber", "passportNumber", "getPassportNumber", "setPassportNumber", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "pincode", "getPincode", "setPincode", "residentStatus", "getResidentStatus", "setResidentStatus", "state", "getState", "setState", "stateId", "getStateId", "setStateId", "street", "getStreet", "setStreet", "app_debug"})
+public final class PersonalDetail {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Id")
+    private java.lang.Object id;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FirstName")
+    private java.lang.String firstName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "MiddleName")
+    private java.lang.Object middleName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "LastName")
+    private java.lang.String lastName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Gender")
+    private java.lang.Object gender;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DateOfBirth")
+    private java.lang.String dateOfBirth;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PanNumber")
+    private java.lang.String panNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FatherName")
+    private java.lang.Object fatherName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Email")
+    private java.lang.String email;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AadharCardNumber")
+    private java.lang.Object aadharCardNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PassportNumber")
+    private java.lang.Object passportNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ResidentStatus")
+    private java.lang.Object residentStatus;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AssestmentYearId")
+    private java.lang.Object assestmentYearId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EmployerTypeId")
+    private java.lang.Object employerTypeId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FlatNumber")
+    private java.lang.Object flatNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Street")
+    private java.lang.Object street;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Area")
+    private java.lang.Object area;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "City")
+    private java.lang.Object city;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "StateId")
+    private java.lang.Object stateId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BuildingPremises")
+    private java.lang.Object buildingPremises;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CountryId")
+    private java.lang.Object countryId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Country")
+    private java.lang.Object country;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Pincode")
+    private java.lang.Object pincode;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "State")
+    private java.lang.Object state;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getFirstName() {
+        return null;
+    }
+    
+    public final void setFirstName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getMiddleName() {
+        return null;
+    }
+    
+    public final void setMiddleName(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getLastName() {
+        return null;
+    }
+    
+    public final void setLastName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getGender() {
+        return null;
+    }
+    
+    public final void setGender(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getDateOfBirth() {
+        return null;
+    }
+    
+    public final void setDateOfBirth(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPanNumber() {
+        return null;
+    }
+    
+    public final void setPanNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getFatherName() {
+        return null;
+    }
+    
+    public final void setFatherName(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getAadharCardNumber() {
+        return null;
+    }
+    
+    public final void setAadharCardNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getPassportNumber() {
+        return null;
+    }
+    
+    public final void setPassportNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getResidentStatus() {
+        return null;
+    }
+    
+    public final void setResidentStatus(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getAssestmentYearId() {
+        return null;
+    }
+    
+    public final void setAssestmentYearId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getEmployerTypeId() {
+        return null;
+    }
+    
+    public final void setEmployerTypeId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getFlatNumber() {
+        return null;
+    }
+    
+    public final void setFlatNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getStreet() {
+        return null;
+    }
+    
+    public final void setStreet(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getArea() {
+        return null;
+    }
+    
+    public final void setArea(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getCity() {
+        return null;
+    }
+    
+    public final void setCity(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getStateId() {
+        return null;
+    }
+    
+    public final void setStateId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getBuildingPremises() {
+        return null;
+    }
+    
+    public final void setBuildingPremises(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getCountryId() {
+        return null;
+    }
+    
+    public final void setCountryId(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getCountry() {
+        return null;
+    }
+    
+    public final void setCountry(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getPincode() {
+        return null;
+    }
+    
+    public final void setPincode(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getState() {
+        return null;
+    }
+    
+    public final void setState(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    public PersonalDetail() {
+        super();
+    }
+}

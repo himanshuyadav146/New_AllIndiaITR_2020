@@ -1,0 +1,507 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010\b\n\u0002\b5\n\u0002\u0010\u000b\n\u0002\bD\u0018\u0000 \u0089\u00012\u00020\u0001:\u0002\u0089\u0001B\u0007\b\u0016\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\t\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR \u0010\f\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u0006\"\u0004\b\u000e\u0010\bR\"\u0010\u000f\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001e\u0010\u0016\u001a\u00020\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001e\u0010\u001b\u001a\u00020\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0018\"\u0004\b\u001d\u0010\u001aR \u0010\u001e\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u0006\"\u0004\b \u0010\bR\"\u0010!\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b\"\u0010\u0012\"\u0004\b#\u0010\u0014R\"\u0010$\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b%\u0010\u0012\"\u0004\b&\u0010\u0014R\"\u0010\'\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b(\u0010\u0012\"\u0004\b)\u0010\u0014R\"\u0010*\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b+\u0010\u0012\"\u0004\b,\u0010\u0014R \u0010-\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010\u0006\"\u0004\b/\u0010\bR \u00100\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b1\u0010\u0006\"\u0004\b2\u0010\bR\u001e\u00103\u001a\u00020\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010\u0018\"\u0004\b5\u0010\u001aR\u001a\u00106\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u0018\"\u0004\b8\u0010\u001aR \u00109\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\u0006\"\u0004\b;\u0010\bR\"\u0010<\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b=\u0010\u0012\"\u0004\b>\u0010\u0014R\"\u0010?\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\b@\u0010\u0012\"\u0004\bA\u0010\u0014R\"\u0010B\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\bC\u0010\u0012\"\u0004\bD\u0010\u0014R\u001e\u0010E\u001a\u00020F8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bE\u0010G\"\u0004\bH\u0010IR \u0010J\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bK\u0010\u0006\"\u0004\bL\u0010\bR \u0010M\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bN\u0010\u0006\"\u0004\bO\u0010\bR \u0010P\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bQ\u0010\u0006\"\u0004\bR\u0010\bR\u001a\u0010S\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bT\u0010\u0018\"\u0004\bU\u0010\u001aR \u0010V\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bW\u0010\u0006\"\u0004\bX\u0010\bR\u001c\u0010Y\u001a\u0004\u0018\u00010\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bZ\u0010\u0006\"\u0004\b[\u0010\bR\u001e\u0010\\\u001a\u00020\u00048\u0006@\u0006X\u0087.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b]\u0010\u0006\"\u0004\b^\u0010\bR\u001e\u0010_\u001a\u00020\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b`\u0010\u0018\"\u0004\ba\u0010\u001aR\"\u0010b\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\bc\u0010\u0012\"\u0004\bd\u0010\u0014R \u0010e\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bf\u0010\u0006\"\u0004\bg\u0010\bR \u0010h\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bi\u0010\u0006\"\u0004\bj\u0010\bR\u001a\u0010k\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bl\u0010\u0018\"\u0004\bm\u0010\u001aR\"\u0010n\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\bo\u0010\u0012\"\u0004\bp\u0010\u0014R\"\u0010q\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\br\u0010\u0012\"\u0004\bs\u0010\u0014R\"\u0010t\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\bu\u0010\u0012\"\u0004\bv\u0010\u0014R\"\u0010w\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0015\u001a\u0004\bx\u0010\u0012\"\u0004\by\u0010\u0014R\u001a\u0010z\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b{\u0010\u0018\"\u0004\b|\u0010\u001aR\u001a\u0010}\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b~\u0010\u0018\"\u0004\b\u007f\u0010\u001aR#\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0081\u0001\u0010\u0006\"\u0005\b\u0082\u0001\u0010\bR\u001d\u0010\u0083\u0001\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0084\u0001\u0010\u0018\"\u0005\b\u0085\u0001\u0010\u001aR\u001d\u0010\u0086\u0001\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0087\u0001\u0010\u0018\"\u0005\b\u0088\u0001\u0010\u001a\u00a8\u0006\u008a\u0001"}, d2 = {"Ldell/com/allindiaitr/models/UsefulToolsModel;", "", "()V", "address", "", "getAddress", "()Ljava/lang/String;", "setAddress", "(Ljava/lang/String;)V", "age", "getAge", "setAge", "assessmentYear", "getAssessmentYear", "setAssessmentYear", "basicDeduction80c", "", "getBasicDeduction80c", "()Ljava/lang/Integer;", "setBasicDeduction80c", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "basicSalary", "getBasicSalary", "()I", "setBasicSalary", "(I)V", "dearnessAllowance", "getDearnessAllowance", "setDearnessAllowance", "eDate", "getEDate", "setEDate", "eightyD", "getEightyD", "setEightyD", "eightyE", "getEightyE", "setEightyE", "eightyG", "getEightyG", "setEightyG", "eightyTTAeightyTTB", "getEightyTTAeightyTTB", "setEightyTTAeightyTTB", "email", "getEmail", "setEmail", "emailId", "getEmailId", "setEmailId", "hra", "getHra", "setHra", "hraChargeableTax", "getHraChargeableTax", "setHraChargeableTax", "hraExemption", "getHraExemption", "setHraExemption", "interestIncome", "getInterestIncome", "setInterestIncome", "interestPaidOnLoan", "getInterestPaidOnLoan", "setInterestPaidOnLoan", "interestpaidOnHomeLoan", "getInterestpaidOnHomeLoan", "setInterestpaidOnHomeLoan", "isMetroCity", "", "()Z", "setMetroCity", "(Z)V", "landlordName", "getLandlordName", "setLandlordName", "months", "getMonths", "setMonths", "name", "getName", "setName", "netTaxableIncome", "getNetTaxableIncome", "setNetTaxableIncome", "panNumber", "getPanNumber", "setPanNumber", "percentage", "getPercentage", "setPercentage", "refund", "getRefund", "setRefund", "rentPaid", "getRentPaid", "setRentPaid", "rentalIncomeReceived", "getRentalIncomeReceived", "setRentalIncomeReceived", "residentialStatus", "getResidentialStatus", "setResidentialStatus", "sDate", "getSDate", "setSDate", "taxPayableAmount", "getTaxPayableAmount", "setTaxPayableAmount", "taxableSalary", "getTaxableSalary", "setTaxableSalary", "tdsDeductedFromSalary", "getTdsDeductedFromSalary", "setTdsDeductedFromSalary", "tdsDeductedOtherThanSalary", "getTdsDeductedOtherThanSalary", "setTdsDeductedOtherThanSalary", "totalAdvanceTaxAlreadyPaid", "getTotalAdvanceTaxAlreadyPaid", "setTotalAdvanceTaxAlreadyPaid", "totalBasicSalary", "getTotalBasicSalary", "setTotalBasicSalary", "totalDeduction", "getTotalDeduction", "setTotalDeduction", "totalLibility", "getTotalLibility", "setTotalLibility", "totalTax", "getTotalTax", "setTotalTax", "totaltaxablesalary", "getTotaltaxablesalary", "setTotaltaxablesalary", "Companion", "app_debug"})
+public final class UsefulToolsModel {
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BasicSalary")
+    private int basicSalary;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "DearnessAllowance")
+    private int dearnessAllowance;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "HRA")
+    private int hra;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "RentPaid")
+    private int rentPaid;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsMetroCity")
+    private boolean isMetroCity;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Email")
+    private java.lang.String email;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "HraExemption")
+    private java.lang.String hraExemption;
+    private int hraChargeableTax;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String percentage;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Name")
+    private java.lang.String name;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "LandlordName")
+    private java.lang.String landlordName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PanNumber")
+    private java.lang.String panNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.SerializedName(value = "Address")
+    private java.lang.String address;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "SDate")
+    private java.lang.String sDate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EDate")
+    private java.lang.String eDate;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Months")
+    private java.lang.String months;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EmailId")
+    private java.lang.String emailId;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AssessmentYear")
+    private java.lang.String assessmentYear;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Age")
+    private java.lang.String age;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ResidentialStatus")
+    private java.lang.String residentialStatus;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TaxableSalary")
+    private java.lang.Integer taxableSalary;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "InterestIncome")
+    private java.lang.Integer interestIncome;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "InterestpaidOnHomeLoan")
+    private java.lang.Integer interestpaidOnHomeLoan;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "BasicDeduction80c")
+    private java.lang.Integer basicDeduction80c;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EightyTTAeightyTTB")
+    private java.lang.Integer eightyTTAeightyTTB;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EightyD")
+    private java.lang.Integer eightyD;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EightyG")
+    private java.lang.Integer eightyG;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "EightyE")
+    private java.lang.Integer eightyE;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TdsDeductedFromSalary")
+    private java.lang.Integer tdsDeductedFromSalary;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TdsDeductedOtherThanSalary")
+    private java.lang.Integer tdsDeductedOtherThanSalary;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TotalAdvanceTaxAlreadyPaid")
+    private java.lang.Integer totalAdvanceTaxAlreadyPaid;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "RentalIncomeReceived")
+    private java.lang.Integer rentalIncomeReceived;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "InterestPaidOnLoan")
+    private java.lang.Integer interestPaidOnLoan;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "TotalLibility")
+    private java.lang.String totalLibility;
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Refund")
+    public java.lang.String refund;
+    private int totaltaxablesalary;
+    private int totalDeduction;
+    private int totalBasicSalary;
+    private int taxPayableAmount;
+    private int netTaxableIncome;
+    private int totalTax;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.UsefulToolsModel.Companion Companion = null;
+    
+    public final int getBasicSalary() {
+        return 0;
+    }
+    
+    public final void setBasicSalary(int p0) {
+    }
+    
+    public final int getDearnessAllowance() {
+        return 0;
+    }
+    
+    public final void setDearnessAllowance(int p0) {
+    }
+    
+    public final int getHra() {
+        return 0;
+    }
+    
+    public final void setHra(int p0) {
+    }
+    
+    public final int getRentPaid() {
+        return 0;
+    }
+    
+    public final void setRentPaid(int p0) {
+    }
+    
+    public final boolean isMetroCity() {
+        return false;
+    }
+    
+    public final void setMetroCity(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getHraExemption() {
+        return null;
+    }
+    
+    public final void setHraExemption(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    public final int getHraChargeableTax() {
+        return 0;
+    }
+    
+    public final void setHraChargeableTax(int p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPercentage() {
+        return null;
+    }
+    
+    public final void setPercentage(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getLandlordName() {
+        return null;
+    }
+    
+    public final void setLandlordName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPanNumber() {
+        return null;
+    }
+    
+    public final void setPanNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAddress() {
+        return null;
+    }
+    
+    public final void setAddress(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getSDate() {
+        return null;
+    }
+    
+    public final void setSDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEDate() {
+        return null;
+    }
+    
+    public final void setEDate(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getMonths() {
+        return null;
+    }
+    
+    public final void setMonths(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmailId() {
+        return null;
+    }
+    
+    public final void setEmailId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAssessmentYear() {
+        return null;
+    }
+    
+    public final void setAssessmentYear(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAge() {
+        return null;
+    }
+    
+    public final void setAge(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getResidentialStatus() {
+        return null;
+    }
+    
+    public final void setResidentialStatus(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getTaxableSalary() {
+        return null;
+    }
+    
+    public final void setTaxableSalary(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getInterestIncome() {
+        return null;
+    }
+    
+    public final void setInterestIncome(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getInterestpaidOnHomeLoan() {
+        return null;
+    }
+    
+    public final void setInterestpaidOnHomeLoan(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getBasicDeduction80c() {
+        return null;
+    }
+    
+    public final void setBasicDeduction80c(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getEightyTTAeightyTTB() {
+        return null;
+    }
+    
+    public final void setEightyTTAeightyTTB(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getEightyD() {
+        return null;
+    }
+    
+    public final void setEightyD(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getEightyG() {
+        return null;
+    }
+    
+    public final void setEightyG(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getEightyE() {
+        return null;
+    }
+    
+    public final void setEightyE(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getTdsDeductedFromSalary() {
+        return null;
+    }
+    
+    public final void setTdsDeductedFromSalary(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getTdsDeductedOtherThanSalary() {
+        return null;
+    }
+    
+    public final void setTdsDeductedOtherThanSalary(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getTotalAdvanceTaxAlreadyPaid() {
+        return null;
+    }
+    
+    public final void setTotalAdvanceTaxAlreadyPaid(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getRentalIncomeReceived() {
+        return null;
+    }
+    
+    public final void setRentalIncomeReceived(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Integer getInterestPaidOnLoan() {
+        return null;
+    }
+    
+    public final void setInterestPaidOnLoan(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTotalLibility() {
+        return null;
+    }
+    
+    public final void setTotalLibility(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRefund() {
+        return null;
+    }
+    
+    public final void setRefund(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getTotaltaxablesalary() {
+        return 0;
+    }
+    
+    public final void setTotaltaxablesalary(int p0) {
+    }
+    
+    public final int getTotalDeduction() {
+        return 0;
+    }
+    
+    public final void setTotalDeduction(int p0) {
+    }
+    
+    public final int getTotalBasicSalary() {
+        return 0;
+    }
+    
+    public final void setTotalBasicSalary(int p0) {
+    }
+    
+    public final int getTaxPayableAmount() {
+        return 0;
+    }
+    
+    public final void setTaxPayableAmount(int p0) {
+    }
+    
+    public final int getNetTaxableIncome() {
+        return 0;
+    }
+    
+    public final void setNetTaxableIncome(int p0) {
+    }
+    
+    public final int getTotalTax() {
+        return 0;
+    }
+    
+    public final void setTotalTax(int p0) {
+    }
+    
+    public UsefulToolsModel() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/UsefulToolsModel$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/UsefulToolsModel;", "getInstance", "()Ldell/com/allindiaitr/models/UsefulToolsModel;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.UsefulToolsModel getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

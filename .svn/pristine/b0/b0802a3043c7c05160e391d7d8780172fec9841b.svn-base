@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".submitDocument.EFilingPersonalInfoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tab_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/forty_five"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_personal_information" />
+
+        <View
+            android:id="@+id/view_forms"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/two"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_user"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_forms"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_forms"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_form_16" />
+
+        <View
+            android:id="@+id/view_details"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/two"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_forms"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_details"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_details"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_important_details" />
+
+        <View
+            android:id="@+id/view_bank"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/two"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_bank"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bank_details" />
+
+        <View
+            android:id="@+id/view_doc"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/two"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_bank"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_doc"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_doc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_any_other_information" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_view">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:layout_marginBottom="@dimen/five">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/start_filing_financial_year"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/choose_financial_year"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:textAlignment="center"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/choose_year_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="@color/lightest_grey"-->
+        <!--android:text="@string/year_txt"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingLeft="15dp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:layout_marginTop="10dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginRight="2dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:text="@string/first_name"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edittxt_firstname"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:padding="12dp"-->
+        <!--android:inputType="textCapSentences"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:background="@drawable/text_field" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginLeft="2dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:text="@string/last_name"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edittxt_lastname"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:padding="12dp"-->
+        <!--android:inputType="textCapSentences"-->
+        <!--android:ems="5"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:background="@drawable/text_field"-->
+        <!--android:autofillHints="" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:text="@string/mobile_number"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:layout_marginTop="5dp"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edittxt_mobno"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:padding="12dp"-->
+        <!--android:inputType="phone"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/text_field"-->
+        <!--android:autofillHints="" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/email_id"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:layout_marginTop="5dp"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edittxt_emailid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:background="@drawable/text_field"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/pan_no"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:layout_marginTop="5dp"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edittxt_panno"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:padding="12dp"-->
+        <!--android:inputType="textCapCharacters"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/text_field"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/dob"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:textColor="@color/lighter_black"-->
+        <!--android:layout_marginTop="5dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/edittxt_dob"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/forty"-->
+        <!--android:padding="12dp"-->
+        <!--android:textColor="@color/light_black"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="@dimen/fifteen"-->
+        <!--android:layout_marginRight="@dimen/fifteen"-->
+        <!--android:textSize="@dimen/text_size_twelve"-->
+        <!--android:background="@drawable/text_field"-->
+        <!--android:drawableEnd="@drawable/ic_calendar_filled" />-->
+
+        <!--</LinearLayout>-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/start_filing_financial_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty"
+                android:layout_marginEnd="@dimen/thirty"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_financial_year"
+                    android:textAlignment="center"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/two"
+                    android:background="@color/lightest_grey"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:paddingTop="@dimen/five"
+                    android:paddingRight="@dimen/fifteen"
+                    android:paddingBottom="@dimen/five"
+                    android:text="@string/year_txt"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/thirty"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/start_filing_financial_year">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/two"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/first_name"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                        android:id="@+id/firstNameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:ems="10"
+                        android:inputType="textCapSentences"
+                        android:padding="@dimen/twelve"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/last_name"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                    <EditText
+                        android:id="@+id/lastNameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:background="@drawable/text_field"
+                        android:ems="10"
+                        android:inputType="textCapSentences"
+                        android:padding="@dimen/twelve"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                    android:id="@+id/mobileNumberField"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/twelve"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="@string/email_id"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                    android:id="@+id/emailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/twelve"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="@string/pan_no"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <EditText
+                    android:id="@+id/panNumberField"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:padding="@dimen/twelve"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="@string/dob"
+                    android:textColor="@color/lighter_black"
+                    android:textSize="@dimen/text_size_twelve" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/forty" -->
+                <!--android:id="@+id/dobField"-->
+                <!--android:background="@drawable/text_field" -->
+                <!--android:layout_marginBottom="@dimen/ten"-->
+                <!--android:drawableRight="@drawable/ic_calendar_filled" -->
+                <!--android:textColor="@color/lighter_black"-->
+                <!--android:textSize="@dimen/text_size_twelve" -->
+                <!--android:padding="@dimen/twelve"/>-->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:background="@drawable/text_field"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dobField"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:ems="10"
+                        android:paddingStart="@dimen/twelve"
+                        android:paddingTop="@dimen/twelve"
+                        android:paddingEnd="@dimen/thirty_five"
+                        android:paddingBottom="@dimen/twelve"
+                        android:textColor="@color/lighter_black"
+                        android:textSize="@dimen/text_size_twelve" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/fifteen"
+                        android:layout_height="@dimen/fifteen"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="@dimen/twelve"
+                        app:srcCompat="@drawable/ic_calendar_filled" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cont_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/forty"
+                android:layout_marginStart="@dimen/fifteen"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/fifteen"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@drawable/button_background"
+                android:text="@string/cont"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_fourteen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

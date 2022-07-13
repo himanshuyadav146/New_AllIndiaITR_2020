@@ -1,0 +1,287 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0002\b$\u0018\u0000 A2\u00020\u0001:\u0001AB\u0007\b\u0012\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00018\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010\u0005\"\u0004\b\u0006\u0010\u0007R \u0010\b\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR \u0010\u000e\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u000b\"\u0004\b\u0010\u0010\rR \u0010\u0011\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000b\"\u0004\b\u0013\u0010\rR \u0010\u0014\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u000b\"\u0004\b\u0016\u0010\rR \u0010\u0017\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u000b\"\u0004\b\u0019\u0010\rR \u0010\u001a\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u000b\"\u0004\b\u001c\u0010\rR\"\u0010\u001d\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b\u001d\u0010\u001f\"\u0004\b \u0010!R\"\u0010#\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b#\u0010\u001f\"\u0004\b$\u0010!R\"\u0010%\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b%\u0010\u001f\"\u0004\b&\u0010!R\"\u0010\'\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b\'\u0010\u001f\"\u0004\b(\u0010!R\"\u0010)\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b)\u0010\u001f\"\u0004\b*\u0010!R\"\u0010+\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b+\u0010\u001f\"\u0004\b,\u0010!R\"\u0010-\u001a\u0004\u0018\u00010\u001e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\"\u001a\u0004\b-\u0010\u001f\"\u0004\b.\u0010!R \u0010/\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b0\u0010\u000b\"\u0004\b1\u0010\rR \u00102\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b3\u0010\u000b\"\u0004\b4\u0010\rR \u00105\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b6\u0010\u000b\"\u0004\b7\u0010\rR \u00108\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b9\u0010\u000b\"\u0004\b:\u0010\rR \u0010;\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b<\u0010\u000b\"\u0004\b=\u0010\rR \u0010>\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b?\u0010\u000b\"\u0004\b@\u0010\r\u00a8\u0006B"}, d2 = {"Ldell/com/allindiaitr/models/Token;", "", "()V", "aadharCardNumber", "getAadharCardNumber", "()Ljava/lang/Object;", "setAadharCardNumber", "(Ljava/lang/Object;)V", "accessToken", "", "getAccessToken", "()Ljava/lang/String;", "setAccessToken", "(Ljava/lang/String;)V", "email", "getEmail", "setEmail", "expires", "getExpires", "setExpires", "expiresIn", "getExpiresIn", "setExpiresIn", "firstName", "getFirstName", "setFirstName", "id", "getId", "setId", "isDocumentFilingComplete", "", "()Ljava/lang/Boolean;", "setDocumentFilingComplete", "(Ljava/lang/Boolean;)V", "Ljava/lang/Boolean;", "isDocumentUploaded", "setDocumentUploaded", "isForm16Uploaded", "setForm16Uploaded", "isManualFiling", "setManualFiling", "isPhoneNumberConfirmed", "setPhoneNumberConfirmed", "isProfileUpdated", "setProfileUpdated", "isTaxFilingComplete", "setTaxFilingComplete", "issued", "getIssued", "setIssued", "lastName", "getLastName", "setLastName", "panNumber", "getPanNumber", "setPanNumber", "phoneNumber", "getPhoneNumber", "setPhoneNumber", "tokenType", "getTokenType", "setTokenType", "userName", "getUserName", "setUserName", "Companion", "app_debug"})
+public final class Token {
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "access_token")
+    private java.lang.String accessToken;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "token_type")
+    private java.lang.String tokenType;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "expires_in")
+    private java.lang.String expiresIn;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Id")
+    private java.lang.String id;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "UserName")
+    private java.lang.String userName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Email")
+    private java.lang.String email;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsProfileUpdated")
+    private java.lang.Boolean isProfileUpdated;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsForm16Uploaded")
+    private java.lang.Boolean isForm16Uploaded;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsManualFiling")
+    private java.lang.Boolean isManualFiling;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PhoneNumber")
+    private java.lang.String phoneNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsTaxFilingComplete")
+    private java.lang.Boolean isTaxFilingComplete;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsDocumentUploaded")
+    private java.lang.Boolean isDocumentUploaded;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsDocumentFilingComplete")
+    private java.lang.Boolean isDocumentFilingComplete;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "FirstName")
+    private java.lang.String firstName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "LastName")
+    private java.lang.String lastName;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PanNumber")
+    private java.lang.String panNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "AadharCardNumber")
+    private java.lang.Object aadharCardNumber;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "IsPhoneNumberConfirmed")
+    private java.lang.Boolean isPhoneNumberConfirmed;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = ".issued")
+    private java.lang.String issued;
+    @org.jetbrains.annotations.Nullable()
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = ".expires")
+    private java.lang.String expires;
+    @org.jetbrains.annotations.NotNull()
+    private static final kotlin.Lazy instance$delegate = null;
+    public static final dell.com.allindiaitr.models.Token.Companion Companion = null;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getAccessToken() {
+        return null;
+    }
+    
+    public final void setAccessToken(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getTokenType() {
+        return null;
+    }
+    
+    public final void setTokenType(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getExpiresIn() {
+        return null;
+    }
+    
+    public final void setExpiresIn(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getUserName() {
+        return null;
+    }
+    
+    public final void setUserName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isProfileUpdated() {
+        return null;
+    }
+    
+    public final void setProfileUpdated(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isForm16Uploaded() {
+        return null;
+    }
+    
+    public final void setForm16Uploaded(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isManualFiling() {
+        return null;
+    }
+    
+    public final void setManualFiling(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPhoneNumber() {
+        return null;
+    }
+    
+    public final void setPhoneNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isTaxFilingComplete() {
+        return null;
+    }
+    
+    public final void setTaxFilingComplete(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isDocumentUploaded() {
+        return null;
+    }
+    
+    public final void setDocumentUploaded(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isDocumentFilingComplete() {
+        return null;
+    }
+    
+    public final void setDocumentFilingComplete(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getFirstName() {
+        return null;
+    }
+    
+    public final void setFirstName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getLastName() {
+        return null;
+    }
+    
+    public final void setLastName(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPanNumber() {
+        return null;
+    }
+    
+    public final void setPanNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Object getAadharCardNumber() {
+        return null;
+    }
+    
+    public final void setAadharCardNumber(@org.jetbrains.annotations.Nullable()
+    java.lang.Object p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.Boolean isPhoneNumberConfirmed() {
+        return null;
+    }
+    
+    public final void setPhoneNumberConfirmed(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getIssued() {
+        return null;
+    }
+    
+    public final void setIssued(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getExpires() {
+        return null;
+    }
+    
+    public final void setExpires(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    private Token() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\t"}, d2 = {"Ldell/com/allindiaitr/models/Token$Companion;", "", "()V", "instance", "Ldell/com/allindiaitr/models/Token;", "getInstance", "()Ldell/com/allindiaitr/models/Token;", "instance$delegate", "Lkotlin/Lazy;", "app_debug"})
+    public static final class Companion {
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.models.Token getInstance() {
+            return null;
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

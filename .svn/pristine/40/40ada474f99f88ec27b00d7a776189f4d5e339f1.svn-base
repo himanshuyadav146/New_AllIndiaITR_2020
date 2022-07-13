@@ -1,0 +1,522 @@
+package dell.com.allindiaitr.usefultools;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\bi\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0015\u0010\u00bc\u0001\u001a\u00030\u00bd\u00012\t\u0010\u00be\u0001\u001a\u0004\u0018\u00010JH\u0014J\n\u0010\u00bf\u0001\u001a\u00030\u00bd\u0001H\u0002J\n\u0010\u00c0\u0001\u001a\u00030\u00bd\u0001H\u0016J\u0014\u0010\u00c1\u0001\u001a\u00030\u00bd\u00012\b\u0010\u00c2\u0001\u001a\u00030\u00c3\u0001H\u0016J\u0016\u0010\u00c4\u0001\u001a\u00030\u00bd\u00012\n\u0010\u00c5\u0001\u001a\u0005\u0018\u00010\u00c6\u0001H\u0014J\u0016\u0010\u00c7\u0001\u001a\u00030\u00c8\u00012\n\u0010\u00c9\u0001\u001a\u0005\u0018\u00010\u00ca\u0001H\u0016J\n\u0010\u00cb\u0001\u001a\u00030\u00bd\u0001H\u0002R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u000bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u0016\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00050\u0017X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0007\"\u0004\b\u001b\u0010\tR\u001a\u0010\u001c\u001a\u00020\u001dX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u001a\u0010\"\u001a\u00020\u001dX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010\u001f\"\u0004\b$\u0010!R\u001a\u0010%\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010(\"\u0004\b)\u0010*R\u001a\u0010+\u001a\u00020,X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R\u001a\u00101\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R\u001a\u00107\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b8\u0010\u0007\"\u0004\b9\u0010\tR\u001a\u0010:\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u00104\"\u0004\b<\u00106R\u001a\u0010=\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b>\u00104\"\u0004\b?\u00106R\u001a\u0010@\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bA\u0010\u0007\"\u0004\bB\u0010\tR\u001a\u0010C\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bD\u00104\"\u0004\bE\u00106R\u001a\u0010F\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bG\u0010\u0007\"\u0004\bH\u0010\tR\u001a\u0010I\u001a\u00020JX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bK\u0010L\"\u0004\bM\u0010NR\u001a\u0010O\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bP\u00104\"\u0004\bQ\u00106R\u001a\u0010R\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bS\u00104\"\u0004\bT\u00106R\u001a\u0010U\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bV\u00104\"\u0004\bW\u00106R\u001a\u0010X\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bY\u0010\u0007\"\u0004\bZ\u0010\tR\u0016\u0010[\u001a\b\u0012\u0004\u0012\u00020\u00050\u0017X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0018R\u001a\u0010\\\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b]\u0010\u0007\"\u0004\b^\u0010\tR\u001a\u0010_\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b`\u00104\"\u0004\ba\u00106R\u001a\u0010b\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bc\u0010\u0007\"\u0004\bd\u0010\tR\u001a\u0010e\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bf\u00104\"\u0004\bg\u00106R\u001a\u0010h\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bi\u0010\u0007\"\u0004\bj\u0010\tR\u001a\u0010k\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bl\u00104\"\u0004\bm\u00106R\u001a\u0010n\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bo\u0010\u0007\"\u0004\bp\u0010\tR\u001a\u0010q\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\br\u00104\"\u0004\bs\u00106R\u001a\u0010t\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bu\u0010\u0007\"\u0004\bv\u0010\tR\u001a\u0010w\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bx\u00104\"\u0004\by\u00106R\u001a\u0010z\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b{\u0010\u0007\"\u0004\b|\u0010\tR\u001a\u0010}\u001a\u000202X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b~\u00104\"\u0004\b\u007f\u00106R\u001d\u0010\u0080\u0001\u001a\u00020\u0005X\u0086.\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0081\u0001\u0010\u0007\"\u0005\b\u0082\u0001\u0010\tR\u001d\u0010\u0083\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0084\u0001\u00104\"\u0005\b\u0085\u0001\u00106R\u001d\u0010\u0086\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0087\u0001\u00104\"\u0005\b\u0088\u0001\u00106R\u001d\u0010\u0089\u0001\u001a\u00020\u0005X\u0086.\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u008a\u0001\u0010\u0007\"\u0005\b\u008b\u0001\u0010\tR\u001d\u0010\u008c\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u008d\u0001\u00104\"\u0005\b\u008e\u0001\u00106R\u001d\u0010\u008f\u0001\u001a\u00020\u0005X\u0086.\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0090\u0001\u0010\u0007\"\u0005\b\u0091\u0001\u0010\tR\u001d\u0010\u0092\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0093\u0001\u00104\"\u0005\b\u0094\u0001\u00106R\u001d\u0010\u0095\u0001\u001a\u00020\u0005X\u0086.\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0096\u0001\u0010\u0007\"\u0005\b\u0097\u0001\u0010\tR\u001d\u0010\u0098\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0099\u0001\u00104\"\u0005\b\u009a\u0001\u00106R\u001d\u0010\u009b\u0001\u001a\u00020\u0005X\u0086.\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u009c\u0001\u0010\u0007\"\u0005\b\u009d\u0001\u0010\tR\u001d\u0010\u009e\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u009f\u0001\u00104\"\u0005\b\u00a0\u0001\u00106R\u001d\u0010\u00a1\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00a2\u0001\u00104\"\u0005\b\u00a3\u0001\u00106R\u001d\u0010\u00a4\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00a5\u0001\u00104\"\u0005\b\u00a6\u0001\u00106R\u001d\u0010\u00a7\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00a8\u0001\u00104\"\u0005\b\u00a9\u0001\u00106R\u001d\u0010\u00aa\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00ab\u0001\u00104\"\u0005\b\u00ac\u0001\u00106R\u001d\u0010\u00ad\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00ae\u0001\u00104\"\u0005\b\u00af\u0001\u00106R\u001d\u0010\u00b0\u0001\u001a\u000202X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00b1\u0001\u00104\"\u0005\b\u00b2\u0001\u00106R \u0010\u00b3\u0001\u001a\u00030\u00b4\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\b\u00b5\u0001\u0010\u00b6\u0001\"\u0006\b\u00b7\u0001\u0010\u00b8\u0001R\u001d\u0010\u00b9\u0001\u001a\u00020&X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u00ba\u0001\u0010(\"\u0005\b\u00bb\u0001\u0010*\u00a8\u0006\u00cc\u0001"}, d2 = {"Ldell/com/allindiaitr/usefultools/IncomeTaxCalculatorActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "ageString", "", "getAgeString", "()Ljava/lang/String;", "setAgeString", "(Ljava/lang/String;)V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "getAppPreferences", "()Ldell/com/allindiaitr/utils/AppPreferences;", "setAppPreferences", "(Ldell/com/allindiaitr/utils/AppPreferences;)V", "assessmentYear", "", "[Ljava/lang/String;", "assessmentYearString", "getAssessmentYearString", "setAssessmentYearString", "date1", "Ljava/util/Date;", "getDate1", "()Ljava/util/Date;", "setDate1", "(Ljava/util/Date;)V", "date2", "getDate2", "setDate2", "days", "", "getDays", "()I", "setDays", "(I)V", "diff", "", "getDiff", "()J", "setDiff", "(J)V", "incomeFromInterestFloat", "", "getIncomeFromInterestFloat", "()F", "setIncomeFromInterestFloat", "(F)V", "incomeFromInterestString", "getIncomeFromInterestString", "setIncomeFromInterestString", "interestFromSavings", "getInterestFromSavings", "setInterestFromSavings", "interestPaidHomeLoneFloat", "getInterestPaidHomeLoneFloat", "setInterestPaidHomeLoneFloat", "interestPaidHomeLoneString", "getInterestPaidHomeLoneString", "setInterestPaidHomeLoneString", "interestPaidLoneFloat", "getInterestPaidLoneFloat", "setInterestPaidLoneFloat", "interestPaidLoneString", "getInterestPaidLoneString", "setInterestPaidLoneString", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "netTaxableIncome", "getNetTaxableIncome", "setNetTaxableIncome", "refund", "getRefund", "setRefund", "rentalIncomeFloat", "getRentalIncomeFloat", "setRentalIncomeFloat", "rentalIncomeString", "getRentalIncomeString", "setRentalIncomeString", "residentialStatus", "residentialStatusString", "getResidentialStatusString", "setResidentialStatusString", "section80CFloat", "getSection80CFloat", "setSection80CFloat", "section80CString", "getSection80CString", "setSection80CString", "section80DFloat", "getSection80DFloat", "setSection80DFloat", "section80DString", "getSection80DString", "setSection80DString", "section80EFloat", "getSection80EFloat", "setSection80EFloat", "section80EString", "getSection80EString", "setSection80EString", "section80GFloat", "getSection80GFloat", "setSection80GFloat", "section80GString", "getSection80GString", "setSection80GString", "section80TTAFloat", "getSection80TTAFloat", "setSection80TTAFloat", "section80TTAString", "getSection80TTAString", "setSection80TTAString", "section80TTBFloat", "getSection80TTBFloat", "setSection80TTBFloat", "section80TTBString", "getSection80TTBString", "setSection80TTBString", "taxPayableAmount", "getTaxPayableAmount", "setTaxPayableAmount", "taxableSalaryFloat", "getTaxableSalaryFloat", "setTaxableSalaryFloat", "taxableSalaryString", "getTaxableSalaryString", "setTaxableSalaryString", "tdsDeductedOtherSalaryFloat", "getTdsDeductedOtherSalaryFloat", "setTdsDeductedOtherSalaryFloat", "tdsDeductedOtherSalaryString", "getTdsDeductedOtherSalaryString", "setTdsDeductedOtherSalaryString", "tdsDeductedSalaryFloat", "getTdsDeductedSalaryFloat", "setTdsDeductedSalaryFloat", "tdsDeductedSalaryString", "getTdsDeductedSalaryString", "setTdsDeductedSalaryString", "totalAdvanceFloat", "getTotalAdvanceFloat", "setTotalAdvanceFloat", "totalAdvanceString", "getTotalAdvanceString", "setTotalAdvanceString", "totalBasicSalary", "getTotalBasicSalary", "setTotalBasicSalary", "totalDeduction", "getTotalDeduction", "setTotalDeduction", "totalPayableTax", "getTotalPayableTax", "setTotalPayableTax", "totalRebateTax", "getTotalRebateTax", "setTotalRebateTax", "totalRentalIncome", "getTotalRentalIncome", "setTotalRentalIncome", "totalTax", "getTotalTax", "setTotalTax", "totaltaxablesalary", "getTotaltaxablesalary", "setTotaltaxablesalary", "usefulToolsModel", "Ldell/com/allindiaitr/models/UsefulToolsModel;", "getUsefulToolsModel", "()Ldell/com/allindiaitr/models/UsefulToolsModel;", "setUsefulToolsModel", "(Ldell/com/allindiaitr/models/UsefulToolsModel;)V", "years", "getYears", "setYears", "attachBaseContext", "", "newBase", "calculate", "onBackPressed", "onClick", "view", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "", "item", "Landroid/view/MenuItem;", "postCalculationAPI", "app_debug"})
+public final class IncomeTaxCalculatorActivity extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    private final java.lang.String[] assessmentYear = null;
+    private final java.lang.String[] residentialStatus = null;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String assessmentYearString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String ageString;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.Date date1;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.Date date2;
+    private long diff;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String residentialStatusString;
+    private int days;
+    private int years;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80TTAString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80TTBString;
+    private float totaltaxablesalary;
+    private float totalDeduction;
+    private float totalBasicSalary;
+    private float taxPayableAmount;
+    private float netTaxableIncome;
+    private float totalPayableTax;
+    private float interestFromSavings;
+    private float totalTax;
+    private float refund;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String taxableSalaryString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String incomeFromInterestString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String interestPaidHomeLoneString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String rentalIncomeString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String interestPaidLoneString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80CString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80GString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80DString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String section80EString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String tdsDeductedSalaryString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String tdsDeductedOtherSalaryString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String totalAdvanceString;
+    private float taxableSalaryFloat;
+    private float incomeFromInterestFloat;
+    private float interestPaidHomeLoneFloat;
+    private float rentalIncomeFloat;
+    private float interestPaidLoneFloat;
+    private float section80CFloat;
+    private float section80TTAFloat;
+    private float section80TTBFloat;
+    private float section80GFloat;
+    private float section80DFloat;
+    private float section80EFloat;
+    private float tdsDeductedSalaryFloat;
+    private float tdsDeductedOtherSalaryFloat;
+    private float totalAdvanceFloat;
+    private float totalRentalIncome;
+    private float totalRebateTax;
+    @org.jetbrains.annotations.NotNull()
+    private dell.com.allindiaitr.models.UsefulToolsModel usefulToolsModel;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAssessmentYearString() {
+        return null;
+    }
+    
+    public final void setAssessmentYearString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAgeString() {
+        return null;
+    }
+    
+    public final void setAgeString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Date getDate1() {
+        return null;
+    }
+    
+    public final void setDate1(@org.jetbrains.annotations.NotNull()
+    java.util.Date p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Date getDate2() {
+        return null;
+    }
+    
+    public final void setDate2(@org.jetbrains.annotations.NotNull()
+    java.util.Date p0) {
+    }
+    
+    public final long getDiff() {
+        return 0L;
+    }
+    
+    public final void setDiff(long p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getResidentialStatusString() {
+        return null;
+    }
+    
+    public final void setResidentialStatusString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getDays() {
+        return 0;
+    }
+    
+    public final void setDays(int p0) {
+    }
+    
+    public final int getYears() {
+        return 0;
+    }
+    
+    public final void setYears(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80TTAString() {
+        return null;
+    }
+    
+    public final void setSection80TTAString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80TTBString() {
+        return null;
+    }
+    
+    public final void setSection80TTBString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final float getTotaltaxablesalary() {
+        return 0.0F;
+    }
+    
+    public final void setTotaltaxablesalary(float p0) {
+    }
+    
+    public final float getTotalDeduction() {
+        return 0.0F;
+    }
+    
+    public final void setTotalDeduction(float p0) {
+    }
+    
+    public final float getTotalBasicSalary() {
+        return 0.0F;
+    }
+    
+    public final void setTotalBasicSalary(float p0) {
+    }
+    
+    public final float getTaxPayableAmount() {
+        return 0.0F;
+    }
+    
+    public final void setTaxPayableAmount(float p0) {
+    }
+    
+    public final float getNetTaxableIncome() {
+        return 0.0F;
+    }
+    
+    public final void setNetTaxableIncome(float p0) {
+    }
+    
+    public final float getTotalPayableTax() {
+        return 0.0F;
+    }
+    
+    public final void setTotalPayableTax(float p0) {
+    }
+    
+    public final float getInterestFromSavings() {
+        return 0.0F;
+    }
+    
+    public final void setInterestFromSavings(float p0) {
+    }
+    
+    public final float getTotalTax() {
+        return 0.0F;
+    }
+    
+    public final void setTotalTax(float p0) {
+    }
+    
+    public final float getRefund() {
+        return 0.0F;
+    }
+    
+    public final void setRefund(float p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTaxableSalaryString() {
+        return null;
+    }
+    
+    public final void setTaxableSalaryString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIncomeFromInterestString() {
+        return null;
+    }
+    
+    public final void setIncomeFromInterestString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getInterestPaidHomeLoneString() {
+        return null;
+    }
+    
+    public final void setInterestPaidHomeLoneString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRentalIncomeString() {
+        return null;
+    }
+    
+    public final void setRentalIncomeString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getInterestPaidLoneString() {
+        return null;
+    }
+    
+    public final void setInterestPaidLoneString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80CString() {
+        return null;
+    }
+    
+    public final void setSection80CString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80GString() {
+        return null;
+    }
+    
+    public final void setSection80GString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80DString() {
+        return null;
+    }
+    
+    public final void setSection80DString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSection80EString() {
+        return null;
+    }
+    
+    public final void setSection80EString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTdsDeductedSalaryString() {
+        return null;
+    }
+    
+    public final void setTdsDeductedSalaryString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTdsDeductedOtherSalaryString() {
+        return null;
+    }
+    
+    public final void setTdsDeductedOtherSalaryString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTotalAdvanceString() {
+        return null;
+    }
+    
+    public final void setTotalAdvanceString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final float getTaxableSalaryFloat() {
+        return 0.0F;
+    }
+    
+    public final void setTaxableSalaryFloat(float p0) {
+    }
+    
+    public final float getIncomeFromInterestFloat() {
+        return 0.0F;
+    }
+    
+    public final void setIncomeFromInterestFloat(float p0) {
+    }
+    
+    public final float getInterestPaidHomeLoneFloat() {
+        return 0.0F;
+    }
+    
+    public final void setInterestPaidHomeLoneFloat(float p0) {
+    }
+    
+    public final float getRentalIncomeFloat() {
+        return 0.0F;
+    }
+    
+    public final void setRentalIncomeFloat(float p0) {
+    }
+    
+    public final float getInterestPaidLoneFloat() {
+        return 0.0F;
+    }
+    
+    public final void setInterestPaidLoneFloat(float p0) {
+    }
+    
+    public final float getSection80CFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80CFloat(float p0) {
+    }
+    
+    public final float getSection80TTAFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80TTAFloat(float p0) {
+    }
+    
+    public final float getSection80TTBFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80TTBFloat(float p0) {
+    }
+    
+    public final float getSection80GFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80GFloat(float p0) {
+    }
+    
+    public final float getSection80DFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80DFloat(float p0) {
+    }
+    
+    public final float getSection80EFloat() {
+        return 0.0F;
+    }
+    
+    public final void setSection80EFloat(float p0) {
+    }
+    
+    public final float getTdsDeductedSalaryFloat() {
+        return 0.0F;
+    }
+    
+    public final void setTdsDeductedSalaryFloat(float p0) {
+    }
+    
+    public final float getTdsDeductedOtherSalaryFloat() {
+        return 0.0F;
+    }
+    
+    public final void setTdsDeductedOtherSalaryFloat(float p0) {
+    }
+    
+    public final float getTotalAdvanceFloat() {
+        return 0.0F;
+    }
+    
+    public final void setTotalAdvanceFloat(float p0) {
+    }
+    
+    public final float getTotalRentalIncome() {
+        return 0.0F;
+    }
+    
+    public final void setTotalRentalIncome(float p0) {
+    }
+    
+    public final float getTotalRebateTax() {
+        return 0.0F;
+    }
+    
+    public final void setTotalRebateTax(float p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.UsefulToolsModel getUsefulToolsModel() {
+        return null;
+    }
+    
+    public final void setUsefulToolsModel(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.UsefulToolsModel p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.utils.AppPreferences getAppPreferences() {
+        return null;
+    }
+    
+    public final void setAppPreferences(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.utils.AppPreferences p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.NotNull()
+    android.view.View view) {
+    }
+    
+    private final void calculate() {
+    }
+    
+    private final void postCalculationAPI() {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public IncomeTaxCalculatorActivity() {
+        super();
+    }
+}

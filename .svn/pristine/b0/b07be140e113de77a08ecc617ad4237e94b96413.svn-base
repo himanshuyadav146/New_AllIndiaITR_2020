@@ -1,0 +1,12 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_services.view.*
+
+class DashboardHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    val service_imageView = itemView.service_imageView
+    val heading_textView = itemView.heading_textView
+    val desc_textView = itemView.desc_textView
+    val free_imageView = itemView.free_imageView
+}

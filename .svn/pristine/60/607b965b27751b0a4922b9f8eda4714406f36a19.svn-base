@@ -1,0 +1,11 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_itr_select.view.*
+
+class SelectITRHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+    val username_textView = itemView.username_textView
+    val pan_no_textView = itemView.pan_no_textView
+    val mob_no_textView = itemView.mob_no_textView
+}

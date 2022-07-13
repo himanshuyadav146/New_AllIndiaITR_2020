@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".submitDocument.EVerifyActivity">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar">
+
+    </include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.7"
+                android:orientation="vertical"
+                android:weightSum="15">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.0"
+                    android:text="@string/e_verify__processinfo"
+                    android:textSize="@dimen/text_size_fourteen"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lighter_black"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/e_verify__onlineverification"
+                    android:textSize="@dimen/text_size_fourteen"
+                    android:textColor="@color/lighter_black"
+                    android:textStyle="bold"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/ic_identity_theft"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/ten"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/e_verify__aadharotp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/text_size_twelve"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/ic_browse_page_96px"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/ten"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/e_verify__netbanking"
+                            android:textSize="@dimen/text_size_twelve"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/ic_account_96px"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/ten"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/e_verify__dematac"
+                            android:textSize="@dimen/text_size_twelve"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/ic_mastercard_96px"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/ten"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/e_verify__atm"
+                            android:textSize="@dimen/text_size_twelve"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/e_verify__offlineverification"
+                    android:textSize="@dimen/text_size_fourteen"
+                    android:textColor="@color/lighter_black"
+                    android:textStyle="bold"
+                    android:gravity="center|center_vertical"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_postal_96px"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/e_verify__taxinfo"
+                        android:textSize="@dimen/text_size_fourteen"
+                        android:textColor="@color/lighter_black"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.3"
+                    app:cardCornerRadius="@dimen/three"
+                    app:cardBackgroundColor="@color/transparencyRed"
+                    android:layout_marginStart="@dimen/fifteen"
+                    android:layout_marginEnd="@dimen/fifteen"
+                    app:cardElevation="0dp">
+
+                <TextView
+                        android:id="@+id/note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="12dp"
+                        android:paddingLeft="12dp"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:text="@string/warning_note"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:textColor="@color/red"
+                        android:layout_above="@+id/btn_proceed"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="5">
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/grey"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/or"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_fourteen"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/grey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:background="@color/banner_blue">
+
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_banner_image"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_verify__info"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_fourteen"/>
+
+                <Button
+                        android:id="@+id/btn_proceed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/thirty_five"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:paddingRight="@dimen/fifteen"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAllCaps="false"
+                        android:baselineAligned="false"
+                        android:text="@string/e_verify__button"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_fourteen"
+                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/light_blue"
+                        style="?android:attr/borderlessButtonStyle"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

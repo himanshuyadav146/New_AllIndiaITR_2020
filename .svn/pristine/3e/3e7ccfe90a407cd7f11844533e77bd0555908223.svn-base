@@ -1,0 +1,37 @@
+package dell.com.allindiaitr.holders;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0019\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0019\u0010\u000e\u001a\n \u0007*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0019\u0010\u0012\u001a\n \u0007*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0011R\u0019\u0010\u0014\u001a\n \u0007*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0011\u00a8\u0006\u0016"}, d2 = {"Ldell/com/allindiaitr/holders/CardOrderPaymentViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Landroid/view/View;)V", "mImg_package", "Landroid/widget/ImageView;", "kotlin.jvm.PlatformType", "getMImg_package", "()Landroid/widget/ImageView;", "mSwitch_package", "Landroid/widget/Switch;", "getMSwitch_package", "()Landroid/widget/Switch;", "mTv_package_cost", "Landroid/widget/TextView;", "getMTv_package_cost", "()Landroid/widget/TextView;", "mTv_package_desc", "getMTv_package_desc", "mTv_package_title", "getMTv_package_title", "app_debug"})
+public final class CardOrderPaymentViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+    private final android.widget.ImageView mImg_package = null;
+    private final android.widget.TextView mTv_package_title = null;
+    private final android.widget.TextView mTv_package_desc = null;
+    private final android.widget.Switch mSwitch_package = null;
+    private final android.widget.TextView mTv_package_cost = null;
+    
+    public final android.widget.ImageView getMImg_package() {
+        return null;
+    }
+    
+    public final android.widget.TextView getMTv_package_title() {
+        return null;
+    }
+    
+    public final android.widget.TextView getMTv_package_desc() {
+        return null;
+    }
+    
+    public final android.widget.Switch getMSwitch_package() {
+        return null;
+    }
+    
+    public final android.widget.TextView getMTv_package_cost() {
+        return null;
+    }
+    
+    public CardOrderPaymentViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.View itemView) {
+        super(null);
+    }
+}

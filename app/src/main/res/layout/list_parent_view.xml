@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eighty"
+            android:background="@color/white">
+
+        <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/ic_select_user"
+                android:id="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="@dimen/ten"
+                tools:ignore="VectorDrawableCompat"
+                app:layout_constraintBottom_toTopOf="@+id/view4"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintEnd_toStartOf="@+id/start_filing_button"
+                android:layout_marginRight="@dimen/fifteen"
+                app:layout_constraintBottom_toTopOf="@+id/view4">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_username"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_sixteen"
+                        android:textStyle="bold"
+                        android:singleLine="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_pannumber"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_twelve"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_dob"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_twelve"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/twenty_eight"
+                android:id="@+id/start_filing_button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/fifteen"
+                app:layout_constraintBottom_toTopOf="@+id/view4"
+                android:text="@string/start_filing"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_twelve"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="@dimen/fifteen"
+                android:paddingEnd="@dimen/fifteen"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/blue"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:id="@+id/view4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@color/lighter_grey"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,13 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.earnning_listadapter.view.*
+
+class EarningsHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    val earninglistAmountText = itemView.earninglistAmountText
+    val earnningDateText = itemView.earnningDateText
+    val earnningUserNameText = itemView.earnningUserNameText
+    val card_view = itemView.card_view
+}

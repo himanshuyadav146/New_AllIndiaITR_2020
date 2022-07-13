@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ten"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_name"
+                    android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/userCreateDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/ten"
+                android:layout_toStartOf="@+id/userImage"
+                android:textSize="@dimen/text_size_ten"
+                android:textColor="@color/light_grey"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/userchatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/two"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/chat_user_bg"
+            android:paddingTop="@dimen/ten"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:textColor="@color/white"
+            android:autoLink="all"
+            android:elevation="@dimen/five"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/twelve">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/adminDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/adminImage"
+                android:textSize="@dimen/text_size_ten"
+                android:textColor="@color/light_grey"/>
+
+            <ImageView
+                    android:id="@+id/adminImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_online_support" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/adminchatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/twenty"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="@dimen/two"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/chat_admin_bg"
+            android:paddingTop="@dimen/ten"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:textColor="@color/lighter_black"
+            android:autoLink="all"
+            android:elevation="@dimen/five"/>
+    </LinearLayout>
+</RelativeLayout>

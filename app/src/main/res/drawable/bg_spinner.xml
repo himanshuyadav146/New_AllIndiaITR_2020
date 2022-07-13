@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item>
+
+    <layer-list>
+
+        <item>
+            <shape>
+                <shape android:shape="rectangle"/>
+
+                <stroke android:width="0.5dp" android:color="@color/grey" />
+
+                <solid android:color="@color/white"/>
+
+                <corners android:radius="4dp"/>
+
+                <padding android:right="10dp"/>
+            </shape>
+        </item>
+
+        <item
+                android:gravity="end|center"
+            android:left="@dimen/five"
+            android:right="@dimen/five">
+
+            <bitmap
+                    android:gravity="center_vertical|right"
+                    android:src="@drawable/ic_dropdown"/>
+
+        </item>
+
+    </layer-list>
+
+</item>
+
+</selector>

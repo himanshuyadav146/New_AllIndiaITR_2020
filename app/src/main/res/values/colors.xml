@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B894</color>
+    <color name="colorPrimaryDark">#009B7B</color>
+    <color name="colorAccent">#00B894</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_txt">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#434343</color>
+    <color name="lighter_black">#505050</color>
+    <color name="lighter_gray">#959595</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="light_grey">#CCCCCC</color>
+    <color name="light_dark_grey">#999999</color>
+    <color name="lighter_grey">#EFEFEF</color>
+    <color name="lightest_grey">#F8F8F8</color>
+    <color name="lightest_grey_forstatus">#C5C4C4</color>
+    <color name="dark_grey">#777777</color>
+    <color name="otp_image_bg">#F2F7F4</color>
+
+    <color name="blue">#4B97FF</color>
+    <color name="target_blue">#008aec</color>
+    <color name="dark_blue">#0F6177</color>
+    <color name="dark_yellow">#FFAB2A</color>
+    <color name="transparencyYellow">#1AFFCB55</color>
+    <color name="yellow">#FFCB55</color>
+    <color name="red">#FF6463</color>
+    <color name="transparencyPrimaryDark">#0D00B894</color>
+    <color name="transparencyRed">#1AFF5858</color>
+    <color name="light_green">#4CAF50</color>
+    <color name="light_pink">#FF606D</color>
+    <color name="light_yellow">#FFC271</color>
+    <color name="tutorial">#F5F5F5</color>
+    <color name="strokColor">#d9d9d9</color>
+    <color name="banner_blue">#1BAAA6</color>
+    <color name="light_blue">#00EEE7</color>
+    <color name="transparencyBlue">#1A007AFF</color>
+    <color name="refer_banner_bg">#293c4a</color>
+    <color name="shadow_grey">#29EFEFEF</color>
+
+    <!-- dots inactive colors -->
+    <color name="intro_bullet_inactive">#4000B894</color>
+    <!-- dots active colors -->
+    <color name="intro_bullet_active">#00B894</color>
+    <color name="sub_text">#CCCCCC99</color>
+
+    <color name="blue_light">#2196F3</color>
+
+
+    <array name="array_intro_bullet_inactive">
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+    </array>
+    <array name="array_intro_bullet_active">
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+    </array>
+
+</resources>

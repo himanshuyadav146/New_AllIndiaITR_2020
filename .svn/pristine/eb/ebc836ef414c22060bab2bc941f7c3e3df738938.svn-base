@@ -1,0 +1,85 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:7:22-73
+application
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:9:5-36:19
+	android:label
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:10:9-35
+activity#com.payu.payuui.Activity.PayUBaseActivity
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:15:9-21:20
+	android:screenOrientation
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:18:13-49
+	android:label
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:17:13-45
+	android:windowSoftInputMode
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:19:13-52
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:16:13-54
+activity#com.payu.payuui.Activity.PaymentsActivity
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:22:9-28:20
+	android:screenOrientation
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:24:13-60
+	android:theme
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:26:13-53
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:23:13-54
+activity#com.payu.payuui.Activity.OldPaymentActivity
+ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:29:9-34:20
+	android:screenOrientation
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:32:13-49
+	android:label
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:31:13-60
+	android:name
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml:30:13-56
+uses-sdk
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		ADDED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml
+		INJECTED from D:\Kotlin\AllIndiaITR\sdkui\src\main\AndroidManifest.xml

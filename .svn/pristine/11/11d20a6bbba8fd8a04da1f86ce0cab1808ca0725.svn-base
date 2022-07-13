@@ -1,0 +1,71 @@
+package dell.com.allindiaitr.models;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u000b\u001a\u0004\u0018\u00010\bJ\b\u0010\f\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\nJ\b\u0010\u000e\u001a\u0004\u0018\u00010\u0004J\u0006\u0010\u000f\u001a\u00020\u0004J\u000e\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0007\u001a\u00020\bJ\u000e\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0003\u001a\u00020\u0004J\u0014\u0010\u0013\u001a\u00020\u00112\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\nJ\u000e\u0010\u0014\u001a\u00020\u00112\u0006\u0010\u0015\u001a\u00020\u0004J\u000e\u0010\u0016\u001a\u00020\u00112\u0006\u0010\u0006\u001a\u00020\u0004R\u0014\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u0004\u0018\u00010\b8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\n8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"}, d2 = {"Ldell/com/allindiaitr/models/CouponModel;", "", "()V", "CouponCode", "", "PackageId", "ParentId", "coupon", "Ldell/com/allindiaitr/models/Coupon;", "message", "", "getCoupon", "getCouponCode", "getMessage", "getPackageId", "getParentId", "setCoupon", "", "setCouponCode", "setMessage", "setPackageId", "packageID", "setParentId", "app_debug"})
+public final class CouponModel {
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Coupon")
+    private dell.com.allindiaitr.models.Coupon coupon;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "Message")
+    private java.util.List<java.lang.String> message;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "CouponCode")
+    private java.lang.String CouponCode;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "ParentId")
+    private java.lang.String ParentId;
+    @com.google.gson.annotations.Expose()
+    @com.google.gson.annotations.SerializedName(value = "PackageId")
+    private java.lang.String PackageId;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final dell.com.allindiaitr.models.Coupon getCoupon() {
+        return null;
+    }
+    
+    public final void setCoupon(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.Coupon coupon) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<java.lang.String> getMessage() {
+        return null;
+    }
+    
+    public final void setMessage(@org.jetbrains.annotations.NotNull()
+    java.util.List<java.lang.String> message) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getPackageId() {
+        return null;
+    }
+    
+    public final void setPackageId(@org.jetbrains.annotations.NotNull()
+    java.lang.String packageID) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getCouponCode() {
+        return null;
+    }
+    
+    public final void setCouponCode(@org.jetbrains.annotations.NotNull()
+    java.lang.String CouponCode) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getParentId() {
+        return null;
+    }
+    
+    public final void setParentId(@org.jetbrains.annotations.NotNull()
+    java.lang.String ParentId) {
+    }
+    
+    public CouponModel() {
+        super();
+    }
+}

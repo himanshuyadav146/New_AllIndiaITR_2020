@@ -1,0 +1,15 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.withdrawal_list.view.*
+
+class WithdrawalHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    val withdrawalMonyTextView = itemView.withdrawalMonyTextView
+    val withdrawalDateTextView = itemView.withdrawalDateTextView
+    val withdrawalStatusTextView = itemView.withdrawalStatusTextView
+    val withdrawalMessageTextView = itemView.withdrawalMessageTextView
+    val image = itemView.image
+    val card_view = itemView.card_view
+}

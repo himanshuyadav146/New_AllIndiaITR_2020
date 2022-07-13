@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_manual">
+
+    <include
+        layout="@layout/app_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbar"/>
+
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/btn_submit"
+    android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty">
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:text="@string/txt_title1"
+            android:textStyle="bold"
+            android:textSize="@dimen/sixteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_nameofcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            android:text="@string/txt_nameof_employer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+
+        <TextView
+            android:id="@+id/tv_referform16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_referform16"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nameofcompany"
+            />
+        <EditText
+            android:id="@+id/txt_nameofemp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintTop_toBottomOf="@+id/tv_referform16" />
+
+        <TextView
+            android:id="@+id/tv_typeoforgnization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_typeoforgnization"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameofemp" />
+
+
+        <Spinner
+            android:id="@+id/spn_typeoforgnization"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/bg_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/tv_typeoforgnization"
+            >
+
+        </Spinner>
+
+
+
+        <TextView
+            android:id="@+id/tv_salatyamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_salaryamount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_typeoforgnization" />
+
+        <TextView
+            android:id="@+id/tv_salatyamount2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_salaryamount2"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/txt_sal_amount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salatyamount2" />
+
+
+        <TextView
+            android:id="@+id/tv_perquisites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_perquisites"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sal_amount" />
+
+        <TextView
+            android:id="@+id/tv_salatyamount3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_salaryamount3"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perquisites" />
+
+        <EditText
+            android:id="@+id/txt_perquisites"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salatyamount3" />
+
+
+
+        <TextView
+            android:id="@+id/tv_profileinlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_profileinlieu"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_perquisites" />
+
+        <TextView
+            android:id="@+id/tv_sub_profileinlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_profileinlieu"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_profileinlieu" />
+
+        <EditText
+            android:id="@+id/txt_sub_profileinlieu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            android:inputType="number"
+            android:textSize="@dimen/twelve"
+            android:text="0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_profileinlieu" />
+
+
+        <TextView
+            android:id="@+id/tv_totalsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_totalsal"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sub_profileinlieu" />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_totalsal1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/tv_backgroundgrey"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalsal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_less"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_lessallowances"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_totalsal1" />
+
+        <TextView
+            android:id="@+id/tv_sub_less"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_lessallowances"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_tv_less"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+
+            android:text="0"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_less" />
+
+
+        <TextView
+            android:id="@+id/tv_standarddeducrion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_standarddeduction"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tv_less" />
+
+        <TextView
+            android:id="@+id/tv_sub_standarddeducrion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_standarddeduction"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <TextView
+            android:id="@+id/txt_standarddeducrion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/tv_backgroundgrey"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_standarddeducrion" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_professionaltax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_professionaltax"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_professionaltax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_professionaltax"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_professionaltax"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+        <TextView
+            android:id="@+id/tv_incomefromsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_incomefromsal"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_incomefromsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_incomefromsal"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <TextView
+            android:id="@+id/txt_incomefromsal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+        <TextView
+            android:id="@+id/tv_income_from_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/mainual_income_from_house"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+
+        <EditText
+            android:id="@+id/txt_income_from_house"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_80C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/mainual_txt_80c"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_80C1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/mainual_txt_80c1"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_80C"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_80CCCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/mainual_tv_80CCCC"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_80CCCC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/mainual_tv_80CCCC1"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_80CCCC"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+        <TextView
+            android:id="@+id/tv_80CCD_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/mainual_tv_80CCD"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_80CCD_1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/mainual_tv_80CCD1"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_80CCD_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:text="0"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+        <TextView
+            android:id="@+id/tv_80CCD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_80ccd2"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_80CCD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_80ccd2"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_80CCD2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:text="0"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+        <TextView
+            android:id="@+id/tv_80D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_80d"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_80D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_80d"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_80D"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:text="0"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+        <TextView
+            android:id="@+id/tv_total_deductions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_total_detaction"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+
+        <TextView
+            android:id="@+id/txt_total_deductions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/tv_backgroundgrey"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourteen"
+            android:text="@string/txt_note"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+
+        <TextView
+            android:id="@+id/tv_tds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tds"
+            android:textSize="@dimen/fourteen"
+            android:layout_marginTop="@dimen/fourteen"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+        <TextView
+            android:id="@+id/tv_sub_tds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="@string/txt_sub_tds"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+        <EditText
+            android:id="@+id/txt_tds"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:padding="@dimen/twelve"
+            android:textSize="@dimen/twelve"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/text_field"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+        <LinearLayout
+            android:id="@+id/tan_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_tan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourteen"
+                android:text="@string/txt_tan"
+                android:textSize="@dimen/fourteen"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_standarddeducrion" />
+
+            <TextView
+                android:id="@+id/tv_sub_tan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two"
+                android:text="@string/txt_sub_tan"
+                android:textSize="@dimen/twelve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_less" />
+
+            <EditText
+                android:id="@+id/txt_tan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:textSize="@dimen/twelve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="@dimen/twelve"
+                android:text="0"
+                android:background="@drawable/text_field"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sub_professionaltax" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:background="@drawable/button_background"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_fourteen"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+
+<!--    tools:context=".manualProcess.ManualActivity">-->
+
+
+
+<!--</ScrollView>-->

@@ -1,0 +1,11 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.blog_adapter.view.*
+
+class BlogViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    val yearNameText = itemView.yearNameText
+    val card_view = itemView.card_view
+}

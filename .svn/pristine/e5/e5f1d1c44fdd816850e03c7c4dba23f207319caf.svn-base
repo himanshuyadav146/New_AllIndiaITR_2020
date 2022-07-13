@@ -1,0 +1,70 @@
+package dell.com.allindiaitr.home
+
+import android.app.Activity
+import android.content.Context
+import android.os.Bundle
+import android.view.MenuItem
+import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import dell.com.allindiaitr.R
+import dell.com.allindiaitr.adapter.FAQExpandableAdapter
+import dell.com.allindiaitr.utils.ExpandableListDataPump
+import kotlinx.android.synthetic.main.activity_faq.*
+import kotlinx.android.synthetic.main.app_toolbar.*
+import java.util.HashMap
+
+class FAQActivity : AppCompatActivity() {
+
+    internal val prevExpandPosition = intArrayOf(-1)
+    var expandableListTitle = arrayListOf<String>()
+    lateinit var expandableListDetail : HashMap<String, List<String>>
+    lateinit var mContext: Context
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_faq)
+
+        setSupportActionBar(toolbar as Toolbar?)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        toolbar_title.text = "FAQ"
+
+        mContext = this
+
+        expandableListView.setOnGroupExpandListener { groupPosition ->
+            if (prevExpandPosition[0] >= 0 && prevExpandPosition[0] != groupPosition) {
+                expandableListView.collapseGroup(prevExpandPosition[0])
+            }
+            prevExpandPosition[0] = groupPosition
+        }
+
+        expandableListView.setOnGroupCollapseListener {
+        }
+
+        expandableListView.setOnChildClickListener { _, _, _, _, _ ->
+            false
+        }
+
+        expandableListDetail = ExpandableListDataPump().getData()
+        expandableListTitle = ArrayList<String>(expandableListDetail.keys)
+        expandableListView.setAdapter(FAQExpandableAdapter(this, expandableListTitle, expandableListDetail))
+        expandableListView.expandGroup(0)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        var id = item!!.itemId
+        if (id == android.R.id.home){
+            val imm = mContext.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            finish()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+    }
+}

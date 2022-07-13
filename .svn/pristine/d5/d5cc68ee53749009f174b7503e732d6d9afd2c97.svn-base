@@ -1,0 +1,16 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_all_orders.view.*
+
+class AllOrdersHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    val tv_name = itemView.text_name
+    val tv_orderDate = itemView.orderDate
+    val tv_order_type = itemView.order_type
+    val tv_orderAmount = itemView.orderAmount
+    val tv_status = itemView.tv_status
+    val img_status = itemView.img_status
+    val card = itemView.card
+}

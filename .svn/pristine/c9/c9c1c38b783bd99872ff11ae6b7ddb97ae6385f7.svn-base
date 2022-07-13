@@ -1,0 +1,108 @@
+package dell.com.allindiaitr.home
+
+import android.app.Activity
+import android.content.Context
+import android.graphics.Bitmap
+import android.os.Bundle
+import android.view.MenuItem
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import dell.com.allindiaitr.R
+import dell.com.allindiaitr.interfaces.API_Interface
+import dell.com.allindiaitr.utils.APIClient
+import dell.com.allindiaitr.utils.AlertDialogueManager
+import dell.com.allindiaitr.utils.AppPreferences
+import dell.com.allindiaitr.utils.MyContextWrapper
+import kotlinx.android.synthetic.main.activity_blogs_view.*
+import kotlinx.android.synthetic.main.app_toolbar.*
+
+class BlogsViewActivity : AppCompatActivity() {
+
+    lateinit var apI_Interface : API_Interface
+    lateinit var mContext: Context
+    private var appPreferences: AppPreferences? = null
+    var position: Int = 0
+    var urlList = arrayListOf<String>()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_blogs_view)
+
+        mContext = this
+        apI_Interface = APIClient().getClient().create(API_Interface::class.java)
+        appPreferences = AppPreferences(this)
+
+        setSupportActionBar(toolbar as Toolbar?)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        toolbar_title.text = "Blogs"
+
+        position = intent.getIntExtra("position", 0)
+        urlList = intent.getStringArrayListExtra("key")
+
+        var dialog = AlertDialogueManager(mContext,getString(R.string.dilog_pleasewait))
+
+        webview.settings.loadWithOverviewMode = true
+        webview.settings.useWideViewPort = true
+        webview.settings.domStorageEnabled = true
+        webview.settings.loadsImagesAutomatically = true
+        webview.settings.javaScriptEnabled = true
+        webview.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
+        webview.settings.builtInZoomControls = true
+
+        webview.webViewClient = object: WebViewClient(){
+            override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
+            }
+
+            override fun onPageFinished(view: WebView, url: String) {
+                dialog.hideDialog()
+            }
+        }
+
+        webview.loadUrl("https://blog.allindiaitr.com/" + urlList[position])
+        webview.settings.loadWithOverviewMode = true
+        webview.settings.useWideViewPort = true
+    }
+
+
+    override fun attachBaseContext(newBase:Context?){
+        mContext= newBase!!
+        appPreferences= AppPreferences(newBase!!)
+        val lang:String=appPreferences?.selectedLanguage!!
+        //  setAppLocal(lang)
+        super.attachBaseContext(MyContextWrapper.wrap(newBase,lang))
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        if (id == android.R.id.home) {
+            val imm = mContext.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+            if (webview.canGoBack()) {
+                webview.goBack()
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            } else {
+                super.onBackPressed()
+                finish()
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        if (webview.canGoBack()) {
+            webview.goBack()
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+        } else {
+            super.onBackPressed()
+            finish()
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+        }
+    }
+}

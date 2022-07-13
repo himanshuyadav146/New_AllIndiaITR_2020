@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">AllIndiaItr</string>
+    <string name="skip_next">छोड़ें/अगला</string>
+    <string name="slide_title">यह काम किस प्रकार करता है?</string>
+    <string name="step_one">चरण 1</string>
+    <string name="slide_1_desc">फॉर्म 16 और अन्य आवश्यक दस्तावेज अपलोड करें</string>
+    <string name="step_two">चरण 2</string>
+    <string name="slide_2_desc">एक टैक्स एक्सपर्ट आपको सौंपा जाएगा</string>
+    <string name="step_three">चरण 3</string>
+    <string name="slide_3_desc">आपका टैक्स एक्सपर्ट आपका इनकम टैक्स रिटर्न फाइल करेगा</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="error_message">कुछ गलत हो गया, यह नेटवर्क के मुद्दों के कारण हो सकता है|</string>
+    <string name="enter_otp">OTP दर्ज करे|</string>
+    <string name="resend_otp">OTP पुनः भेजें</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="done">किया हुआ</string>
+    <string name="title_home">घर</string>
+    <string name="title_orders">आदेश</string>
+    <string name="title_refer">भेजें और कमाएँ</string>
+    <string name="title_more">अधिक</string>
+    <string name="new_version_available">नया संस्करण उपलब्ध है</string>
+    <string name="update_now">अपडेट करें</string>
+    <string name="refer_and_earn">एक दोस्त को भेजें और कमाएँ!</string>
+    <string name="refer_now">अभी भेजो</string>
+    <string name="start_new_filing">नई फाइलिंग शुरू करें</string>
+    <string name="start_filing">फाइलिंग शुरू करें</string>
+    <string name="assessment_year">निर्धारण वर्ष</string>
+    <string name="view_details">विवरण देखें</string>
+    <string name="click_update">अपडेट करने के लिए यहां क्लिक करें</string>
+    <string name="or">या</string>
+    <string name="skip">छोड़ें</string>
+    <string name="how_it_works">यह काम किस प्रकार करता है</string>
+    <string name="itr_tutorial_upload">दस्तावेज़ अपलोड करें / भेजें</string>
+    <string name="itr_tutorial_upload_desc">आप या तो संबंधित दस्तावेजों को अपलोड कर सकते हैं या ई-मेल हमें भी भेज सकते हैं।
+    </string>
+    <string name="itr_tutorial_ask_expert">विशेषज्ञ से जवाब कॉलबैक</string>
+    <string name="itr_tutorial_ask_expert_desc">
+हमारे कर विशेषज्ञ आपको कॉल करेंगे और आपके सभी कर संबंधित प्रश्नों को हल करेंगे।
+    </string>
+    <string name="itr_tutorial_completes_filing">विशेषज्ञ ई-फाइलिंग को पूरा करता है</string>
+
+    <string name="stringblogs">ब्लॉग</string>
+
+    <string name="itr_tutorial_completes_filing_desc">
+आपका ITR आपके असाइन किए गए टैक्स एक्सपर्ट द्वारा दायर किया जाएगा।</string>
+    <string name="cont">जारी रखें</string>
+    <string name="choose_financial_year">वित्तीय वर्ष | निर्धारण वर्ष</string>
+    <string name="year_txt">2019-20 | 2020-21</string>
+    <string name="first_name">पहला नाम</string>
+    <string name="middle_name">मध्य नाम</string>
+    <string name="last_name">उपनाम</string>
+    <string name="email_id">ईमेल आईडी</string>
+    <string name="pan_no">पैन नंबर</string>
+    <string name="dob">D.O.B</string>
+    <string name="upload_form16_pension">फॉर्म 16\nया\n पेंशन पर्ची अपलोड करें</string>
+    <string name="upload_form16_instruction">कृपया सुनिश्चित करें कि आपके फॉर्म 16 / पेंशन स्लिप के क्षेत्र स्पष्ट रूप से हैं
+        दिखाई।
+    </string>
+    <string name="important_details_father">पिता का नाम
+        <i>(पैन कार्ड के अनुसार)</i>
+    </string>
+    <string name="important_details_aadhar">आधार कार्ड नंबर / नामांकन आईडी</string>
+    <string name="important_details_currentadd">वर्तमान पता</string>
+    <string name="important_details_add1">पता पंक्ति 1</string>
+    <string name="important_details_add2">पता पंक्ति नं। 2</string>
+    <string name="important_details_state">राज्य</string>
+    <string name="important_details_city">शहर</string>
+    <string name="important_details_pin">पिनकोड </string>
+
+    <string name="upload_aadhar">आधार कार्ड अपलोड करें</string>
+    <string name="choose_service">सेवा चुनें</string>
+
+
+    <string name="demotitle">डेमो शीर्षक</string>
+
+
+    <string name="front_side">सामने</string>
+    <string name="back_side">पीछे की तरफ</string>
+    <string name="important_details_retry">पुन: प्रयास करें</string>
+    <string name="important_details_delete">हटाएं</string>
+
+    <string name="bank_details_add_another">एक और बैंक खाता जोड़ें</string>
+    <string name="bank_details_name">बैंक का नाम</string>
+    <string name="bank_details_ifsc">IFSC कोड</string>
+    <string name="bank_details_acc_no">खाता संख्या</string>
+    <string name="bank_details_acc_type">खाते का प्रकार</string>
+    <string name="bank_details_make_primary">इसे मेरा प्राथमिक खाता बनाएं।</string>
+    <string name="bank_details_make_desc">टैक्स रिफंड, यदि कोई आपके प्राथमिक बैंक खाते में जमा किया जाएगा।</string>
+
+    <string name="other_income_int_inc">ब्याज आय</string>
+    <string name="other_income_int_inc_desc">सेविंग बैंक और पोस्ट ऑफिस जमा से ब्याज आय।</string>
+    <string name="other_income_int_fd_rd">आरडी के एफडी / एफडी के ब्याज आदि।</string>
+    <string name="other_income_int_fd_rd_desc">एफडी में परिवर्तित स्वीप खातों से ब्याज भी यहाँ निर्दिष्ट किया गया है।
+    </string>
+    <string name="other_income_any_other">कोई अन्य आय</string>
+    <string name="other_income_any_other_desc">किसी अन्य आय की रिपोर्ट करें जो वेतन, सदन से आय का हिस्सा नहीं है
+        संपत्ति, पूंजीगत लाभ या व्यवसाय और पेशा। उपहार यहां आय के रूप में घोषित किए जा सकते हैं।
+    </string>
+
+    <string name="misc_income">आपके द्वारा चयनित आय के स्रोत</string>
+    <string name="misc_income_select">अपना टर्नओवर / सकल रसीदें चुनें</string>
+    <string name="misc_income_upto_lakhs">10 लाख तक</string>
+    <string name="misc_income_10lakhs">10 से 25 लाख</string>
+    <string name="misc_income_25lakhs">25 से 50 लाख</string>
+    <string name="misc_income_50lakhs">50 लाख से ऊपर</string>
+    <string name="misc_income_desc">अधिक जानकारी के लिए, हमारे टैक्स विशेषज्ञ आपकी मूलभूत जानकारी प्राप्त कर लेंगे
+        शीघ्र ही आपसे संपर्क करेंगे।
+    </string>
+
+    <string name="upload_other_tax_expert">टैक्स एक्सपर्ट के लिए अतिरिक्त जानकारी</string>
+    <string name="upload_other_write_comment">एक टिप्पणी यहाँ लिखें…</string>
+    <string name="enter_coupon">यहां अपना कूपन कोड दर्ज करें</string>
+    <string name="apply">लागू</string>
+    <string name="payment_summary">वेतन का सारांश</string>
+    <string name="original_price">मूल कीमत</string>
+    <string name="discount_price">डिस्काउंट कीमत</string>
+    <string name="gst">GST @18%</string>
+    <string name="total_payment">कुल</string>
+    <string name="gstin_quest">क्या आपके पास GSTIN है?</string>
+    <string name="gstin_desc">यदि आप जीएसटी के तहत पंजीकृत हैं, तो कृपया इनपुट टैक्स क्रेडिट के तहत अपना जीएसटीआईएन प्रदान करें
+        जीएसटी विनियम।
+    </string>
+    <string name="gstin">GSTIN*</string>
+    <string name="gstin_comp_name">कंपनी / फर्म का नाम (GSTIN के अनुसार)*</string>
+    <string name="gstin_dropdown">राज्य (GSTIN के अनुसार)*</string>
+    <string name="gstin_comp_add">कंपनी / फर्म का पता (GSTIN के अनुसार)*</string>
+    <string name="gstin_service_prov">सेवा प्रदाता का GSTIN: 06AAGCC7251C2ZY</string>
+
+    <string name="submit">प्रस्तुत</string>
+    <string name="upload_n_any_other_document">अन्य दस्तावेज़\n अपलोड करें</string>
+    <string name="upload_n_intimation_notice">सूचना / सूचना अपलोड करें</string>
+    <string name="skip_submit">स्किप/भेजें</string>
+    <string name="start_new_filing_for_user">नए उपयोगकर्ता के लिए फाइलिंग शुरू करें</string>
+    <string name="reply_to_notice">नए उपयोगकर्ता के लिए सूचना का उत्तर दें</string>
+    <string name="basic_salary_received">मूल वेतन मिला *</string>
+    <string name="dearness_allowance">महंगाई भत्ता (डीए)</string>
+    <string name="da_received">महंगाई भत्ता (डीए) प्राप्त हुआ</string>
+    <string name="hra_received">HRA प्राप्त *</string>
+    <string name="total_rent_paid">कुल किराए का भुगतान *</string>
+    <string name="calculate">गणना</string>
+    <string name="hra_question">क्या आप दिल्ली, मुंबई, कोलकाता या चेन्नई में रहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="calculate_again">फिर से गणना करें</string>
+    <string name="print">छाप</string>
+    <string name="personal_info">व्यक्तिगत जानकारी</string>
+    <string name="name">आपका नाम *</string>
+    <string name="your_email">आपकी ईमेल आईडी *</string>
+    <string name="rent_details">किराया विवरण</string>
+    <string name="landlord_name">जमींदार का नाम *</string>
+    <string name="landlord_pan">जमींदार का पैन *
+        <i>(e.g. ABCPL1234C)</i>
+    </string>
+    <string name="rent_paid">प्रति माह किराया अदा करें *</string>
+    <string name="rent_duration">किराया अवधि *</string>
+    <string name="warning_note"><b>ध्यान दें:</b> यदि आप 120 दिनों के भीतर अपनी वापसी का ई-सत्यापन नहीं करते हैं, तो इसे अमान्य रिटर्न माना जाएगा</string>
+    <string name="About_Us">प्रौद्योगिकी एक महान प्रबोधक है क्योंकि यह नवीन समाधान खोजती रहती है। यह और अधिक हो जाता है
+        प्रभावी जब यह डोमेन विशेषज्ञता के साथ लोड आता है। ऑल इंडिया आईटीआर में, हम अत्याधुनिक तकनीक का मिश्रण करते हैं
+        आपके कर-संबंधी सभी प्रश्नों के उत्तर खोजने के लिए करों का व्यापक ज्ञान; आईटीआर की ई-फाइलिंग या
+        जीएसटी को तैयार करने में आपकी मदद करना। कुछ विशेषताएं हैं जो हमें करदाताओं के लिए भरोसेमंद विकल्प बनाती हैं।
+        \n\n<b>अतुलनीय प्रौद्योगिकी</b>\nहम उस समय में रह रहे हैं जहां लगभग हर मौजूदा व्यवसाय में एक ऐप है।
+        लेकिन सभी ऐप एरर फ्री नहीं होते हैं। अखिल भारतीय आईटीआर में, हमारे पास अपने बनाए रखने के लिए कुशल ऐप डेवलपर्स की एक टीम है
+        आवेदन और आवश्यकता के रूप में इसे अद्यतन करें। इसलिए, निश्चिंत रहें कि आपने इसका उपयोग करते समय गड़बड़ का सामना नहीं किया।
+        \n\n<b>बेजोड़ विशेषज्ञता</b>\nतकनीकी रूप से अग्रिम इंटरफेस होने के बावजूद, हमारे लिए, प्रौद्योगिकी केवल एक है
+        ग्राहकों के लिए कर समाधान की पेशकश के रूप में, हमारी प्राथमिकता सूची में सबसे ऊपर है। इसे हासिल करने के लिए हमारे पास एक टीम है
+        कर विशेषज्ञ जो आपको कम से कम समय में कर समाधान प्रदान करने के लिए तैयार हैं।
+        \n\n<b>विश्वसनीयता जो ट्रस्ट बनाया</b>\nअपने विवरण का खुलासा करते हुए, करदाता यह सुनिश्चित करना चाहते हैं कि यदि
+        सेवा प्रदाता पर्याप्त विश्वसनीय है। जैसा कि ऑल इंडिया आईटीआर एक सरकारी अधिकृत मध्यस्थ है, आप आराम कर सकते हैं
+        आश्वासन दिया कि आपके विवरण सुरक्षित हाथों में हैं।
+        \n\n<b>वन-स्टॉप टैक्स सॉल्यूशंस</b>\n
+ऐप बनाते समय हमने विवरणों पर बहुत ध्यान दिया है। हमने बनाया हे
+        सुनिश्चित करें कि हमारे मूल्यवान ग्राहकों को कर समाधान खोजने के लिए स्तंभ से पोस्ट तक नहीं चलना चाहिए। उनकी सुविधा के लिए, हमारे पास है
+        आयकर कैलकुलेटर, एचआरए कैलकुलेटर और रेंट रसीद जेनरेटर जो मुफ्त में इस्तेमाल किए जा सकते हैं।
+    </string>
+    <string name="request_callback_title">मदद चाहिए?\n किसी विशेषज्ञ से बात करें.</string>
+    <string name="update_details">आपके द्वारा दी गई जानकारी गलत है, कृपया सही विवरण प्रदान करें।</string>
+    <string name="expert_assign">विशेषज्ञ ने सौंपा</string>
+    <string name="review_info">सूचना की समीक्षा करें</string>
+    <string name="e_filed">ई-दायर</string>
+    <string name="e_verify">ई-वेरी नाउ</string>
+
+
+    <string name="txt_title1">अपने 16 दस्तावेज़ और नीचे दिए गए पूर्ण विवरण देखें। 0 से जहां आपके पास कोई मूल्य नहीं है।</string>
+    <string name="txt_nameof_employer">नियोक्ता / कंपनी का नाम</string>
+    <string name="txt_referform16">फॉर्म -16 देखें</string>
+    <string name="txt_typeoforgnization">संगठन का प्रकार</string>
+    <string name="txt_salaryamount">वेतन राशि 17 (1)</string>
+    <string name="txt_salaryamount2">कृपया -16 (भाग-बी) के बिंदु संख्या 6 को देखें।</string>
+    <string name="txt_perquisites">अनुलाभ 17 (2)</string>
+    <string name="txt_salaryamount3">कृपया -16 (भाग-बी) के बिंदु संख्या 6 को देखें।</string>
+
+    <string name="txt_profileinlieu">वेतन 17 का लाभ (3)</string>
+    <string name="txt_sub_profileinlieu">कृपया नंबर -16 (भाग-बी) के बिंदु संख्या 1 (सी) की जांच करें</string>
+    <string name="txt_totalsal">पूरी तनख्वा</string>
+
+    <string name="txt_lessallowances">कम: भत्ते छूट यू / एस 10</string>
+    <string name="txt_sub_lessallowances">कृपया -16 (भाग-बी) के अंक नंबर 2 की जाँच करें।</string>
+
+    <string name="txt_standarddeduction">मानक कटौती</string>
+    <string name="txt_sub_standarddeduction">कृपया नंबर -16 (भाग-बी) का बिंदु संख्या 4 (ए) देखें।</string>
+
+    <string name="txt_professionaltax">वृत्ति कर</string>
+    <string name="txt_sub_professionaltax">कृपया नंबर -16 (भाग-बी) का बिंदु संख्या 4 (सी) देखें</string>
+
+    <string name="txt_incomefromsal">वेतन से आय</string>
+    <string name="txt_sub_incomefromsal">कृपया -16 (भाग-बी) के बिंदु संख्या 6 को देखें।</string>
+
+
+    <string name="txt_80ccd2">80 सीसीडी (2)</string>
+    <string name="txt_sub_80ccd2">नियोक्ता द्वारा पेंशन योजना में योगदान।</string>
+
+    <string name="txt_80d">80 डी</string>
+    <string name="txt_sub_80d">मेडिकल इंश्योरेंस पॉलिसी पर भुगतान किया गया।</string>
+
+    <string name="txt_total_detaction">कुल कटौती</string>
+
+    <string name="txt_note">नोट: आप बाद में कटौती पृष्ठ पर भरने के लिए अधिक कटौती पा सकते हैं</string>
+    <string name="txt_tds">स्रोत पर कर कटौती (टीडीएस)</string>
+    <string name="txt_sub_tds">फॉर्म -16 देखें (भाग-ए)</string>
+
+    <string name="txt_tan">नियोक्ता का टैन</string>
+    <string name="txt_sub_tan">फॉर्म -16 (भाग-ए) देखें।</string>
+    <string name="contact_us_name">नाम</string>
+    <string name="contact_us_contactno">फोन नं</string>
+    <string name="contact_us_callback">कॉलबैक का अनुरोध करें</string>
+
+
+    <string name="more_faq">पूछे जाने वाले प्रश्न</string>
+    <string name="more_share">शेयर</string>
+    <string name="more_custompayment">कस्टम भुगतान</string>
+    <string name="more_rateus">हमें रेटिंग दें</string>
+    <string name="more_aboutus">हमारे बारे में</string>
+    <string name="more_contactus">संपर्क करें</string>
+    <string name="more_language">भाषा</string>
+    <string name="more_logout">लॉग आउट</string>
+
+    <!--********************************HEADER TITLE************************************-->
+    <string name="title_choose_services">सेवा चुनें।</string>
+    <string name="title_select_itr">ITR का चयन करें।</string>
+    <string name="title_select_User">उपयोगकर्ता का चयन करें।</string>
+    <string name="title_select_incomesource">आय स्रोत का चयन करें।</string>
+    <string name="title_select_uploadform16">फॉर्म 16 अपलोड करें।</string>
+    <string name="title_bankdetials">बैंक विवरण दर्ज करें।</string>
+
+    <string name="title_bankdetialstitle">बैंक विवरण।</string>
+    <string name="title_anyother_doc">अन्य कोई सूचना।</string>
+    <string name="title_otherdetails">ऑर्डर का विवरण।</string>
+    <string name="title_imp_details">महत्वपूर्ण विवरण।</string>
+    <string name="title_update_details">अद्यतन विवरण।</string>
+    <string name="title_reply_to_notice">नोटिस का जवाब दें।</string>
+
+    <string name="title_hra_cal">HRA कैलकुलेटर</string>
+    <string name="title_calculated_hra">परिकलित एचआरए</string>
+    <string name="title_income_calculator">आयकर कैलकुलेटर</string>
+    <string name="title_miscellaneous">विविध आय</string>
+    <string name="title_otherincome">अन्य आय</string>
+    <string name="title_replyto_notice">सूचना की स्थिति का जवाब दें</string>
+    <string name="title_e_verify_status">ई-सत्यापित स्थिति</string>
+    <string name="title_payment_rec_successfull">भुगतान सफलतापूर्वक प्राप्त हुआ!</string>
+    <string name="title_payment_rec_successfull2">हमने आपसे सफलतापूर्वक भुगतान प्राप्त कर लिया है। हमारे टैक्स एक्सपर्ट्स द्वारा जल्द ही आपका रिप्लाई टू नोटिस दायर किया जाएगा।</string>
+    <string name="title_order_complete">आदेश पूरा!</string>
+    <string name="title_r_notice_success">हमारे कर विशेषज्ञों द्वारा आपके उत्तर को नोटिस सफलतापूर्वक दर्ज कर दिया गया है। प्रक्रिया पूरी करने के लिए कृपया ITR को सत्यापित करें।</string>
+    <string name="title_p_received_success">भुगतान सफलतापूर्वक प्राप्त हुआ!</string>
+    <string name="title_r_received_success">हमने सफलतापूर्वक भुगतान प्राप्त कर लिया है। आपका ई-सत्यापन शीघ्र ही पूरा हो जाएगा।</string>
+    <string name="title_itr_success">आपका आईटीआर सफलतापूर्वक ई-सत्यापित हो गया है। आईटीआर का ई-फाइलिंग पूरा हो गया है।</string>
+    <string name="title_e_verify">ई-सत्यापित आईटीआर</string>
+    <string name="title_itr_language">भाषा सेटिंग</string>
+    <string name="title_tutorials">हमारी फाइलिंग प्रक्रिया</string>
+
+    <string name="title_allorder">सभी ऑर्डर</string>
+    <string name="title_referral">रेफरल</string>
+    <string name="title_earning">कमाई</string>
+    <string name="title_withdrawal">निकासी</string>
+
+    <string name="title_orderstatus">आदेश की स्थिति</string>
+
+
+    <!--********************************HEADER TITLE************************************-->
+
+
+    <!--    ******************************************Order Status*******************************************-->
+    <string name="orderstatus_call">कॉल</string>
+    <string name="orderstatus_chat">विशेषज्ञ से चैट</string>
+    <string name="orderstatus_email">ईमेल</string>
+
+
+    <string name="orderstatus_mobno">मोब नं</string>
+    <string name="orderstatus_efield_success">ई-फाइल सफलतापूर्वक!</string>
+    <string name="orderstatus_efield_ack">आपकी वापसी सफलतापूर्वक दायर की गई है, आपकी\nपावती संख्या है:</string>
+    <string name="orderstatus_efield_notice">आपका रिटर्न सफलतापूर्वक दाखिल किया जाता है, ताकि फाइलिंग प्रक्रिया को पूरा किया जा सके।</string>
+
+    <string name="orderstatus_popup">बधाई हो!</string>
+    <string name="orderstatus_popup_itr">आपका ITR सफलतापूर्वक फाइल किया गया है</string>
+    <string name="orderstatus_popup_ack">आपका पावती नंबर है:</string>
+    <string name="orderstatus_popup_txt">ऑल इंडिया आईटीआर के साथ अपने अनुभव के बारे में बताएं\nहमें अभी रेट करें</string>
+    <string name="orderstatus_popup_no">जी नहीं, धन्यवाद!</string>
+    <!--    ******************************************Order Status*******************************************-->
+
+    <!--    ************************************USER LIST****************************************************-->
+
+    <string name="user_pan">पैन नं.</string>
+    <string name="user_dob">जन्मदिन की तारीख:</string>
+    <string name="user_btn_viewdetails">विवरण देखें|</string>
+    <string name="user_btn_continue_filing">फाइलिंग जारी रखें|</string>
+    <string name="user_e_verify">ई सत्यापित करें</string>
+    <string name="user_e_field">ई-दायर</string>
+    <string name="user_itr_inprogress">ITR चालू</string>
+    <string name="user_reply_to_notice">नोटिस का जवाब दें</string>
+
+    <!--    ************************************USER LIST****************************************************-->
+
+
+
+
+
+    <string name="button_checkout">चेक आउट।</string>
+    <string name="popup_select_gallery">गैलरी से फोटो का चयन करें</string>
+    <string name="popup_select_camera">कैमरे से फोटो खींचे</string>
+    <string name="popup_select_pdf">दस्तावेज़ का पीडीएफ चुनें</string>
+    <string name="popup_title">कार्रवाई चुनें</string>
+    <string name="txt_additional_doc">यदि आपके पास अतिरिक्त दस्तावेज हैं, तो कृपया उपरोक्त स्थान पर समान अपलोड करें।</string>
+
+    <string name="txt_tax_refund">टैक्स रिफंड, यदि कोई आपके प्राथमिक बैंक खाते में जमा किया जाएगा।</string>
+
+    <!--    **************************DASHBOARD DATA**********************-->
+
+    <string name="dashboard_starte_filing">ई-फाइलिंग शुरू करें</string>
+    <string name="dashboard_incometax">आयकर कैलकुलेटर</string>
+    <string name="dashboard_hra">HRA कैलकुलेटर</string>
+    <string name="dashboard_rent_recipt">किराया रसीद जेनरेटर</string>
+
+
+
+    <string name="dashboard_sub_starte_filing">यहां क्लिक करें और विशेषज्ञ सहायता के साथ अपने आयकर रिटर्न की ई-फाइलिंग शुरू करें।</string>
+    <string name="dashboard_sub_incometax">ऑल इंडिया आईटीआर के इनकम टैक्स कैलकुलेटर का उपयोग करके अपनी आयकर देयता की गणना करें।</string>
+    <string name="dashboard_sub_hra">एक किराए की जगह में रहते हैं? हाउस रेंट अलाउंस की गणना के लिए ऑल इंडिया आईटीआरए के एचआरए कैलकुलेटर का उपयोग करें।</string>
+    <string name="dashboard_sub_rent_recipt">करों को बचाना चाहते हैं? ऑल इंडिया आईटीआरए के रेंट रसीद जेनरेटर का उपयोग करके किराए की रसीदें तैयार करें।</string>
+
+    <string name="dashboard_replytonotice">नोटिस का जवाब दें।</string>
+    <string name="dashboard_sub_replytonotice">ITR में कोई त्रुटि हुई? बिना किसी परेशानी के संशोधित रिटर्न फाइल करें।</string>
+
+    <!--    **************************DASHBOARD DATA**********************-->
+
+    <!--    **************************************USEFULL TOOLS***************************************-->
+    <string name="title_incometax_calculator">आयकर कैलकुलेटर</string>
+    <string name="title_incometax_select_years">आकलन वर्ष का चयन करें *</string>
+    <string name="title_dob">जन्म की तारीख *</string>
+    <string name="title_residaental">आवासीय स्थिति *</string>
+    <string name="title_incomedetails">आय का विवरण *</string>
+    <string name="title_taxable_sal">कर योग्य वेतन</string>
+    <string name="title_deductions">वेतन से 40,000 के मानक कटौती के बाद आय दर्ज करें</string>
+    <string name="title_intrest_other_inc">ब्याज और अन्य आय से आय</string>
+    <string name="title_self_house">केवल स्व-कब्जे वाली हाउस प्रॉपर्टी पर लागू</string>
+    <string name="title_paid_on_loan">ब्याज ऋण पर भुगतान किया</string>
+    <string name="title_rented_house_property">केवल रेंटेड हाउस प्रॉपर्टी पर लागू</string>
+    <string name="title_rented_income_recived">किराये की आय प्राप्त हुई</string>
+    <string name="title_interstpaid_home">होम लोन पर ब्याज का भुगतान</string>
+    <string name="title_deduction">कटौती</string>
+    <string name="title_tds_details">टीडीएस विवरण</string>
+    <string name="title_tds_detucted_sal">टीडीएस वेतन में कटौती</string>
+    <string name="title_tds_detucted_other">टीडीएस घटाया (वेतन के अलावा)</string>
+    <string name="title_advance_tax">एडवांस टैक्स चुकाया</string>
+    <string name="title_calculated_result">परिकलित परिणाम</string>
+    <string name="title_gross_total">सकल कुल आय</string>
+    <string name="title_desuction_80">कटौती यू / एस 80</string>
+    <string name="title_tax_income">कर योग्य आय</string>
+    <string name="title_tax_paid">टैक्स अदा किया</string>
+    <string name="title_tax_payable">देय कर</string>
+
+
+
+    <string name="title_tds_deduct">टीडीएस वेतन में कटौती</string>
+    <string name="title_tds_other_deduct">टीडीएस घटाया (वेतन के अलावा)</string>
+    <string name="title_advance_tax_paid">एडवांस टैक्स चुकाया</string>
+    <string name="title_section80_c">धारा 80 सी</string>
+    <string name="title_basic_deduction">बुनियादी कटौती</string>
+    <string name="title_section80_tta">धारा 80TTA</string>
+    <string name="title_interst_from">बचत से ब्याज</string>
+    <string name="title_section80_ttb">धारा 80TTB</string>
+    <string name="title_interest_on_deposit">जमा पर ब्याज</string>
+    <string name="title_section80_g">धारा 80 जी</string>
+    <string name="title_donation_charity">दान दान</string>
+    <string name="title_section80_d">धारा 80 डी</string>
+    <string name="title_medical_pre">चिकित्सा बीमा प्रीमियम</string>
+    <string name="title_section80_e">धारा 80 ई</string>
+    <string name="title_interest_e_loan">शैक्षिक ऋण पर ब्याज</string>
+
+    <!--    **************************************USEFULL TOOLS***************************************-->
+
+
+    <!--    **********************************SOURCE OF INCOME****************************-->
+
+    <string name="sourceof_income_salary">वेतन/पेंशन</string>
+    <string name="sourceof_income_house">घर की संपत्ति</string>
+    <string name="sourceof_income_bussiness">व्यापार/व्यवसाय</string>
+    <string name="sourceof_income_capital">पूँजीगत लाभ</string>
+    <string name="sourceof_income_other_source">अन्य स्रोत</string>
+    <string name="sourceof_income_foreign">विदेशी आय</string>
+
+
+
+
+    <!--    **********************************SOURCE OF INCOME****************************-->
+
+
+    <!--    ***************************************************Dilog Messages *******************************************-->
+
+    <string name="dilog_pleasewait">कृपया प्रतीक्षा करें</string>
+
+<!--    <string name="dilog_pleasewait">Please Wait</string>-->
+
+    <!--    ***************************************************Dilog Messages *******************************************-->
+
+    <!--    **********************************************All Order************************************************************-->
+    <string name="allorder_order_date">आदेश की तारीख:</string>
+    <string name="allorder_ppackage_amount">पैकेज राशि:</string>
+
+    <!--    **********************************************All Order************************************************************-->
+
+    <!--    **********************************************E-verify ITR************************************************************-->
+    <string name="e_verify__processinfo">आईटीआर फाइलिंग प्रक्रिया को सत्यापित करके पूरा करें। आप निम्न में से किसी एक मोड का उपयोग करके ITR को सत्यापित कर सकते हैं: -</string>
+    <string name="e_verify__onlineverification">ऑनलाइन सत्यापन</string>
+    <string name="e_verify__aadharotp">के जरिए\nआधार ओटीपी</string>
+    <string name="e_verify__netbanking">के जरिए\nनेट बैंकिंग</string>
+    <string name="e_verify__dematac">के जरिए\nडीमैट खाता</string>
+    <string name="e_verify__atm">के जरिए\nएटीएम</string>
+    <string name="e_verify__offlineverification">ऑफ़लाइन सत्यापन</string>
+    <string name="e_verify__taxinfo">एक करदाता स्पीड पोस्ट के माध्यम से सीपीसी बैंगलोर को आईटीआर-वी की एक हस्ताक्षरित प्रति भेजकर, मैन्युअल रूप से आईटीआर सत्यापित कर सकता है।</string>
+    <string name="e_verify__info">किसी भी परेशानी से बचने के लिए, आप कर सकते हैं\nअखिल भारतीय आईटीआर के साथ ई-सत्यापन।</string>
+    <string name="e_verify__button">ई-वेरी नाउ</string>
+
+    <!--    **********************************************E-verify ITR************************************************************-->
+
+
+    <!--    ************************************Rent Recipt***********************************************-->
+    <string name="rent_recipt_persionl_info">व्यक्तिगत जानकारी</string>
+    <string name="rent_recipt_email"> आपकी ईमेल आईडी *</string>
+    <string name="rent_recipt_rent_details"> किराया विवरण</string>
+    <string name="rent_recipt_landloard_name"> जमींदार का नाम *</string>
+    <string name="rent_recipt_rent_month"> प्रति माह किराया अदा करें *</string>
+    <string name="rent_recipt_rent_duration">किराया अवधि *</string>
+    <string name="rent_recipt_address_1"> पता पंक्ति *</string>
+    <string name="rent_recipt_city"> शहर *</string>
+    <string name="rent_recipt_state"> राज्य *</string>
+    <string name="rent_recipt_pincode">पिन कोड *</string>
+
+    <!--    ************************************Rent Recipt***********************************************-->
+
+
+
+    <!--    *******************************Refer and earn***********************************************************-->
+    <string name="ref_earn_uniqe_code"> आपका यूनिक कोड</string>
+    <string name="ref_earn_copy"> प्रतिलिपि</string>
+    <string name="ref_earn_share_link"> कमाने के लिए अपना लिंक शेयर करें:</string>
+
+
+    <string name="ref_earn_refer_friend"> <font color='#00B894'>देखें All India<br> ITR</br> अपने दोस्तों के लिए</font></string>
+    <string name="ref_earn_get_notify"> प्राप्त <font color='#00B894'>अधिसूचित</font> एक बार \n आपके मित्र ITR फाइल करते हैं</string>
+    <string name="ref_earn_get_cashback"> आप और आपका\n दोस्तों मिलता है <font color='#00B894'>नकदी वापस</font></string>
+
+    <string name="ref_earn_fb"> फेसबुक</string>
+    <string name="ref_earn_whatsup"> Whatsapp</string>
+    <string name="ref_earn_message"> संदेश</string>
+    <string name="ref_earn_email"> ईमेल</string>
+    <string name="ref_earn_more"> अधिक</string>
+
+
+
+    <string name="ref_earn_balance"> आपका संतुलन</string>
+        <string name="ref_earn_withdraw"> अब वापस ले लो</string>
+    <string name="ref_earn_listoffr">उन मित्रों की सूची, जिन्हें आपने अखिल भारतीय ITR कहा था</string>
+
+    <string name="ref_earn_add_bank"> निकासी के लिए अपना बैंक विवरण जोड़ें</string>
+    <string name="ref_earn_account"> खाता धारक का नाम</string>
+    <string name="ref_earn_bank_name"> बैंक का नाम</string>
+    <string name="ref_earn_bank_ac_no"> बैंक खाता संख्या</string>
+    <string name="ref_earn_bank_ifsc"> IFSC कोड</string>
+    <string name="ref_earn_btn_withdraw"> निकालना</string>
+    <string name="ref_earn_sorry"> क्षमा करें, निकासी इतिहास उपलब्ध नहीं है!</string>
+
+    <string name="more_title">अधिक</string>
+
+
+    <!--    *******************************Refer and earn***********************************************************-->
+
+    <string name="facebook_app_id">1974089359528580</string>
+    <string name="fb_login_protocol_scheme">fb1974089359528580</string>
+</resources>

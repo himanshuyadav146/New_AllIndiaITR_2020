@@ -1,0 +1,100 @@
+package dell.com.allindiaitr.submitDocument
+
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.view.MenuItem
+import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import dell.com.allindiaitr.Enum.CommonVal
+import dell.com.allindiaitr.R
+import dell.com.allindiaitr.home.AllOrdersActivity
+import dell.com.allindiaitr.models.NewItrBase
+import dell.com.allindiaitr.utils.AppPreferences
+import dell.com.allindiaitr.utils.MyContextWrapper
+import kotlinx.android.synthetic.main.activity_erstatus.*
+import kotlinx.android.synthetic.main.app_toolbar.*
+
+class ERStatusActivity : AppCompatActivity() {
+
+    var newItrBase = NewItrBase.instance
+    lateinit var mContext: Context
+    private var appPreferences: AppPreferences? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_erstatus)
+
+        setSupportActionBar(toolbar as Toolbar?)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+        mContext = this
+
+        if (newItrBase.processMode.equals(CommonVal.RevisedReturn.name)){
+            toolbar_title.text = ""
+            if (newItrBase.selectedProcessStatus.equals(CommonVal.InProgress.name)){
+                statement_textView.text = getString(R.string.title_payment_rec_successfull)
+                description_textView.text =getString(R.string.title_payment_rec_successfull2)
+            }
+            else if (newItrBase.selectedProcessStatus.equals(CommonVal.Complete.name)){
+                statement_textView.text =getString(R.string.title_order_complete)
+                description_textView.text = getString(R.string.title_r_notice_success)
+            }
+        }
+        else if (newItrBase.processMode.equals(CommonVal.EVerify.name)){
+            toolbar_title.text = getString(R.string.title_e_verify_status)
+            if (newItrBase.selectedProcessStatus.equals(CommonVal.InProgress.name)){
+                statement_textView.text =getString(R.string.title_p_received_success)
+                description_textView.text =getString(R.string.title_r_received_success)
+            }
+            else if (newItrBase.selectedProcessStatus.equals(CommonVal.Complete.name)){
+                statement_textView.text = getString(R.string.title_order_complete)
+                description_textView.text =getString(R.string.title_itr_success)
+            }
+        }
+    }
+
+    override fun attachBaseContext(newBase:Context?){
+        mContext= newBase!!
+        appPreferences= AppPreferences(newBase!!)
+        val lang:String=appPreferences?.selectedLanguage!!
+        //  setAppLocal(lang)
+        super.attachBaseContext(MyContextWrapper.wrap(newBase,lang))
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        var id = item!!.itemId
+        if (id == android.R.id.home){
+            val imm = mContext.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+            if (newItrBase.orderMode.equals("AllOrders")) {
+                val intent =Intent(applicationContext, AllOrdersActivity::class.java)
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                startActivity(intent)
+                finish()
+            }
+            else {
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        if (newItrBase.orderMode.equals("AllOrders")) {
+            val intent =Intent(applicationContext, AllOrdersActivity::class.java)
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            startActivity(intent)
+            finish()
+        }
+        else {
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+            super.onBackPressed()
+        }
+    }
+}

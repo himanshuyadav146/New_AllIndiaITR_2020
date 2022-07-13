@@ -1,0 +1,508 @@
+<resources>
+    <string name="app_name">AllIndiaItr</string>
+    <string name="skip_next">Skip/Next</string>
+    <string name="slide_title">How it works?</string>
+    <string name="step_one">Step 1</string>
+    <string name="slide_1_desc">Upload Form 16 and other required documents</string>
+    <string name="step_two">Step 2</string>
+    <string name="slide_2_desc">A Tax Expert will be assigned to you</string>
+    <string name="step_three">Step 3</string>
+    <string name="slide_3_desc">Your Tax Expert will file your Income Tax Return</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="error_message">Something went wrong, it may be due to network issues</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="done">Done</string>
+    <string name="title_home">Home</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_refer">Refer &amp; Earn</string>
+    <string name="title_more">More</string>
+    <string name="new_version_available">New Version Available</string>
+    <string name="update_now">Update Now</string>
+    <string name="refer_and_earn">Refer a Friend &amp; Earn!</string>
+    <string name="refer_now">Refer now</string>
+    <string name="start_new_filing">Start New Filing</string>
+    <string name="start_filing">Start Filing</string>
+    <string name="assessment_year">Assessment Year</string>
+    <string name="view_details">View Details</string>
+    <string name="click_update">Click here to Update</string>
+    <string name="or">OR</string>
+    <string name="skip">Skip</string>
+    <string name="how_it_works">HOW IT WORKS</string>
+    <string name="itr_tutorial_upload">Upload/mail Document</string>
+    <string name="itr_tutorial_upload_desc">You can either Upload the relevant documents or E-mail the same to us.
+    </string>
+    <string name="itr_tutorial_ask_expert">Answer Callback from expert</string>
+    <string name="itr_tutorial_ask_expert_desc">Our Tax Experts will call you and solve all your Tax Related queries.
+    </string>
+    <string name="itr_tutorial_completes_filing">Expert Completes e-Filing</string>
+    <string name="itr_tutorial_completes_filing_desc">Your ITR will be filed by your assigned Tax Expert.</string>
+    <string name="cont">Continue</string>
+    <string name="choose_financial_year">Financial Year | Assessment Year</string>
+    <string name="year_txt">2018-19 | 2019-20</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">E-mail ID</string>
+    <string name="pan_no">PAN Number</string>
+    <string name="dob">D.O.B</string>
+    <string name="upload_form16_pension">Upload Form 16\nOr\nPension Slip</string>
+    <string name="upload_form16_instruction">Kindly ensure that the fields in your Form 16/ Pension Slip are clearly
+        visible.
+    </string>
+    <string name="important_details_father">Father\'s Name
+        <i>(as per PAN Card)</i>
+    </string>
+    <string name="important_details_aadhar">Aadhaar Card Number/ Enrollment ID</string>
+    <string name="important_details_currentadd">Current Address</string>
+    <string name="important_details_add1">Address Line 1</string>
+    <string name="important_details_add2">Address Line 2</string>
+    <string name="important_details_state">State</string>
+    <string name="important_details_city">City</string>
+    <string name="important_details_pin">Pincode</string>
+
+    <string name="upload_aadhar">Upload Aadhaar Card</string>
+    <string name="front_side">Front Side</string>
+    <string name="back_side">Back Side</string>
+    <string name="important_details_retry">Retry</string>
+    <string name="important_details_delete">Delete</string>
+
+    <string name="bank_details_add_another">Add Another Bank Account</string>
+    <string name="bank_details_name">Bank Name</string>
+    <string name="bank_details_ifsc">IFSC Code</string>
+    <string name="bank_details_acc_no">Account Number</string>
+    <string name="bank_details_acc_type">Account Type</string>
+    <string name="bank_details_make_primary">Make this my Primary Account.</string>
+    <string name="bank_details_make_desc">Tax Refund, if any will be credited to your Primary Bank Account.</string>
+
+    <string name="other_income_int_inc">Interest Income</string>
+    <string name="other_income_int_inc_desc">Interest Income from Saving Bank and Post Office deposits.</string>
+    <string name="other_income_int_fd_rd">Interest On RD\'s / FD\'s etc.</string>
+    <string name="other_income_int_fd_rd_desc">Interest from sweep accounts converted to FDs also specified here.
+    </string>
+    <string name="other_income_any_other">Any Other Income</string>
+    <string name="other_income_any_other_desc">Report any other income which is not part of Income from Salary, House
+        Property, Capital Gain or Business and Profession. Gifts can be declared as Income here.
+    </string>
+
+    <string name="misc_income">Sources of income selected by you</string>
+    <string name="misc_income_select">Select your Turnover/Gross Receipts</string>
+    <string name="misc_income_upto_lakhs">Upto 10 Lakhs</string>
+    <string name="misc_income_10lakhs">10 to 25 Lakhs</string>
+    <string name="misc_income_25lakhs">25 to 50 Lakhs</string>
+    <string name="misc_income_50lakhs">Above 50 Lakhs</string>
+    <string name="misc_income_desc">We have received your basic details, for more information, our Tax Expert will
+        contact you shortly.
+    </string>
+
+    <string name="upload_other_tax_expert">Additional Information for Tax Expert</string>
+    <string name="upload_other_write_comment">Write a comment here…</string>
+    <string name="enter_coupon">Enter your coupon code here</string>
+    <string name="apply">Apply</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="original_price">Original Price</string>
+    <string name="discount_price">Discount Price</string>
+    <string name="gst">GST @18%</string>
+    <string name="total_payment">Total</string>
+    <string name="gstin_quest">Do you have GSTIN?</string>
+    <string name="gstin_desc">If you are registered under GST, please provide your GSTIN to claim Input Tax Credit under
+        the GST Regulations.
+    </string>
+    <string name="gstin">GSTIN*</string>
+    <string name="gstin_comp_name">Company / Firm’s Name (as per GSTIN)*</string>
+    <string name="gstin_dropdown">State (as per GSTIN)*</string>
+    <string name="gstin_comp_add">Company / Firm’s Address (as per GSTIN)*</string>
+    <string name="gstin_service_prov">Service Provider’s GSTIN: 06AAGCC7251C2ZY</string>
+
+    <string name="submit">Submit</string>
+    <string name="upload_n_any_other_document">Upload\nany other document</string>
+    <string name="upload_n_intimation_notice">Upload\nIntimation/Notice</string>
+    <string name="skip_submit">Skip/Submit</string>
+    <string name="start_new_filing_for_user">Start Filing for New User</string>
+    <string name="reply_to_notice">Reply to Notice for New User</string>
+    <string name="basic_salary_received">Basic salary received *</string>
+    <string name="dearness_allowance">Dearness Allowance (DA)</string>
+    <string name="da_received">Dearness Allowance (DA) received</string>
+    <string name="hra_received">HRA received *</string>
+    <string name="total_rent_paid">Total rent paid *</string>
+    <string name="calculate">Calculate</string>
+    <string name="hra_question">Do you live in Delhi, Mumbai, Kolkata or Chennai?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="calculate_again">Calculate Again</string>
+    <string name="print">Print</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="name">Your Name *</string>
+    <string name="your_email">Your Email Id *</string>
+    <string name="rent_details">Rent Details</string>
+    <string name="landlord_name">Landlord Name *</string>
+    <string name="landlord_pan">Landlord PAN *
+        <i>(e.g. ABCPL1234C)</i>
+    </string>
+    <string name="rent_paid">Rent Paid Per Month *</string>
+    <string name="rent_duration">Rent Duration *</string>
+    <string name="warning_note"><b>Note:</b> If you do not e-verify your return within 120 days, it will be considered as invalid return</string>
+    <string name="About_Us">Technology is a great enabler as it keeps finding innovative solutions. It becomes more
+        effective when it comes loaded with domain expertise. At All India ITR, we blend cutting-edge technology with
+        comprehensive knowledge of taxes to find answers to all your tax-related queries; be it e-filing of ITR or
+        helping you get GST ready. There are certain features that make us a dependable choice for taxpayers.
+        \n\n<b>Infallible Technology</b>\nWe are living in the times where almost every existing business has an app.
+        But not all apps are error free. At All India ITR, we have a team of proficient app developers to maintain our
+        application and update it as and when required. So, rest assured you won’t face a glitch while using it.
+        \n\n<b>Unmatched Expertise</b>\nDespite having a technologically-advance interface, for us, technology is only a
+        means to an end, as offering tax solutions to clients tops our priority list. To achieve this, we have a team of
+        tax experts which is willing to provide you tax solutions in shortest possible time.
+        \n\n<b>Credibility that Built Trust</b>\nWhile revealing their details, taxpayers want to make it sure if the
+        service provider is credible enough. As All India ITR is a government authorised intermediary, you can rest
+        assured that your details are in safe hands.
+        \n\n<b>One-Stop Tax Solutions</b>\nWhile creating the app we have paid great attention to details. We have made
+        sure our valued customers shouldn’t walk from pillar to post to find tax solutions. To facilitate them, we have
+        Income Tax Calculator, HRA Calculator and Rent Receipt Generator that can be used for free.
+    </string>
+    <string name="request_callback_title">Need Help?\n Talk to an Expert.</string>
+    <string name="update_details">The Information provided by you is incorrect, kindly provide the correct details.</string>
+    <string name="expert_assign">Expert Assigned</string>
+    <string name="review_info">Review Information</string>
+    <string name="e_filed">E-Filed</string>
+    <string name="e_verify">E-Verify Now</string>
+
+
+    <string name="txt_title1">Refer your From 16 document and complete details below.Enter 0 where you have no values.</string>
+    <string name="txt_nameof_employer">Name of Employer / Company</string>
+    <string name="txt_referform16">Refer Form-16</string>
+    <string name="txt_typeoforgnization">Type of Organisation</string>
+    <string name="txt_salaryamount">Salary Amount 17(1)</string>
+    <string name="txt_salaryamount2">Please check point no.6 of From-16(Part-B))</string>
+    <string name="txt_perquisites">Perquisites 17(2)</string>
+    <string name="txt_salaryamount3">Please check point no.6 of From-16(Part-B))</string>
+
+    <string name="txt_profileinlieu">Profits inlieu of Salary 17(3)</string>
+    <string name="txt_sub_profileinlieu">Please check point no.1(c) of From-16(Part-B))</string>
+    <string name="txt_totalsal">Total Salary</string>
+
+    <string name="txt_lessallowances">Less : Allowances exempt u/s 10</string>
+    <string name="txt_sub_lessallowances">Please check point no.2 of From-16(Part-B))</string>
+
+    <string name="txt_standarddeduction">Standard Deduction</string>
+    <string name="txt_sub_standarddeduction">Please check point no.4(a) of From-16(Part-B))</string>
+
+    <string name="txt_professionaltax">Professional Tax</string>
+    <string name="txt_sub_professionaltax">Please check point no.4(c) of From-16(Part-B))</string>
+
+    <string name="txt_incomefromsal">Income from Salary</string>
+    <string name="txt_sub_incomefromsal">Please check point no.6 of From-16(Part-B))</string>
+
+
+    <string name="txt_80ccd2">80CCD(2)</string>
+    <string name="txt_sub_80ccd2">Contribution to Pension Scheme by Employer.</string>
+
+    <string name="txt_80d">80D</string>
+    <string name="txt_sub_80d">Premimum paid on medical Insurance policy.</string>
+
+    <string name="txt_total_detaction">Total Deductions</string>
+
+    <string name="txt_note">Note: You can find more deductions to fill later on Deductions Page</string>
+    <string name="txt_tds">Tax Deducted at Source(TDS)</string>
+    <string name="txt_sub_tds">Refer Form-16(Part-A)</string>
+
+    <string name="txt_tan">TAN of Employer</string>
+    <string name="txt_sub_tan">Refer Form-16(Part-A).</string>
+
+    <string name="stringblogs">Blogs</string>
+    <string name="choose_service">Choose Service</string>
+    <string name="demotitle">Demo Title</string>
+    <string name="contact_us_name">Name</string>
+    <string name="contact_us_contactno">Contact Number</string>
+    <string name="contact_us_callback">Request a Callback</string>
+
+
+    <string name="more_faq">FAQa\s</string>
+    <string name="more_share">Share</string>
+    <string name="more_custompayment">Custom Payment</string>
+    <string name="more_rateus">Rate Us</string>
+    <string name="more_aboutus">About Us</string>
+    <string name="more_contactus">Contact Us</string>
+    <string name="more_language">Language</string>
+    <string name="more_logout">Logout</string>
+
+
+    <!--********************************HEADER TITLE************************************-->
+    <string name="title_choose_services">Choose Service</string>
+    <string name="title_select_itr">Selcet ITR</string>
+    <string name="title_select_User">Select User</string>
+    <string name="title_select_incomesource">Select Income Source</string>
+    <string name="title_select_uploadform16">Upload Form 16</string>
+    <string name="title_bankdetials">Enter Bank Details</string>
+    <string name="title_bankdetialstitle">Bank Details</string>
+    <string name="title_anyother_doc">Any Other Information</string>
+    <string name="title_otherdetails">Order Details</string>
+    <string name="title_imp_details">Important Details</string>
+    <string name="title_update_details">Update Details</string>
+    <string name="title_reply_to_notice">Reply to Notice</string>
+    <string name="title_hra_cal">HRA Calculator</string>
+    <string name="title_calculated_hra">Calculated HRA</string>
+    <string name="title_income_calculator">Income Tax Calculator</string>
+    <string name="title_miscellaneous">Miscellaneous Income</string>
+    <string name="title_otherincome">Other Income</string>
+    <string name="title_replyto_notice">Reply to Notice Status</string>
+    <string name="title_e_verify_status">E-Verify Status</string>
+    <string name="title_payment_rec_successfull">Payment Received Successfully!</string>
+    <string name="title_payment_rec_successfull2">We have successfully received the payment from you. Your Reply to Notice will be filed shortly by our Tax Experts.</string>
+    <string name="title_order_complete">Order Complete!</string>
+    <string name="title_r_notice_success">Your Reply to Notice has been successfully filed by our Tax Experts. Kindly, verify the ITR to complete the process.</string>
+    <string name="title_p_received_success">Payment Received Successfully!</string>
+    <string name="title_r_received_success">We have successfully received the Payment. Your E-Verification will be completed shortly.</string>
+    <string name="title_itr_success">Your ITR has been successfully E-Verified. The E-filing of ITR is complete.</string>
+    <string name="title_itr_language">Language setting</string>
+    <string name="title_tutorials">Our Filing Process</string>
+    <string name="title_allorder">All Orders</string>
+    <string name="title_referral">Referral</string>
+    <string name="title_earning">Earning</string>
+    <string name="title_withdrawal">Withgrawal</string>
+
+
+    <string name="title_orderstatus">Order Status</string>
+
+
+    <!--********************************HEADER TITLE************************************-->
+
+
+    <!--    ******************************************Order Status*******************************************-->
+    <string name="orderstatus_call">Call</string>
+    <string name="orderstatus_chat">Chat</string>
+    <string name="orderstatus_email">Email</string>
+
+    <string name="orderstatus_mobno">Mob No</string>
+    <string name="orderstatus_efield_success">E-Filed Successfully!</string>
+    <string name="orderstatus_efield_ack">Your return is successfully filed, your\nAcknowledgement Number is:</string>
+    <string name="orderstatus_efield_notice">Your return is successfully filed, in order to complete the filing process e-verify your return.</string>
+    <string name="orderstatus_popup">Congratulations!</string>
+    <string name="orderstatus_popup_itr">Your ITR has been Filed successfully</string>
+    <string name="orderstatus_popup_ack">Your Acknowledgement Number is:</string>
+    <string name="orderstatus_popup_txt">Tell us about your experience with ALL India ITR\nRate Us Now</string>
+    <string name="orderstatus_popup_no">No Thanks!</string>
+
+
+    <!--    ******************************************Order Status*******************************************-->
+
+
+    <!--    ************************************USER LIST****************************************************-->
+
+    <string name="user_pan">PAN No.</string>
+    <string name="user_dob">DOB:</string>
+    <string name="user_btn_viewdetails">View Details</string>
+    <string name="user_btn_continue_filing">Continue Filing</string>
+    <string name="user_e_verify">E-Verify</string>
+    <string name="user_e_field">E-Filed</string>
+    <string name="user_itr_inprogress">ITR Inprogress</string>
+    <string name="user_reply_to_notice">Reply to Notice</string>
+
+
+    <!--    ************************************USER LIST****************************************************-->
+
+
+    <!--    **************************************USEFULL TOOLS***************************************-->
+    <string name="title_incometax_calculator">Income Tax Calculator</string>
+    <string name="title_incometax_select_years">Select the Assessment Year *</string>
+    <string name="title_dob">Date of Birth *</string>
+    <string name="title_residaental">Residential Status *</string>
+    <string name="title_incomedetails">Income Details *</string>
+    <string name="title_taxable_sal">Taxable Salary</string>
+    <string name="title_deductions">Enter Income after Standard Deduction of ₹ 40,000 from Salary</string>
+    <string name="title_intrest_other_inc">Income from Interest and other income</string>
+    <string name="title_self_house">Applicable only on self-occupied House Property</string>
+    <string name="title_paid_on_loan">Interest Paid On Loan</string>
+    <string name="title_rented_house_property">Applicable only on Rented House Property</string>
+    <string name="title_rented_income_recived">Rental Income Received</string>
+    <string name="title_interstpaid_home">Interest Paid On Home Loan</string>
+    <string name="title_deduction">Deductions</string>
+    <string name="title_tds_details">TDS Details</string>
+    <string name="title_tds_detucted_sal">TDS Deducted on Salary</string>
+    <string name="title_tds_detucted_other">TDS Deducted (other than Salary)</string>
+    <string name="title_advance_tax">Advance Tax paid</string>
+    <string name="title_calculated_result">Calculated Result</string>
+    <string name="title_gross_total">Gross Total Income</string>
+    <string name="title_desuction_80">Deductions u/s 80</string>
+    <string name="title_tax_income">Taxable Income</string>
+    <string name="title_tax_paid">Taxes Paid</string>
+    <string name="title_tax_payable">Tax Payable</string>
+
+
+    <string name="title_tds_deduct">TDS Deducted on Salary</string>
+    <string name="title_tds_other_deduct">TDS Deducted (other than Salary)</string>
+    <string name="title_advance_tax_paid">Advance Tax paid</string>
+    <string name="title_section80_c">Section 80C</string>
+    <string name="title_basic_deduction">Basic Deductions</string>
+    <string name="title_section80_tta">Section 80TTA</string>
+    <string name="title_interst_from">Interest From Savings</string>
+    <string name="title_section80_ttb">Section 80TTB</string>
+    <string name="title_interest_on_deposit">Interest on Deposits</string>
+    <string name="title_section80_g">Section 80G</string>
+    <string name="title_donation_charity">Donations To Charity</string>
+    <string name="title_section80_d">Section 80D</string>
+    <string name="title_medical_pre">Medical Insurance Premium</string>
+    <string name="title_section80_e">Section 80E</string>
+    <string name="title_interest_e_loan">Interest on Educational Loan</string>
+    <string name="title_e_verify">E-Verify ITR</string>
+
+
+    <!--    **************************************USEFULL TOOLS***************************************-->
+
+    <string name="button_continue">Continue</string>
+    <string name="button_checkout">Checkout</string>
+
+    <string name="txt_tax_refund">Tax Refund, if any will be credited to your Primary Bank Account.</string>
+
+    <string name="popup_select_gallery">Select photo from gallery</string>
+    <string name="popup_select_camera">Capture photo from camera</string>
+    <string name="popup_select_pdf">Select PDF of the document</string>
+
+    <string name="txt_additional_doc">If you have additional documents, kindly upload the same in the above space.</string>
+
+    <string name="popup_title">Select Action</string>
+
+
+    <!--    **************************DASHBOARD DATA**********************-->
+
+    <string name="dashboard_starte_filing">Start E-Filing</string>
+    <string name="dashboard_incometax">Income Tax Calculator</string>
+    <string name="dashboard_hra">HRA Calculator</string>
+    <string name="dashboard_rent_recipt">Rent Receipt Generator</string>
+    <string name="dashboard_sub_starte_filing">Click here and start e-filing of your Income Tax Return with Expert assistance.</string>
+    <string name="dashboard_sub_incometax">Calculate your Income Tax liability by using All India ITR a\ s Income Tax Calculator</string>
+    <string name="dashboard_sub_hra">Living in a rented space? Use All India ITRa\ s HRA Calculator to calculate House Rent Allowance.</string>
+    <string name="dashboard_sub_rent_recipt">Want to save taxes? Generate rent receipts using All India ITRa\ s Rent Receipt Generator</string>
+
+
+    <string name="dashboard_replytonotice">Reply to Notice</string>
+    <string name="dashboard_sub_replytonotice">Made an error in ITR? File a revised return without any hassle.</string>
+
+    <!--    **************************DASHBOARD DATA**********************-->
+
+
+    <!--    **********************************SOURCE OF INCOME****************************-->
+
+    <string name="sourceof_income_salary">Salary/Pension</string>
+    <string name="sourceof_income_house">House Property</string>
+    <string name="sourceof_income_bussiness">Business/Profession</string>
+    <string name="sourceof_income_capital">Capital Gains</string>
+    <string name="sourceof_income_other_source">Other Sources</string>
+    <string name="sourceof_income_foreign">Foreign Income</string>
+
+
+    <!--    **********************************SOURCE OF INCOME****************************-->
+
+
+    <!--    ***************************************************Dilog Messages *******************************************-->
+
+    <string name="dilog_pleasewait">Please Wait</string>
+
+
+    <!--    ***************************************************Dilog Messages *******************************************-->
+
+
+    <!--    **********************************************All Order************************************************************-->
+    <string name="allorder_order_date">Order Date:</string>
+    <string name="allorder_ppackage_amount">Package Amount:</string>
+
+    <!--    **********************************************All Order************************************************************-->
+
+    <!--    **********************************************E-verify ITR************************************************************-->
+    <string name="e_verify__processinfo">Complete the ITR Filing process by Verifying it. You can verify the ITR by using any one of the following modes: -</string>
+    <string name="e_verify__onlineverification">Online Verification</string>
+    <string name="e_verify__aadharotp">Via\nAadhaar OTP</string>
+    <string name="e_verify__netbanking">Via\nNet Banking</string>
+    <string name="e_verify__dematac">Via\nDemat Account</string>
+    <string name="e_verify__atm">Via\nATM</string>
+    <string name="e_verify__offlineverification">Offline Verification</string>
+    <string name="e_verify__taxinfo">A Taxpayer can verify ITR manually, by sending a signed copy of ITR-V to CPC Bangalore via Speed Post.</string>
+    <string name="e_verify__info">To avoid any hassle, you can\nE-Verify with All India ITR.</string>
+    <string name="e_verify__button">E-Verify Now</string>
+
+    <!--    **********************************************E-verify ITR************************************************************-->
+
+    <!--    ************************************Rent Recipt***********************************************-->
+    <string name="rent_recipt_persionl_info"> Personal Information</string>
+    <string name="rent_recipt_email"> Your Email Id *</string>
+    <string name="rent_recipt_rent_details"> Rent Details</string>
+    <string name="rent_recipt_landloard_name"> Landlord Name *</string>
+    <string name="rent_recipt_rent_month"> Rent Paid Per Month *</string>
+    <string name="rent_recipt_rent_duration"> Rent Duration *</string>
+    <string name="rent_recipt_address_1"> Address Line *</string>
+    <string name="rent_recipt_city"> Town / City *</string>
+    <string name="rent_recipt_state"> State *</string>
+    <string name="rent_recipt_pincode"> Pincode *</string>
+
+    <!--    ************************************Rent Recipt***********************************************-->
+
+
+    <!--    *******************************Refer and earn***********************************************************-->
+    <string name="ref_earn_uniqe_code"> Your Unique Code</string>
+    <string name="ref_earn_copy"> Copy</string>
+    <string name="ref_earn_share_link"> Share your link to earn:</string>
+
+
+    <string name="ref_earn_refer_friend"> <font color='#00B894'>Refer All India<br> ITR</br> to your Friends</font></string>
+    <string name="ref_earn_get_notify"> Get <font color='#00B894'>Notified</font> once \n your friends file ITR</string>
+    <string name="ref_earn_get_cashback"> You and your\n Friends Get <font color='#00B894'>Cashback</font></string>
+
+    <string name="ref_earn_fb"> Facebook</string>
+    <string name="ref_earn_whatsup"> Whatsapp</string>
+    <string name="ref_earn_message"> Message</string>
+    <string name="ref_earn_email"> Email</string>
+    <string name="ref_earn_more"> More</string>
+
+
+    <string name="ref_earn_balance"> Your Balance</string>
+    <string name="ref_earn_withdraw"> Withdraw Now</string>
+    <string name="ref_earn_listoffr"> List of Friends whom you referred All India ITR</string>
+
+    <string name="ref_earn_add_bank"> Add Your Bank Details for Withdrawal</string>
+    <string name="ref_earn_account"> Account Holder\'s Name</string>
+    <string name="ref_earn_bank_name"> Bank Name</string>
+    <string name="ref_earn_bank_ac_no"> Bank Account Number</string>
+    <string name="ref_earn_bank_ifsc"> IFSC Code</string>
+    <string name="ref_earn_btn_withdraw"> Withdraw</string>
+    <string name="ref_earn_sorry"> Sorry, withdrawal history not available!</string>
+
+
+    <!--    *******************************Refer and earn***********************************************************-->
+
+
+    <!--    ************************************Manual Process*************************-->
+    <string name="mainual_title"> Form 16 details</string>
+    <string name="mainual_title_fromdetails"> Form 16 details</string>
+
+    <string name="mainual_formtitle"> Good. Just recheck your imported Summary</string>
+    <string name="mainual_form_subtitle"> Here are the key field of your From-16.Please reconfirm and Continue</string>
+
+    <string name="mainual_form_details_sal1">Income from Salary</string>
+    <string name="mainual_form_details_house">House Property Income</string>
+    <string name="mainual_form_details_deduction">Less:Deduction</string>
+    <string name="mainual_form_details_taxable">Total Taxable Income</string>
+    <string name="mainual_form_details_tds">Total TDS</string>
+
+    <string name="mainual_income_from_house">Income from House Property</string>
+
+    <string name="mainual_txt_80c">80C</string>
+    <string name="mainual_txt_80c1">Life insurance,PPF,Tuition fees,etc.</string>
+    <string name="mainual_tv_80CCCC">80CCCC</string>
+    <string name="mainual_tv_80CCCC1">Contribution to pension funds.</string>
+
+
+    <string name="mainual_tv_80CCD">80CCD(1)</string>
+    <string name="mainual_tv_80CCD1">Contribution to Pension Scheme by Employee.</string>
+
+
+    <string name="more_title">More</string>
+    <string name="save">Save</string>
+
+    <!--    ************************************Manual Process*************************-->
+
+    <string name="facebook_app_id">1974089359528580</string>
+    <string name="fb_login_protocol_scheme">fb1974089359528580</string>
+
+
+
+
+</resources>

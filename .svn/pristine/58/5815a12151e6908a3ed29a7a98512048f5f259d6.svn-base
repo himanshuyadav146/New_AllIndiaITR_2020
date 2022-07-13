@@ -1,0 +1,11 @@
+package dell.com.allindiaitr.holders
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_upload_list.view.*
+
+class UploadDocumentHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+    var documnet_name_textView = itemView.documnet_name_textView
+    var delete = itemView.delete
+}

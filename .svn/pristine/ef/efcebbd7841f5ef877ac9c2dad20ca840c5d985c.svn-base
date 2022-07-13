@@ -1,0 +1,475 @@
+package dell.com.allindiaitr.submitDocument;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\u0018\u00002\u00020\u0001:\u0002\u00a8\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\n\u0010\u0088\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u008a\u0001\u001a\u00030\u0089\u0001H\u0002J\u0015\u0010\u008b\u0001\u001a\u00030\u0089\u00012\t\u0010\u008c\u0001\u001a\u0004\u0018\u00010\"H\u0014J\n\u0010\u008d\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u008e\u0001\u001a\u00030\u0089\u0001H\u0002J\u0012\u0010\u008f\u0001\u001a\u00020\u00042\u0007\u0010\u0090\u0001\u001a\u00020\u0004H\u0002J\n\u0010\u0091\u0001\u001a\u00030\u0089\u0001H\u0002J\t\u0010\u0092\u0001\u001a\u00020\u0004H\u0002J\n\u0010\u0093\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u0094\u0001\u001a\u00030\u0089\u0001H\u0016J\u0016\u0010\u0095\u0001\u001a\u00030\u0089\u00012\n\u0010\u0096\u0001\u001a\u0005\u0018\u00010\u0097\u0001H\u0014J\u0015\u0010\u0098\u0001\u001a\u00020I2\n\u0010\u0099\u0001\u001a\u0005\u0018\u00010\u009a\u0001H\u0016J\n\u0010\u009b\u0001\u001a\u00030\u0089\u0001H\u0002J\u0013\u0010\u009c\u0001\u001a\u00030\u0089\u00012\u0007\u0010\u009d\u0001\u001a\u00020pH\u0002J\n\u0010\u009e\u0001\u001a\u00030\u0089\u0001H\u0002J-\u0010\u009f\u0001\u001a\u00030\u0089\u00012\u0007\u0010\u00a0\u0001\u001a\u00020+2\u0007\u0010\u00a1\u0001\u001a\u00020+2\u0006\u00103\u001a\u00020+2\u0007\u0010\u00a2\u0001\u001a\u00020\\H\u0002J\n\u0010\u00a3\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u00a4\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u00a5\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u00a6\u0001\u001a\u00030\u0089\u0001H\u0002J\n\u0010\u00a7\u0001\u001a\u00030\u0089\u0001H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0016X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0006\"\u0004\b\u001d\u0010\bR\u001a\u0010\u001e\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u0006\"\u0004\b \u0010\bR\u001a\u0010!\u001a\u00020\"X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R\u001a\u0010\'\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u0006\"\u0004\b)\u0010\bR\u001a\u0010*\u001a\u00020+X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R\u001a\u00100\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b1\u0010\u0006\"\u0004\b2\u0010\bR\u001a\u00103\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010\u0006\"\u0004\b5\u0010\bR\u001a\u00106\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b7\u0010\u0006\"\u0004\b8\u0010\bR\u001a\u00109\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\u0006\"\u0004\b;\u0010\bR\u001a\u0010<\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b=\u0010\u0006\"\u0004\b>\u0010\bR\u001a\u0010?\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u0006\"\u0004\bA\u0010\bR\u001a\u0010B\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bC\u0010\u0006\"\u0004\bD\u0010\bR\u001a\u0010E\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bF\u0010\u0006\"\u0004\bG\u0010\bR\u001a\u0010H\u001a\u00020IX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bJ\u0010K\"\u0004\bL\u0010MR\u001a\u0010N\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bO\u0010\u0006\"\u0004\bP\u0010\bR\u001a\u0010Q\u001a\u00020RX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bS\u0010T\"\u0004\bU\u0010VR\u0010\u0010W\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010X\u001a\b\u0012\u0004\u0012\u00020Z0YX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010[\u001a\u00020\\X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b]\u0010^\"\u0004\b_\u0010`R\u0011\u0010a\u001a\u00020b\u00a2\u0006\b\n\u0000\u001a\u0004\bc\u0010dR\u001a\u0010e\u001a\u00020fX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bg\u0010h\"\u0004\bi\u0010jR\u001a\u0010k\u001a\u00020bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bl\u0010d\"\u0004\bm\u0010nR\u001a\u0010o\u001a\u00020pX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bq\u0010r\"\u0004\bs\u0010tR\u001a\u0010u\u001a\u00020bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bv\u0010d\"\u0004\bw\u0010nR\u001a\u0010x\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\by\u0010\u0006\"\u0004\bz\u0010\bR!\u0010{\u001a\b\u0012\u0004\u0012\u00020\u00040|X\u0080\u000e\u00a2\u0006\u000f\n\u0000\u001a\u0004\b}\u0010~\"\u0005\b\u007f\u0010\u0080\u0001R$\u0010\u0081\u0001\u001a\b\u0012\u0004\u0012\u00020\u00040|X\u0080\u000e\u00a2\u0006\u0011\n\u0000\u001a\u0005\b\u0082\u0001\u0010~\"\u0006\b\u0083\u0001\u0010\u0080\u0001R\u001d\u0010\u0084\u0001\u001a\u00020+X\u0086\u000e\u00a2\u0006\u0010\n\u0000\u001a\u0005\b\u0085\u0001\u0010-\"\u0005\b\u0086\u0001\u0010/R\u0011\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u00a9\u0001"}, d2 = {"Ldell/com/allindiaitr/submitDocument/PaymentActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "PaymentType", "", "getPaymentType", "()Ljava/lang/String;", "setPaymentType", "(Ljava/lang/String;)V", "Service", "Lcom/paytm/pgsdk/PaytmPGService;", "getService", "()Lcom/paytm/pgsdk/PaytmPGService;", "setService", "(Lcom/paytm/pgsdk/PaytmPGService;)V", "apI_Interface", "Ldell/com/allindiaitr/interfaces/API_Interface;", "getApI_Interface", "()Ldell/com/allindiaitr/interfaces/API_Interface;", "setApI_Interface", "(Ldell/com/allindiaitr/interfaces/API_Interface;)V", "appPreferences", "Ldell/com/allindiaitr/utils/AppPreferences;", "getAppPreferences", "()Ldell/com/allindiaitr/utils/AppPreferences;", "setAppPreferences", "(Ldell/com/allindiaitr/utils/AppPreferences;)V", "end_point", "getEnd_point", "setEnd_point", "mClientName", "getMClientName", "setMClientName", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "setMContext", "(Landroid/content/Context;)V", "mCouponCode", "getMCouponCode", "setMCouponCode", "mCouponID", "", "getMCouponID", "()I", "setMCouponID", "(I)V", "mCouponType", "getMCouponType", "setMCouponType", "mDiscount", "getMDiscount", "setMDiscount", "mDiscountType", "getMDiscountType", "setMDiscountType", "mGstInCompanyAddressString", "getMGstInCompanyAddressString", "setMGstInCompanyAddressString", "mGstInCompanyString", "getMGstInCompanyString", "setMGstInCompanyString", "mGstInNoString", "getMGstInNoString", "setMGstInNoString", "mGstInStateString", "getMGstInStateString", "setMGstInStateString", "mGstInString", "getMGstInString", "setMGstInString", "mIsCouponApply", "", "getMIsCouponApply", "()Z", "setMIsCouponApply", "(Z)V", "mMessage", "getMMessage", "setMMessage", "mMessageReceiver", "Landroid/content/BroadcastReceiver;", "getMMessageReceiver", "()Landroid/content/BroadcastReceiver;", "setMMessageReceiver", "(Landroid/content/BroadcastReceiver;)V", "merchantKey", "modelSelectedPackagesArrayList", "", "Ldell/com/allindiaitr/models/ModelSelectedPackages;", "netAmount", "", "getNetAmount", "()D", "setNetAmount", "(D)V", "newItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "getNewItrBase", "()Ldell/com/allindiaitr/models/NewItrBase;", "objCouponModel", "Ldell/com/allindiaitr/models/CouponModel;", "getObjCouponModel", "()Ldell/com/allindiaitr/models/CouponModel;", "setObjCouponModel", "(Ldell/com/allindiaitr/models/CouponModel;)V", "objItrBase", "getObjItrBase", "setObjItrBase", "(Ldell/com/allindiaitr/models/NewItrBase;)V", "objPaymentModel", "Ldell/com/allindiaitr/models/PaymentModel;", "getObjPaymentModel", "()Ldell/com/allindiaitr/models/PaymentModel;", "setObjPaymentModel", "(Ldell/com/allindiaitr/models/PaymentModel;)V", "responseBody", "getResponseBody", "setResponseBody", "resultData", "getResultData", "setResultData", "stateIdArrayList", "Ljava/util/ArrayList;", "getStateIdArrayList$app_debug", "()Ljava/util/ArrayList;", "setStateIdArrayList$app_debug", "(Ljava/util/ArrayList;)V", "stateNameArrayList", "getStateNameArrayList$app_debug", "setStateNameArrayList$app_debug", "statePositionInt", "getStatePositionInt", "setStatePositionInt", "userCredentials", "GetPackageId", "", "applyCouponCode", "attachBaseContext", "newBase", "checkStatus", "getCalculation1", "getSplittedAmount", "splitAmount", "livePaytm", "loadJSONFromAsset", "newLivePaytm", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "paytmNavigation", "postPayTMGateway", "objPaymentModel1", "postPayment", "setAmountSummaryInUI", "mTotalAmount", "mTax", "mGstAmount", "setCouponSummaryVisibility", "setCouponVisibilityGone", "setDataintoModel", "setPackageAddOnsListIntoModel", "updateUI", "AsyncTaskExample", "app_debug"})
+public final class PaymentActivity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.Context mContext;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.interfaces.API_Interface apI_Interface;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.utils.AppPreferences appPreferences;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.models.NewItrBase objItrBase;
+    private double netAmount;
+    private boolean mIsCouponApply;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mCouponType;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mClientName;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mCouponCode;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mDiscountType;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mDiscount;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mMessage;
+    private java.util.List<dell.com.allindiaitr.models.ModelSelectedPackages> modelSelectedPackagesArrayList;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.models.NewItrBase responseBody;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.models.CouponModel objCouponModel;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String PaymentType;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String mGstInString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mGstInNoString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mGstInCompanyString;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String mGstInCompanyAddressString;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String mGstInStateString;
+    @org.jetbrains.annotations.NotNull()
+    public dell.com.allindiaitr.models.PaymentModel objPaymentModel;
+    private int statePositionInt;
+    private int mCouponID;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> stateIdArrayList;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> stateNameArrayList;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String end_point;
+    private java.lang.String merchantKey;
+    private java.lang.String userCredentials;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String resultData;
+    @org.jetbrains.annotations.NotNull()
+    private final dell.com.allindiaitr.models.NewItrBase newItrBase = null;
+    @org.jetbrains.annotations.NotNull()
+    public com.paytm.pgsdk.PaytmPGService Service;
+    @org.jetbrains.annotations.NotNull()
+    private android.content.BroadcastReceiver mMessageReceiver;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    public final void setMContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.interfaces.API_Interface getApI_Interface() {
+        return null;
+    }
+    
+    public final void setApI_Interface(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.interfaces.API_Interface p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.utils.AppPreferences getAppPreferences() {
+        return null;
+    }
+    
+    public final void setAppPreferences(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.utils.AppPreferences p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getObjItrBase() {
+        return null;
+    }
+    
+    public final void setObjItrBase(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    public final double getNetAmount() {
+        return 0.0;
+    }
+    
+    public final void setNetAmount(double p0) {
+    }
+    
+    public final boolean getMIsCouponApply() {
+        return false;
+    }
+    
+    public final void setMIsCouponApply(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMCouponType() {
+        return null;
+    }
+    
+    public final void setMCouponType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMClientName() {
+        return null;
+    }
+    
+    public final void setMClientName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMCouponCode() {
+        return null;
+    }
+    
+    public final void setMCouponCode(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMDiscountType() {
+        return null;
+    }
+    
+    public final void setMDiscountType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMDiscount() {
+        return null;
+    }
+    
+    public final void setMDiscount(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMMessage() {
+        return null;
+    }
+    
+    public final void setMMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getResponseBody() {
+        return null;
+    }
+    
+    public final void setResponseBody(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.NewItrBase p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.CouponModel getObjCouponModel() {
+        return null;
+    }
+    
+    public final void setObjCouponModel(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.CouponModel p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPaymentType() {
+        return null;
+    }
+    
+    public final void setPaymentType(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMGstInString() {
+        return null;
+    }
+    
+    public final void setMGstInString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMGstInNoString() {
+        return null;
+    }
+    
+    public final void setMGstInNoString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMGstInCompanyString() {
+        return null;
+    }
+    
+    public final void setMGstInCompanyString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMGstInCompanyAddressString() {
+        return null;
+    }
+    
+    public final void setMGstInCompanyAddressString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMGstInStateString() {
+        return null;
+    }
+    
+    public final void setMGstInStateString(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.PaymentModel getObjPaymentModel() {
+        return null;
+    }
+    
+    public final void setObjPaymentModel(@org.jetbrains.annotations.NotNull()
+    dell.com.allindiaitr.models.PaymentModel p0) {
+    }
+    
+    public final int getStatePositionInt() {
+        return 0;
+    }
+    
+    public final void setStatePositionInt(int p0) {
+    }
+    
+    public final int getMCouponID() {
+        return 0;
+    }
+    
+    public final void setMCouponID(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getStateIdArrayList$app_debug() {
+        return null;
+    }
+    
+    public final void setStateIdArrayList$app_debug(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getStateNameArrayList$app_debug() {
+        return null;
+    }
+    
+    public final void setStateNameArrayList$app_debug(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getEnd_point() {
+        return null;
+    }
+    
+    public final void setEnd_point(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getResultData() {
+        return null;
+    }
+    
+    public final void setResultData(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final dell.com.allindiaitr.models.NewItrBase getNewItrBase() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.paytm.pgsdk.PaytmPGService getService() {
+        return null;
+    }
+    
+    public final void setService(@org.jetbrains.annotations.NotNull()
+    com.paytm.pgsdk.PaytmPGService p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context newBase) {
+    }
+    
+    private final void setPackageAddOnsListIntoModel() {
+    }
+    
+    private final void setDataintoModel() {
+    }
+    
+    private final void postPayTMGateway(dell.com.allindiaitr.models.PaymentModel objPaymentModel1) {
+    }
+    
+    private final void postPayment() {
+    }
+    
+    private final void paytmNavigation() {
+    }
+    
+    private final void checkStatus() {
+    }
+    
+    private final void livePaytm() {
+    }
+    
+    private final void newLivePaytm() {
+    }
+    
+    private final void applyCouponCode() {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.Nullable()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.BroadcastReceiver getMMessageReceiver() {
+        return null;
+    }
+    
+    public final void setMMessageReceiver(@org.jetbrains.annotations.NotNull()
+    android.content.BroadcastReceiver p0) {
+    }
+    
+    private final void updateUI() {
+    }
+    
+    private final void GetPackageId() {
+    }
+    
+    private final void getCalculation1() {
+    }
+    
+    private final void setAmountSummaryInUI(int mTotalAmount, int mTax, int mDiscount, double mGstAmount) {
+    }
+    
+    private final void setCouponSummaryVisibility() {
+    }
+    
+    private final void setCouponVisibilityGone() {
+    }
+    
+    private final java.lang.String loadJSONFromAsset() {
+        return null;
+    }
+    
+    private final java.lang.String getSplittedAmount(java.lang.String splitAmount) {
+        return null;
+    }
+    
+    public PaymentActivity() {
+        super();
+    }
+    
+    @android.annotation.SuppressLint(value = {"StaticFieldLeak"})
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\b\u0087\u0004\u0018\u00002\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u0001B\'\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0002\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000bJ%\u0010!\u001a\u00020\u00022\u0016\u0010\"\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00020#\"\u0004\u0018\u00010\u0002H\u0014\u00a2\u0006\u0002\u0010$J\u0012\u0010%\u001a\u00020&2\b\u0010\'\u001a\u0004\u0018\u00010\u0002H\u0014J\b\u0010(\u001a\u00020&H\u0014R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\f\u001a\u00020\r\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0016\u001a\u00020\u0002\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0002X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0018\"\u0004\b\u001b\u0010\u001cR\u0011\u0010\u001d\u001a\u00020\u001e\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 \u00a8\u0006)"}, d2 = {"Ldell/com/allindiaitr/submitDocument/PaymentActivity$AsyncTaskExample;", "Landroid/os/AsyncTask;", "", "Ljava/lang/Void;", "activity", "Ldell/com/allindiaitr/submitDocument/PaymentActivity;", "endpoint", "objItrBase", "Ldell/com/allindiaitr/models/NewItrBase;", "objPaymentModel", "Ldell/com/allindiaitr/models/PaymentModel;", "(Ldell/com/allindiaitr/submitDocument/PaymentActivity;Ldell/com/allindiaitr/submitDocument/PaymentActivity;Ljava/lang/String;Ldell/com/allindiaitr/models/NewItrBase;Ldell/com/allindiaitr/models/PaymentModel;)V", "connection", "Ljava/net/HttpURLConnection;", "getConnection", "()Ljava/net/HttpURLConnection;", "dialog", "Ldell/com/allindiaitr/utils/AlertDialogueManager;", "getDialog", "()Ldell/com/allindiaitr/utils/AlertDialogueManager;", "setDialog", "(Ldell/com/allindiaitr/utils/AlertDialogueManager;)V", "serverURL", "getServerURL", "()Ljava/lang/String;", "token", "getToken", "setToken", "(Ljava/lang/String;)V", "url", "Ljava/net/URL;", "getUrl", "()Ljava/net/URL;", "doInBackground", "p0", "", "([Ljava/lang/String;)Ljava/lang/String;", "onPostExecute", "", "result", "onPreExecute", "app_debug"})
+    public final class AsyncTaskExample extends android.os.AsyncTask<java.lang.String, java.lang.Void, java.lang.String> {
+        @org.jetbrains.annotations.NotNull()
+        private final java.lang.String serverURL = null;
+        @org.jetbrains.annotations.NotNull()
+        private final java.net.URL url = null;
+        @org.jetbrains.annotations.NotNull()
+        private java.lang.String token;
+        @org.jetbrains.annotations.NotNull()
+        private final java.net.HttpURLConnection connection = null;
+        @org.jetbrains.annotations.NotNull()
+        private dell.com.allindiaitr.utils.AlertDialogueManager dialog;
+        private dell.com.allindiaitr.submitDocument.PaymentActivity activity;
+        
+        @org.jetbrains.annotations.NotNull()
+        public final java.lang.String getServerURL() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final java.net.URL getUrl() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final java.lang.String getToken() {
+            return null;
+        }
+        
+        public final void setToken(@org.jetbrains.annotations.NotNull()
+        java.lang.String p0) {
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final java.net.HttpURLConnection getConnection() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final dell.com.allindiaitr.utils.AlertDialogueManager getDialog() {
+            return null;
+        }
+        
+        public final void setDialog(@org.jetbrains.annotations.NotNull()
+        dell.com.allindiaitr.utils.AlertDialogueManager p0) {
+        }
+        
+        @java.lang.Override()
+        protected void onPreExecute() {
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        @java.lang.Override()
+        protected java.lang.String doInBackground(@org.jetbrains.annotations.NotNull()
+        java.lang.String... p0) {
+            return null;
+        }
+        
+        @java.lang.Override()
+        protected void onPostExecute(@org.jetbrains.annotations.Nullable()
+        java.lang.String result) {
+        }
+        
+        public AsyncTaskExample(@org.jetbrains.annotations.Nullable()
+        dell.com.allindiaitr.submitDocument.PaymentActivity activity, @org.jetbrains.annotations.NotNull()
+        java.lang.String endpoint, @org.jetbrains.annotations.NotNull()
+        dell.com.allindiaitr.models.NewItrBase objItrBase, @org.jetbrains.annotations.NotNull()
+        dell.com.allindiaitr.models.PaymentModel objPaymentModel) {
+            super();
+        }
+    }
+}
